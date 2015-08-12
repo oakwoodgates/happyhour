@@ -1087,13 +1087,13 @@ get_header();
 
   <p class="lead">Abstract object styles for building various types of components (like blog comments, events, etc) that feature a left- or right-aligned image alongside textual content.</p>
 
-  <h2 id="media-default">Default media</h2>
+<!--  <h2 id="media-default">Default media</h2>
   <p>The default media displays a media object (images, video, audio) to the left or right of a content block.</p>
   <div class="bs-example" data-example-id="default-media">
     <div class="media">
       <div class="media-left">
         <a href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
+          <img class="media-object" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaKEAo4CmR7IqTBGPNsD1B-u0nokmAIkaIL-CZ1HuhnEUhYIoekQ" width="150">
         </a>
       </div>
       <div class="media-body">
@@ -1130,7 +1130,7 @@ get_header();
       </div>
       <div class="media-right">
         <a href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
+          <img class="media-object" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaKEAo4CmR7IqTBGPNsD1B-u0nokmAIkaIL-CZ1HuhnEUhYIoekQ" alt="Generic placeholder image">
         </a>
       </div>
     </div>
@@ -1150,7 +1150,7 @@ get_header();
         </a>
       </div>
     </div>
-  </div><!-- /.bs-example -->
+  </div>
 
   <h2 id="media-alignment">Media alignment</h2>
   <p>The images or other media can be aligned top, middle, or bottom. The default is top aligned.</p>
@@ -1206,7 +1206,6 @@ get_header();
         <div class="media-body">
           <h4 class="media-heading">Media heading</h4>
           <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-          <!-- Nested media object -->
           <div class="media">
             <div class="media-left">
               <a href="#">
@@ -1216,7 +1215,6 @@ get_header();
             <div class="media-body">
               <h4 class="media-heading">Nested media heading</h4>
               Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-              <!-- Nested media object -->
               <div class="media">
                 <div class="media-left">
                   <a href="#">
@@ -1230,7 +1228,6 @@ get_header();
               </div>
             </div>
           </div>
-          <!-- Nested media object -->
           <div class="media">
             <div class="media-left">
               <a href="#">
@@ -1245,7 +1242,9 @@ get_header();
         </div>
       </li>
     </ul>
-  </div>
+  </div> -->
+
+
 </div>
 
 <!-- Dialogs

@@ -125,6 +125,9 @@ function happyhour_scripts() {
 	);
 	wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
 
+	// CDN ftw
+	wp_enqueue_style( 'happyhour-fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );	
+
 	wp_enqueue_style( 'happyhour-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css' );	
 
 //	wp_enqueue_style( 'happyhour-style', get_stylesheet_uri() );
