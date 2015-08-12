@@ -8,14 +8,14 @@ happyhour
 * Added Bootstrap v.3.3.5 - http://getbootstrap.com/ - to `assets/`
 * Bootstrap SASS in `assets/css/`
 * Custom `variables.scss` for Style Guide
-* @ToDo Custom `assets/css/theme/` or `theme.scss` for extras
+* +ToDo Custom `assets/css/theme/` or `theme.scss` for extras
 
 Supports
 ---------------
 * Jetpack - http://jetpack.me/
-* @ToDo The Events Calendar - https://wordpress.org/plugins/the-events-calendar/
-* @ToDo Hybrid Core - https://github.com/justintadlock/hybrid-core/
-* @ToDo CMB2 - https://github.com/WebDevStudios/CMB2
+* +ToDo The Events Calendar - https://wordpress.org/plugins/the-events-calendar/
+* Hybrid Core - https://github.com/justintadlock/hybrid-core/
+* CMB2 - https://github.com/WebDevStudios/CMB2
 
 Development
 ---------------

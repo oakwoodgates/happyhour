@@ -69,6 +69,9 @@ function happyhour_setup() {
 		'video',
 		'quote',
 		'link',
+		'gallery',
+		'status',
+		'audio',
 	) );
 
 	// Set up the WordPress core custom background feature.
@@ -88,7 +91,7 @@ add_action( 'after_setup_theme', 'happyhour_setup' );
  * @global int $content_width
  */
 function happyhour_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'happyhour_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'happyhour_content_width', 1200 );
 }
 add_action( 'after_setup_theme', 'happyhour_content_width', 0 );
 
@@ -134,7 +137,7 @@ function happyhour_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_enqueue_script( 'happyhour-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '1.0.0', true );	
+	wp_enqueue_script( 'happyhour-js', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery'), '1.0.0', true );	
 }
 add_action( 'wp_enqueue_scripts', 'happyhour_scripts' );
 
@@ -162,3 +165,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/* Launch the Hybrid Core framework. */
+require_once( trailingslashit( get_template_directory() ) . 'hybrid-core/hybrid.php' );
+new Hybrid();
+
+
+require get_template_directory() . '/oakwood-happyhour/hybrid/template.php';
+

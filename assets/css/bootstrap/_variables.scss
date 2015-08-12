@@ -9,8 +9,9 @@ $bootstrap-sass-asset-helper: false !default;
 //## Gray and brand colors for use across Bootstrap.
 
 $gray-base:              #000 !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              #212121 !default;
+// $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-darker:            #151515 !default;
+$gray-dark:              #2D2D2D !default;
 $gray:                   #666 !default;
 $gray-light:             #bbb !default;
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
@@ -21,14 +22,14 @@ $brand-info:            #2196F3 !default;
 $brand-warning:         #ff9800 !default;
 $brand-danger:          #E91E63 !default;
 
-
+$gray-bkg:				#212121 !default;
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
 //** $body-bg:               #fff !default;
-$body-bg:               $gray-dark !default;
+$body-bg:               $gray-bkg !default;
 //** Global text color on `<body>`.
 //* $text-color:            $gray !default;
 $text-color:            $gray-lighter !default;
@@ -36,7 +37,7 @@ $text-color:            $gray-lighter !default;
 //** Global textual link color.
 $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:      darken($link-color, 10%) !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
 
@@ -134,7 +135,7 @@ $table-bg:                      transparent !default;
 //** Background color used for `.table-striped`.
 $table-bg-accent:               #f9f9f9 !default;
 //** Background color used for `.table-hover`.
-$table-bg-hover:                #f5f5f5 !default;
+$table-bg-hover:                $gray-light !default;
 $table-bg-active:               $table-bg-hover !default;
 
 //** Border color for table and cell borders.
@@ -235,7 +236,7 @@ $cursor-disabled:                not-allowed !default;
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-$dropdown-bg:                    #fff !default;
+$dropdown-bg:                    $gray !default;
 //** Dropdown menu `border-color`.
 $dropdown-border:                rgba(0,0,0,.15) !default;
 //** Dropdown menu `border-color` **for IE8**.
@@ -451,11 +452,11 @@ $nav-pills-active-link-hover-color:         $component-active-color !default;
 //##
 
 $pagination-color:                     $link-color !default;
-$pagination-bg:                        #fff !default;
-$pagination-border:                    #ddd !default;
+$pagination-bg:                        $gray-dark !default;
+$pagination-border:                    $gray !default;
 
 $pagination-hover-color:               $link-hover-color !default;
-$pagination-hover-bg:                  $gray-lighter !default;
+$pagination-hover-bg:                  $gray-light !default;
 $pagination-hover-border:              #ddd !default;
 
 $pagination-active-color:              #fff !default;
@@ -463,8 +464,8 @@ $pagination-active-bg:                 $brand-primary !default;
 $pagination-active-border:             $brand-primary !default;
 
 $pagination-disabled-color:            $gray-light !default;
-$pagination-disabled-bg:               #fff !default;
-$pagination-disabled-border:           #ddd !default;
+$pagination-disabled-bg:               #gray-base !default;
+$pagination-disabled-border:           #gray-base !default;
 
 
 //== Pager
@@ -539,7 +540,7 @@ $tooltip-arrow-color:         $tooltip-bg !default;
 //##
 
 //** Popover body background color
-$popover-bg:                          #fff !default;
+$popover-bg:                          $gray-base !default;
 //** Popover maximum width
 $popover-max-width:                   276px !default;
 //** Popover border color
@@ -599,7 +600,7 @@ $modal-title-padding:         15px !default;
 $modal-title-line-height:     $line-height-base !default;
 
 //** Background color of modal content area
-$modal-content-bg:                             #fff !default;
+$modal-content-bg:                             $gray-base !default;
 //** Modal content border color
 $modal-content-border-color:                   transparent !default;
 //** Modal content border color **for IE8**
@@ -672,14 +673,14 @@ $progress-bar-info-bg:        $brand-info !default;
 //##
 
 //** Background color on `.list-group-item`
-$list-group-bg:                 #fff !default;
+$list-group-bg:                 $gray-dark !default;
 //** `.list-group-item` border color
-$list-group-border:             #ddd !default;
+$list-group-border:             $gray-base !default;
 //** List group border radius
 $list-group-border-radius:      $border-radius-base !default;
 
 //** Background color of single list items on hover
-$list-group-hover-bg:           #f5f5f5 !default;
+$list-group-hover-bg:           $gray !default;
 //** Text color of active list items
 $list-group-active-color:       $component-active-color !default;
 //** Background color of active list items
@@ -698,7 +699,7 @@ $list-group-disabled-text-color: $list-group-disabled-color !default;
 
 $list-group-link-color:         #555 !default;
 $list-group-link-hover-color:   $list-group-link-color !default;
-$list-group-link-heading-color: #333 !default;
+$list-group-link-heading-color: $gray-lighter !default;
 
 
 //== Panels
@@ -712,7 +713,7 @@ $panel-footer-padding:        $panel-heading-padding !default;
 $panel-border-radius:         $border-radius-base !default;
 
 //** Border color for elements within panels
-$panel-inner-border:          #ddd !default;
+$panel-inner-border:          $gray !default;
 $panel-footer-bg:             $gray-darker !default;
 
 $panel-default-text:          $gray-lighter !default;
@@ -763,7 +764,7 @@ $thumbnail-caption-padding:   9px !default;
 //
 //##
 
-$well-bg:                     #f9f9f9 !default;
+$well-bg:                     $gray-dark !default;
 $well-border:                 transparent !default;
 
 
@@ -793,7 +794,7 @@ $badge-border-radius:         10px !default;
 $breadcrumb-padding-vertical:   8px !default;
 $breadcrumb-padding-horizontal: 15px !default;
 //** Breadcrumb background color
-$breadcrumb-bg:                 #f5f5f5 !default;
+$breadcrumb-bg:                 $gray-darker !default;
 //** Breadcrumb text color
 $breadcrumb-color:              #ccc !default;
 //** Text color of current page in the breadcrumb
