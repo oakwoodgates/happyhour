@@ -14,8 +14,8 @@ Supports
 ---------------
 * Jetpack - http://jetpack.me/
 * +ToDo The Events Calendar - https://wordpress.org/plugins/the-events-calendar/
-* +ToDo Hybrid Core - https://github.com/justintadlock/hybrid-core/
-* +ToDo CMB2 - https://github.com/WebDevStudios/CMB2
+* Hybrid Core - https://github.com/justintadlock/hybrid-core/
+* CMB2 - https://github.com/WebDevStudios/CMB2
 
 Development
 ---------------
