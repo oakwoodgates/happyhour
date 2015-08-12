@@ -46,23 +46,23 @@ get_header();
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Brand</a>
+                    <a class="navbar-brand" href="javascript:void(0)">Brand</a>
                   </div>
 
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                      <li><a href="#">Link</a></li>
+                      <li class="active"><a href="javascript:void(0)">Link <span class="sr-only">(current)</span></a></li>
+                      <li><a href="javascript:void(0)">Link</a></li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Action</a></li>
-                          <li><a href="#">Another action</a></li>
-                          <li><a href="#">Something else here</a></li>
+                          <li><a href="javascript:void(0)">Action</a></li>
+                          <li><a href="javascript:void(0)">Another action</a></li>
+                          <li><a href="javascript:void(0)">Something else here</a></li>
                           <li class="divider"></li>
-                          <li><a href="#">Separated link</a></li>
+                          <li><a href="javascript:void(0)">Separated link</a></li>
                           <li class="divider"></li>
-                          <li><a href="#">One more separated link</a></li>
+                          <li><a href="javascript:void(0)">One more separated link</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -73,7 +73,7 @@ get_header();
                       <button type="submit" class="btn btn-default">Submit</button>
                     </form>
                     <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#">Link</a></li>
+                      <li><a href="javascript:void(0)">Link</a></li>
                     </ul>
                   </div>
                 </div>
@@ -90,23 +90,23 @@ get_header();
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Brand</a>
+                    <a class="navbar-brand" href="javascript:void(0)">Brand</a>
                   </div>
 
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                     <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                      <li><a href="#">Link</a></li>
+                      <li class="active"><a href="javascript:void(0)">Link <span class="sr-only">(current)</span></a></li>
+                      <li><a href="javascript:void(0)">Link</a></li>
                       <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Action</a></li>
-                          <li><a href="#">Another action</a></li>
-                          <li><a href="#">Something else here</a></li>
+                          <li><a href="javascript:void(0)">Action</a></li>
+                          <li><a href="javascript:void(0)">Another action</a></li>
+                          <li><a href="javascript:void(0)">Something else here</a></li>
                           <li class="divider"></li>
-                          <li><a href="#">Separated link</a></li>
+                          <li><a href="javascript:void(0)">Separated link</a></li>
                           <li class="divider"></li>
-                          <li><a href="#">One more separated link</a></li>
+                          <li><a href="javascript:void(0)">One more separated link</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -117,7 +117,7 @@ get_header();
                       <button type="submit" class="btn btn-default">Submit</button>
                     </form>
                     <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#">Link</a></li>
+                      <li><a href="javascript:void(0)">Link</a></li>
                     </ul>
                   </div>
                 </div>
@@ -144,139 +144,139 @@ get_header();
           <div class="col-lg-7">
 
             <p class="bs-component">
-              <a href="#" class="btn btn-default">Default</a>
-              <a href="#" class="btn btn-primary">Primary</a>
-              <a href="#" class="btn btn-success">Success</a>
-              <a href="#" class="btn btn-info">Info</a>
-              <a href="#" class="btn btn-warning">Warning</a>
-              <a href="#" class="btn btn-danger">Danger</a>
-              <a href="#" class="btn btn-link">Link</a>
+              <a href="javascript:void(0)" class="btn btn-default">Default</a>
+              <a href="javascript:void(0)" class="btn btn-primary">Primary</a>
+              <a href="javascript:void(0)" class="btn btn-success">Success</a>
+              <a href="javascript:void(0)" class="btn btn-info">Info</a>
+              <a href="javascript:void(0)" class="btn btn-warning">Warning</a>
+              <a href="javascript:void(0)" class="btn btn-danger">Danger</a>
+              <a href="javascript:void(0)" class="btn btn-link">Link</a>
             </p>
 
             <p class="bs-component">
-              <a href="#" class="btn btn-default disabled">Default</a>
-              <a href="#" class="btn btn-primary disabled">Primary</a>
-              <a href="#" class="btn btn-success disabled">Success</a>
-              <a href="#" class="btn btn-info disabled">Info</a>
-              <a href="#" class="btn btn-warning disabled">Warning</a>
-              <a href="#" class="btn btn-danger disabled">Danger</a>
-              <a href="#" class="btn btn-link disabled">Link</a>
+              <a href="javascript:void(0)" class="btn btn-default disabled">Default</a>
+              <a href="javascript:void(0)" class="btn btn-primary disabled">Primary</a>
+              <a href="javascript:void(0)" class="btn btn-success disabled">Success</a>
+              <a href="javascript:void(0)" class="btn btn-info disabled">Info</a>
+              <a href="javascript:void(0)" class="btn btn-warning disabled">Warning</a>
+              <a href="javascript:void(0)" class="btn btn-danger disabled">Danger</a>
+              <a href="javascript:void(0)" class="btn btn-link disabled">Link</a>
             </p>
 
 
             <div style="margin-bottom: 15px;">
               <div class="btn-toolbar bs-component" style="margin: 0;">
                 <div class="btn-group">
-                  <a href="#" class="btn btn-default">Default</a>
-                  <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                  <a href="javascript:void(0)" class="btn btn-default">Default</a>
+                  <a href="javascript:void(0)" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="javascript:void(0)">Action</a></li>
+                    <li><a href="javascript:void(0)">Another action</a></li>
+                    <li><a href="javascript:void(0)">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="javascript:void(0)">Separated link</a></li>
                   </ul>
                 </div>
 
                 <div class="btn-group">
-                  <a href="#" class="btn btn-primary">Primary</a>
-                  <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                  <a href="javascript:void(0)" class="btn btn-primary">Primary</a>
+                  <a href="javascript:void(0)" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="javascript:void(0)">Action</a></li>
+                    <li><a href="javascript:void(0)">Another action</a></li>
+                    <li><a href="javascript:void(0)">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="javascript:void(0)">Separated link</a></li>
                   </ul>
                 </div>
 
                 <div class="btn-group">
-                  <a href="#" class="btn btn-success">Success</a>
-                  <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                  <a href="javascript:void(0)" class="btn btn-success">Success</a>
+                  <a href="javascript:void(0)" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="javascript:void(0)">Action</a></li>
+                    <li><a href="javascript:void(0)">Another action</a></li>
+                    <li><a href="javascript:void(0)">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="javascript:void(0)">Separated link</a></li>
                   </ul>
                 </div>
 
                 <div class="btn-group">
-                  <a href="#" class="btn btn-info">Info</a>
-                  <a href="#" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                  <a href="javascript:void(0)" class="btn btn-info">Info</a>
+                  <a href="javascript:void(0)" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="javascript:void(0)">Action</a></li>
+                    <li><a href="javascript:void(0)">Another action</a></li>
+                    <li><a href="javascript:void(0)">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="javascript:void(0)">Separated link</a></li>
                   </ul>
                 </div>
 
                 <div class="btn-group">
-                  <a href="#" class="btn btn-warning">Warning</a>
-                  <a href="#" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                  <a href="javascript:void(0)" class="btn btn-warning">Warning</a>
+                  <a href="javascript:void(0)" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="javascript:void(0)">Action</a></li>
+                    <li><a href="javascript:void(0)">Another action</a></li>
+                    <li><a href="javascript:void(0)">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="javascript:void(0)">Separated link</a></li>
                   </ul>
                 </div>
               </div>
             </div>
 
             <p class="bs-component">
-              <a href="#" class="btn btn-primary btn-lg">Large button</a>
-              <a href="#" class="btn btn-primary">Default button</a>
-              <a href="#" class="btn btn-primary btn-sm">Small button</a>
-              <a href="#" class="btn btn-primary btn-xs">Mini button</a>
+              <a href="javascript:void(0)" class="btn btn-primary btn-lg">Large button</a>
+              <a href="javascript:void(0)" class="btn btn-primary">Default button</a>
+              <a href="javascript:void(0)" class="btn btn-primary btn-sm">Small button</a>
+              <a href="javascript:void(0)" class="btn btn-primary btn-xs">Mini button</a>
             </p>
 
           </div>
           <div class="col-lg-5">
 
             <p class="bs-component">
-              <a href="#" class="btn btn-default btn-lg btn-block">Block level button</a>
+              <a href="javascript:void(0)" class="btn btn-default btn-lg btn-block">Block level button</a>
             </p>
 
 
             <div class="bs-component" style="margin-bottom: 15px;">
               <div class="btn-group btn-group-justified">
-                <a href="#" class="btn btn-default">Left</a>
-                <a href="#" class="btn btn-default">Middle</a>
-                <a href="#" class="btn btn-default">Right</a>
+                <a href="javascript:void(0)" class="btn btn-default">Left</a>
+                <a href="javascript:void(0)" class="btn btn-default">Middle</a>
+                <a href="javascript:void(0)" class="btn btn-default">Right</a>
               </div>
             </div>
 
             <div class="bs-component" style="margin-bottom: 15px;">
               <div class="btn-toolbar">
                 <div class="btn-group">
-                  <a href="#" class="btn btn-default">1</a>
-                  <a href="#" class="btn btn-default">2</a>
-                  <a href="#" class="btn btn-default">3</a>
-                  <a href="#" class="btn btn-default">4</a>
+                  <a href="javascript:void(0)" class="btn btn-default">1</a>
+                  <a href="javascript:void(0)" class="btn btn-default">2</a>
+                  <a href="javascript:void(0)" class="btn btn-default">3</a>
+                  <a href="javascript:void(0)" class="btn btn-default">4</a>
                 </div>
 
                 <div class="btn-group">
-                  <a href="#" class="btn btn-default">5</a>
-                  <a href="#" class="btn btn-default">6</a>
-                  <a href="#" class="btn btn-default">7</a>
+                  <a href="javascript:void(0)" class="btn btn-default">5</a>
+                  <a href="javascript:void(0)" class="btn btn-default">6</a>
+                  <a href="javascript:void(0)" class="btn btn-default">7</a>
                 </div>
 
                 <div class="btn-group">
-                  <a href="#" class="btn btn-default">8</a>
+                  <a href="javascript:void(0)" class="btn btn-default">8</a>
                   <div class="btn-group">
-                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <a href="javascript:void(0)" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                       Dropdown
                       <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Dropdown link</a></li>
-                      <li><a href="#">Dropdown link</a></li>
-                      <li><a href="#">Dropdown link</a></li>
+                      <li><a href="javascript:void(0)">Dropdown link</a></li>
+                      <li><a href="javascript:void(0)">Dropdown link</a></li>
+                      <li><a href="javascript:void(0)">Dropdown link</a></li>
                      </ul>
                   </div>
                 </div>
@@ -285,10 +285,10 @@ get_header();
 
             <div class="bs-component">
               <div class="btn-group-vertical">
-                  <a href="#" class="btn btn-default">Button</a>
-                  <a href="#" class="btn btn-default">Button</a>
-                  <a href="#" class="btn btn-default">Button</a>
-                  <a href="#" class="btn btn-default">Button</a>
+                  <a href="javascript:void(0)" class="btn btn-default">Button</a>
+                  <a href="javascript:void(0)" class="btn btn-default">Button</a>
+                  <a href="javascript:void(0)" class="btn btn-default">Button</a>
+                  <a href="javascript:void(0)" class="btn btn-default">Button</a>
               </div>
             </div>
 
@@ -324,7 +324,7 @@ get_header();
           <div class="col-lg-4">
             <div class="bs-component">
               <h2>Example body text</h2>
-              <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+              <p>Nullam quis risus eget <a href="javascript:void(0)">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
               <p><small>This line of text is meant to be treated as fine print.</small></p>
               <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
               <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
@@ -611,7 +611,7 @@ get_header();
                 <li><a href="#profile" data-toggle="tab">Profile</a></li>
                 <li class="disabled"><a>Disabled</a></li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
                     Dropdown <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
@@ -641,19 +641,19 @@ get_header();
             <h2 id="nav-pills">Pills</h2>
             <div class="bs-component">
               <ul class="nav nav-pills">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li class="disabled"><a href="#">Disabled</a></li>
+                <li class="active"><a href="javascript:void(0)">Home</a></li>
+                <li><a href="javascript:void(0)">Profile</a></li>
+                <li class="disabled"><a href="javascript:void(0)">Disabled</a></li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
                     Dropdown <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="javascript:void(0)">Action</a></li>
+                    <li><a href="javascript:void(0)">Another action</a></li>
+                    <li><a href="javascript:void(0)">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="javascript:void(0)">Separated link</a></li>
                   </ul>
                 </li>
               </ul>
@@ -661,19 +661,19 @@ get_header();
             <br>
             <div class="bs-component">
               <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li class="disabled"><a href="#">Disabled</a></li>
+                <li class="active"><a href="javascript:void(0)">Home</a></li>
+                <li><a href="javascript:void(0)">Profile</a></li>
+                <li class="disabled"><a href="javascript:void(0)">Disabled</a></li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)">
                     Dropdown <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="javascript:void(0)">Action</a></li>
+                    <li><a href="javascript:void(0)">Another action</a></li>
+                    <li><a href="javascript:void(0)">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="javascript:void(0)">Separated link</a></li>
                   </ul>
                 </li>
               </ul>
@@ -687,13 +687,13 @@ get_header();
               </ul>
 
               <ul class="breadcrumb">
-                <li><a href="#">Home</a></li>
+                <li><a href="javascript:void(0)">Home</a></li>
                 <li class="active">Library</li>
               </ul>
 
               <ul class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Library</a></li>
+                <li><a href="javascript:void(0)">Home</a></li>
+                <li><a href="javascript:void(0)">Library</a></li>
                 <li class="active">Data</li>
               </ul>
             </div>
@@ -707,31 +707,31 @@ get_header();
             <h2 id="pagination">Pagination</h2>
             <div class="bs-component">
               <ul class="pagination">
-                <li class="disabled"><a href="#">&laquo;</a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li class="disabled"><a href="javascript:void(0)">&laquo;</a></li>
+                <li class="active"><a href="javascript:void(0)">1</a></li>
+                <li><a href="javascript:void(0)">2</a></li>
+                <li><a href="javascript:void(0)">3</a></li>
+                <li><a href="javascript:void(0)">4</a></li>
+                <li><a href="javascript:void(0)">5</a></li>
+                <li><a href="javascript:void(0)">&raquo;</a></li>
               </ul>
 
               <ul class="pagination pagination-lg">
-                <li class="disabled"><a href="#">&laquo;</a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li class="disabled"><a href="javascript:void(0)">&laquo;</a></li>
+                <li class="active"><a href="javascript:void(0)">1</a></li>
+                <li><a href="javascript:void(0)">2</a></li>
+                <li><a href="javascript:void(0)">3</a></li>
+                <li><a href="javascript:void(0)">&raquo;</a></li>
               </ul>
 
               <ul class="pagination pagination-sm">
-                <li class="disabled"><a href="#">&laquo;</a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&raquo;</a></li>
+                <li class="disabled"><a href="javascript:void(0)">&laquo;</a></li>
+                <li class="active"><a href="javascript:void(0)">1</a></li>
+                <li><a href="javascript:void(0)">2</a></li>
+                <li><a href="javascript:void(0)">3</a></li>
+                <li><a href="javascript:void(0)">4</a></li>
+                <li><a href="javascript:void(0)">5</a></li>
+                <li><a href="javascript:void(0)">&raquo;</a></li>
               </ul>
             </div>
           </div>
@@ -739,13 +739,13 @@ get_header();
             <h2 id="pager">Pager</h2>
             <div class="bs-component">
               <ul class="pager">
-                <li><a href="#">Previous</a></li>
-                <li><a href="#">Next</a></li>
+                <li><a href="javascript:void(0)">Previous</a></li>
+                <li><a href="javascript:void(0)">Next</a></li>
               </ul>
 
               <ul class="pager">
-                <li class="previous disabled"><a href="#">&larr; Older</a></li>
-                <li class="next"><a href="#">Newer &rarr;</a></li>
+                <li class="previous disabled"><a href="javascript:void(0)">&larr; Older</a></li>
+                <li class="next"><a href="javascript:void(0)">Newer &rarr;</a></li>
               </ul>
             </div>
           </div>
@@ -774,7 +774,7 @@ get_header();
               <div class="alert alert-dismissible alert-warning">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
                 <h4>Warning!</h4>
-                <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
+                <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="javascript:void(0)" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
               </div>
             </div>
           </div>
@@ -784,7 +784,7 @@ get_header();
             <div class="bs-component">
               <div class="alert alert-dismissible alert-danger">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+                <strong>Oh snap!</strong> <a href="javascript:void(0)" class="alert-link">Change a few things up</a> and try submitting again.
               </div>
             </div>
           </div>
@@ -792,7 +792,7 @@ get_header();
             <div class="bs-component">
               <div class="alert alert-dismissible alert-success">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+                <strong>Well done!</strong> You successfully read <a href="javascript:void(0)" class="alert-link">this important alert message</a>.
               </div>
             </div>
           </div>
@@ -800,7 +800,7 @@ get_header();
             <div class="bs-component">
               <div class="alert alert-dismissible alert-info">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+                <strong>Heads up!</strong> This <a href="javascript:void(0)" class="alert-link">alert needs your attention</a>, but it's not super important.
               </div>
             </div>
           </div>
@@ -821,9 +821,9 @@ get_header();
             <h2>Badges</h2>
             <div class="bs-component">
               <ul class="nav nav-pills">
-                <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
-                <li><a href="#">Profile <span class="badge"></span></a></li>
-                <li><a href="#">Messages <span class="badge">3</span></a></li>
+                <li class="active"><a href="javascript:void(0)">Home <span class="badge">42</span></a></li>
+                <li><a href="javascript:void(0)">Profile <span class="badge"></span></a></li>
+                <li><a href="javascript:void(0)">Messages <span class="badge">3</span></a></li>
               </ul>
             </div>
           </div>
@@ -951,12 +951,12 @@ get_header();
           <div class="col-lg-4">
             <div class="bs-component">
               <div class="list-group">
-                <a href="#" class="list-group-item active">
+                <a href="javascript:void(0)" class="list-group-item active">
                   Cras justo odio
                 </a>
-                <a href="#" class="list-group-item">Dapibus ac facilisis in
+                <a href="javascript:void(0)" class="list-group-item">Dapibus ac facilisis in
                 </a>
-                <a href="#" class="list-group-item">Morbi leo risus
+                <a href="javascript:void(0)" class="list-group-item">Morbi leo risus
                 </a>
               </div>
             </div>
@@ -964,11 +964,11 @@ get_header();
           <div class="col-lg-4">
             <div class="bs-component">
               <div class="list-group">
-                <a href="#" class="list-group-item">
+                <a href="javascript:void(0)" class="list-group-item">
                   <h4 class="list-group-item-heading">List group item heading</h4>
                   <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                 </a>
-                <a href="#" class="list-group-item">
+                <a href="javascript:void(0)" class="list-group-item">
                   <h4 class="list-group-item-heading">List group item heading</h4>
                   <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                 </a>
