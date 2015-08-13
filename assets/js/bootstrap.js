@@ -2449,3 +2449,9 @@ jQuery(document).ready(function($){
   // Target your .container, .wrapper, .post, etc.
   $("#primary").fitVids();
 });
+
+// bs
+jQuery(function ($) {
+  $('[data-toggle="popover"]').popover()
+  $('[data-toggle="tooltip"]').tooltip()
+})

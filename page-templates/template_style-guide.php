@@ -955,6 +955,10 @@ get_header();
     <div class="col-lg-4">
       <div class="bs-component">
         <div class="list-group">
+          <a href="javascript:void(0" class="list-group-item active">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+          </a>        
           <a href="javascript:void(0)" class="list-group-item">
             <h4 class="list-group-item-heading">List group item heading</h4>
             <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
@@ -1086,166 +1090,104 @@ get_header();
   <h1 id="media" class="page-header">Media object</h1>
 
   <p class="lead">Abstract object styles for building various types of components (like blog comments, events, etc) that feature a left- or right-aligned image alongside textual content.</p>
-
-  <h2 id="media-default">Default media</h2>
-  <p>The default media displays a media object (images, video, audio) to the left or right of a content block.</p>
-  <div class="bs-example" data-example-id="default-media">
-    <div class="media">
-      <div class="media-left">
-        <a href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">Media heading</h4>
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-      </div>
-    </div>
-    <div class="media">
-      <div class="media-left">
-        <a href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">Media heading</h4>
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        <div class="media">
-          <div class="media-left">
-            <a href="#">
-              <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-            </a>
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">Nested media heading</h4>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="media">
-      <div class="media-body">
-        <h4 class="media-heading">Media heading</h4>
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-      </div>
-      <div class="media-right">
-        <a href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-        </a>
-      </div>
-    </div>
-    <div class="media">
-      <div class="media-left">
-        <a href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">Media heading</h4>
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-      </div>
-      <div class="media-right">
-        <a href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-        </a>
-      </div>
-    </div>
-  </div><!-- /.bs-example -->
-
-  <h2 id="media-alignment">Media alignment</h2>
-  <p>The images or other media can be aligned top, middle, or bottom. The default is top aligned.</p>
-  <div class="bs-example" data-example-id="media-alignment">
-    <div class="media">
-      <div class="media-left">
-        <a href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">Top aligned media</h4>
-        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-    <div class="media">
-      <div class="media-left media-middle">
-        <a href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">Middle aligned media</h4>
-        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-    <div class="media">
-      <div class="media-left media-bottom">
-        <a href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-        </a>
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">Bottom aligned media</h4>
-        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-      </div>
-    </div>
-  </div>
-
-  <h2 id="media-list">Media list</h2>
-  <p>With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists).</p>
-  <div class="bs-example" data-example-id="media-list">
-    <ul class="media-list">
-      <li class="media">
+  <div class="row">  
+    <div class="col-md-4">
+      <h2>Simple Event List</h2>    
+      <div class="media event-simple event-simple-default">
         <div class="media-left">
-          <a href="#">
-            <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
+          <a href="javascript:void(0)">
+            <span class="day">day</span>
+            <span class="date">23</span>
+            <span class="month">month</span>
           </a>
         </div>
         <div class="media-body">
-          <h4 class="media-heading">Media heading</h4>
-          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-          <!-- Nested media object -->
-          <div class="media">
-            <div class="media-left">
-              <a href="#">
-                <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-              </a>
-            </div>
-            <div class="media-body">
-              <h4 class="media-heading">Nested media heading</h4>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-              <!-- Nested media object -->
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">Nested media heading</h4>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Nested media object -->
-          <div class="media">
-            <div class="media-left">
-              <a href="#">
-                <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-              </a>
-            </div>
-            <div class="media-body">
-              <h4 class="media-heading">Nested media heading</h4>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-            </div>
-          </div>
+          <a href="javascript:void(0)">
+            <h4 class="media-heading">Media heading</h4>
+          </a>
+          <span class="time">8pm</span><span class="cost">$5</span>
+          <span class="description">Cras sit amet nibh libero, in gravida nulla.</span>
         </div>
-      </li>
-    </ul>
+      </div>
+      <div class="media event-simple event-simple-primary">
+        <div class="media-left">
+          <a href="javascript:void(0)">
+            <span class="day">day</span>
+            <span class="date">23</span>
+            <span class="month">month</span>
+          </a>
+        </div>
+        <div class="media-body">
+        <a href="javascript:void(0)">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla.
+        </a>
+        </div>
+      </div>
+      <div class="media event-simple event-simple-success">
+        <div class="media-left ">
+          <a href="javascript:void(0)">
+            <span class="day">day</span>
+            <span class="date">23</span>
+            <span class="month">month</span>
+          </a>
+        </div>
+        <div class="media-body">
+        <a href="javascript:void(0)">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla.
+        </a>
+        </div>
+      </div>
+      <div class="media event-simple event-simple-warning">
+        <div class="media-left">
+          <a href="javascript:void(0)">
+            <span class="day">day</span>
+            <span class="date">23</span>
+            <span class="month">month</span>
+          </a>
+        </div>
+        <div class="media-body">
+        <a href="javascript:void(0)">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla.
+        </a>
+        </div>
+      </div>
+      <div class="media event-simple event-simple-info">
+        <div class="media-left">
+          <a href="javascript:void(0)">
+            <span class="day">day</span>
+            <span class="date">23</span>
+            <span class="month">month</span>
+          </a>
+        </div>
+        <div class="media-body">
+        <a href="javascript:void(0)">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla.
+        </a>
+        </div>
+      </div>      
+      <div class="media event-simple event-simple-danger">
+        <div class="media-left">
+          <a href="javascript:void(0)">
+            <span class="day">day</span>
+            <span class="date">23</span>
+            <span class="month">month</span>
+          </a>
+        </div>
+        <div class="media-body">
+        <a href="javascript:void(0)">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla.
+        </a>
+        </div>
+      </div>      
+    </div>
   </div>
+
+
 </div>
 
 <!-- Dialogs
@@ -1263,20 +1205,59 @@ get_header();
     <div class="col-lg-6">
       <h2>Modals</h2>
       <div class="bs-component">
-        <div class="modal">
-          <div class="modal-dialog">
+        <!-- Large modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Modal title</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myLargeModalLabel">Modal title</h4>
               </div>
               <div class="modal-body">
-                <p>One fine body…</p>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-4">.col-md-4</div>
+                    <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+                    <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-9">
+                      Level 1: .col-sm-9
+                      <div class="row">
+                        <div class="col-xs-8 col-sm-6">
+                          Level 2: .col-xs-8 .col-sm-6
+                        </div>
+                        <div class="col-xs-4 col-sm-6">
+                          Level 2: .col-xs-4 .col-sm-6
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Save changes</button>
               </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Small modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              ...
             </div>
           </div>
         </div>
@@ -1303,20 +1284,6 @@ get_header();
         <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom">Bottom</button>
 
         <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="" data-original-title="Tooltip on right">Right</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="source-modal" class="modal fade">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Source Code</h4>
-      </div>
-      <div class="modal-body">
-        <pre></pre>
       </div>
     </div>
   </div>
