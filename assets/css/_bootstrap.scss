@@ -1043,3 +1043,53 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
+/*--------------------------------------------------------------
+## Event Simple
+--------------------------------------------------------------*/
+
+.event-simple {
+  background-color: $gray-dark;
+  line-height: 1.2;
+  border-bottom: 1px solid $gray-darker;
+  margin-top:0;
+}
+.event-simple a {
+  color: $gray-lighter;
+  font-size: small;
+}
+.event-simple a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.event-simple .media-left {
+  background-color: $gray;
+  padding: 2px 5px;
+  text-align: center;
+  vertical-align: middle;  
+}
+.event-simple-primary .media-left {
+  background-color: $brand-primary;
+}
+.event-simple-success .media-left {
+  background-color: $brand-success;
+}
+.event-simple-info .media-left {
+  background-color: $brand-info;
+}
+.event-simple-warning .media-left {
+  background-color: $brand-warning;
+}
+.event-simple-danger .media-left {
+  background-color: $brand-danger;
+}
+.event-simple .media-body {
+  padding:10px;
+}
+.event-simple span.date {
+    font-size: 180%;
+    padding-top: 5px;
+    margin-top: 5px;
+    line-height: 1.6;  
+}
