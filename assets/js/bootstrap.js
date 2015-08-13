@@ -2447,7 +2447,7 @@ if (typeof jQuery === 'undefined') {
 // Fire up fitvids
 jQuery(document).ready(function($){
   // Target your .container, .wrapper, .post, etc.
-  $("#primary").fitVids();
+  $("#page").fitVids();
 });
 
 // bs

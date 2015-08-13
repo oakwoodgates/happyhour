@@ -20,10 +20,13 @@ Supports & Supported by
 * Font Awesome 4.4.0 - served by maxcdn - http://fortawesome.github.io/Font-Awesome/
 * Google Fonts - https://www.google.com/fonts
 * Subtle Patterns - http://subtlepatterns.com/
+* FitVids - http://fitvidsjs.com/
 
 Development
 ---------------
 Development happening on - http://45.55.219.172/
 with the main Style Guide - http://45.55.219.172/style-guide/ - growing and taking shape.
 
-Icon Guide - http://45.55.219.172/icon-guide/
+The Icon Guide - http://45.55.219.172/icon-guide/ - is from Font Awesome.
+
+We can test Oembeds here - http://45.55.219.172/oembed/ - to make sure our embeded media and iframes are responsive, etc.

@@ -173,6 +173,7 @@ require get_template_directory() . '/inc/jetpack.php';
 require_once( trailingslashit( get_template_directory() ) . 'hybrid-core/hybrid.php' );
 new Hybrid();
 
-
+/* Just load the stuff for now until we finalize it */
 require get_template_directory() . '/oakwood-happyhour/hybrid/template.php';
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/oembed-test.php';
 

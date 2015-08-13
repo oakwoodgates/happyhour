@@ -1096,23 +1096,26 @@ get_header();
      <div class="row marg">
      <div class="col-xs-12">
     <h3>Color Story</h3>
-      <div class="col-xs-6 col-md-3 bkg-primary">
+      <div class="col-xs-12 col-md-4 bkg-primary">
         Happy Hour, 25&cent; Wings, Weekly Specials
       </div>
-      <div class="col-xs-6 col-md-3 bkg-info">
+      <div class="col-xs-6 col-md-4 bkg-info">
         Classic Party, Super Bowl, New Years Eve
       </div>
-      <div class="col-xs-6 col-md-3 bkg-warning">
-        Closed Christmas, Open at 7 on Labor Day
-      </div>
-      <div class="col-xs-6 col-md-3 bkg-danger">
+      <div class="col-xs-6 col-md-4 bkg-danger">
         Special Event, Guest Dancer, Concert After Party
+      </div>
+      <div class="col-xs-6 col-md-6 bkg-warning">
+        Open at 7 on Labor Day
       </div>      
+      <div class="col-xs-6 col-md-6 bkg-default">
+        Closed Christmas
+      </div>  
     </div> 
     </div>  
   <div class="row">  
  
-    <div class="col-md-4 col-sm-6">   
+    <div class="col-md-4 col-xs-6">   
       <div class="media event-simple event-default">
         <div class="media-left">
           <a href="javascript:void(0)">
@@ -1226,9 +1229,10 @@ get_header();
       </div>    
 
     </div>
+<?php // end one ?>
 
+    <div class="col-md-4 col-xs-6 darker"> 
 
-    <div class="col-md-4 col-sm-6 darker">   
       <div class="media event-simple event-default">
         <div class="media-left">
           <a href="javascript:void(0)">
@@ -1342,8 +1346,8 @@ get_header();
       </div>    
 
     </div>
-
-    <div class="col-md-4 col-sm-6 event-column-one">
+<?php // end two ?>
+    <div class="col-md-4 col-xs-6 event-column-one">
 
       <div class="media event-simple card-one event-default">
         <div class="media-left">
@@ -1482,8 +1486,8 @@ get_header();
       </div>
 
     </div>  
-
-    <div class="col-md-4 col-sm-6 event-column-one">
+<?php // end three ?>
+    <div class="col-md-4 col-xs-6 event-column-one">
       <div class="media event-simple event-default">
         <div class="media-left">
           <a href="javascript:void(0)">
@@ -1603,8 +1607,131 @@ get_header();
         </div>
       </div> 
 
-    </div>  
+      <div class="media event-simple event-darker">
+        <div class="media-left bkg-base">
+          <a href="javascript:void(0)">
+            <span class="day">day</span>
+            <span class="date">23</span>
+            <span class="month">month</span>
+          </a>
+        </div>
+        <div class="media-body">
+          <a class="event-description" href="javascript:void(0)">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla.
+          </a>
+          <div class="overlay bkg-base" style=""></div>
+        </div>
+      </div>
 
+    </div>  
+<?php // end four ?>
+    <div class="col-md-8 col-sm-6 event-column-one">
+
+      <div class="media event-simple card-one event-default">
+        <div class="media-left">
+          <a href="javascript:void(0)">
+            <span class="day">day</span>
+            <span class="date">23</span>
+            <span class="month">month</span>
+          </a>
+        </div>
+        <div class="media-body" style="background-image:url('//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/1.jpg');">
+        <a class="event-description" href="javascript:void(0)">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla.
+        </a>
+      <div class="overlay bkg-base"></div>        
+        </div>
+      </div>
+
+      <div class="media event-simple card-one event-primary">
+        <div class="media-left">
+          <a href="javascript:void(0)">
+            <span class="day">day</span>
+            <span class="date">23</span>
+            <span class="month">month</span>
+          </a>
+        </div>
+        <div class="media-body" style="background-image:url('//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/2.jpg');">
+        <a class="event-description" href="javascript:void(0)">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla.
+        </a>
+      <div class="overlay bkg-base" style=""></div>       
+        </div>
+      </div>
+      <div class="media event-simple card-one event-danger">
+        <div class="media-header">
+          <img src="//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/8.jpg" />
+        </div>
+        <div class="media-left bkg-darker">
+          <a href="javascript:void(0)">
+            <span class="day">day</span>
+            <span class="date">23</span>
+            <span class="month">month</span>
+          </a>
+        </div>
+        <div class="media-body bkg-darker">
+        <a class="event-description" href="javascript:void(0)">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla.
+        </a>
+        </div>
+      </div>
+      <div class="media event-simple card-one event-warning">
+        <div class="media-left">
+          <a href="javascript:void(0)">
+            <span class="day">day</span>
+            <span class="date">23</span>
+            <span class="month">month</span>
+          </a>
+        </div>
+        <div class="media-body" style="background-image:url('//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/4.jpg');">
+        <a class="event-description" href="javascript:void(0)">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla.
+        </a>
+      <div class="overlay bkg-base" style=""></div>
+        </div>
+      </div>
+
+      <div class="media event-simple card-one event-primary">
+        <div class="media-left">
+          <a href="javascript:void(0)">
+            <span class="day">day</span>
+            <span class="date">23</span>
+            <span class="month">month</span>
+          </a>
+        </div>
+        <div class="media-body" style="">
+        <a class="event-description" href="javascript:void(0)">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla.
+        </a>
+      <div class="overlay bkg-primary" style="opacity:0.2"></div>
+        </div>
+      </div>   
+
+      <div class="media event-simple card-one event-danger">
+        <div class="media-left">
+          <a href="javascript:void(0)">
+            <span class="day">day</span>
+            <span class="date">23</span>
+            <span class="month">month</span>
+          </a>
+        </div>
+        <div class="media-body" style="background-image:url('//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/6.jpg');">
+        <a class="event-description" href="javascript:void(0)">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla.
+        </a>
+      <div class="overlay bkg-base" style=""></div>
+        </div>
+      </div>  
+
+    </div>
+<?php // end five ?>
 
   </div> <!-- /row -->
 
@@ -1749,7 +1876,7 @@ get_header();
       </div>  
 
       <div class="media event-simple card-one event-darker">
-        <div class="media-left bkg-darker">
+        <div class="media-left bkg-base">
           <a href="javascript:void(0)">
             <span class="day">day</span>
             <span class="date">23</span>
@@ -1767,7 +1894,7 @@ get_header();
 
     </div>     
 
-    <div class="col-sm-6">
+    <div class="col-sm-12 col-md-6">
       <div class="media event-simple card-one event-danger">
         <div class="media-header">
           <img src="//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/8.jpg" />
