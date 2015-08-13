@@ -21,6 +21,7 @@ Supports & Supported by
 * Google Fonts - https://www.google.com/fonts
 * Subtle Patterns - http://subtlepatterns.com/
 * FitVids - http://fitvidsjs.com/
+* Responsive oEmbeds - More about oEmbeds in WordPress - https://codex.wordpress.org/Embeds
 
 Development
 ---------------
@@ -29,4 +30,4 @@ with the main Style Guide - http://45.55.219.172/style-guide/ - growing and taki
 
 The Icon Guide - http://45.55.219.172/icon-guide/ - is from Font Awesome.
 
-We can test Oembeds here - http://45.55.219.172/oembed/ - to make sure our embeded media and iframes are responsive, etc.
+We can test oEmbeds here - http://45.55.219.172/oembed/ - to make sure our embeded media and iframes are responsive, etc.

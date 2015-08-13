@@ -1150,3 +1150,9 @@ object {
 .row.marg {
   margin-bottom:30px;
 }
+
+embed, iframe, object {
+    max-width: 100%!important;
+    width: 100%!important;
+    min-width: 0px!important;
+}

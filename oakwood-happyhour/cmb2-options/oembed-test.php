@@ -29,5 +29,11 @@ function cmb2_add_metabox() {
 	    'id'   => 'wiki_test_embed',
 	    'type' => 'oembed',
 	) );
+	$cmb->add_group_field( $group_field_id, array(
+	    'name' => 'Entry Title',
+	    'id'   => 'title',
+	    'type' => 'text',
+	    // 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
+	) );	
 
 }
