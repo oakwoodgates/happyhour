@@ -1046,8 +1046,38 @@ object {
 
 
 /*--------------------------------------------------------------
-## Event Simple
+## Event Cards
 --------------------------------------------------------------*/
+.event-default .media-left,
+.bkg-default {
+  background-color: $gray;
+}
+.event-primary .media-left,
+.bkg-primary {
+  background-color: $brand-primary;
+}
+.event-success .media-left,
+.bkg-success {
+  background-color: $brand-success;
+}
+.event-info .media-left,
+.bkg-info {
+  background-color: $brand-info;
+}
+.event-warning .media-left,
+.bkg-warning {
+  background-color: $brand-warning;
+}
+.event-danger .media-left,
+.bkg-danger {
+  background-color: $brand-danger;
+}
+.bkg-base {
+  background-color: $gray-base;
+}
+.bkg-darker {
+  background-color: $gray-darker;
+}
 
 .event-simple {
   background-color: $gray-dark;
@@ -1064,32 +1094,59 @@ object {
   text-decoration: none;
 }
 .event-simple .media-left {
-  background-color: $gray;
   padding: 2px 5px;
   text-align: center;
   vertical-align: middle;  
 }
-.event-simple-primary .media-left {
-  background-color: $brand-primary;
-}
-.event-simple-success .media-left {
-  background-color: $brand-success;
-}
-.event-simple-info .media-left {
-  background-color: $brand-info;
-}
-.event-simple-warning .media-left {
-  background-color: $brand-warning;
-}
-.event-simple-danger .media-left {
-  background-color: $brand-danger;
-}
 .event-simple .media-body {
   padding:10px;
+  background-position: center center;
+  background-size: cover;  
 }
 .event-simple span.date {
     font-size: 180%;
     padding-top: 5px;
     margin-top: 5px;
     line-height: 1.6;  
+}
+
+.event-column-one .event-simple {
+  
+}
+.event-column-one .event-simple .media-body {
+  position:relative;
+}
+.event-column-one .event-simple .event-description,
+.event-column-one .event-simple .media-heading {
+  position: relative;
+  z-index:1;
+}
+.event-column-one .event-simple .overlay {
+  opacity: 0.2;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0;  
+}
+
+.event-column-one .event-simple.card-one .event-description,
+.event-column-one .event-simple.card-one .media-heading {
+  color: #fff;
+}
+
+.event-column-one .event-simple.card-one .overlay {
+  opacity: 0.65;
+}
+.event-column-one .event-simple.card-one .media-body {
+  padding: 30px 15px;
+}
+
+.darker .event-simple {
+  border-color: $gray-base;
+}
+
+.row.marg {
+  margin-bottom:30px;
 }

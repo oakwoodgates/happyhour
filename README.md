@@ -9,14 +9,21 @@ happyhour
 * Bootstrap SASS in `assets/css/`
 * Custom `variables.scss` for Style Guide
 * +ToDo Custom `assets/css/theme/` or `theme.scss` for extras
+* Font Awesome 4.4.0
 
-Supports
+Supports & Supported by
 ---------------
 * Jetpack - http://jetpack.me/
-* +ToDo The Events Calendar - https://wordpress.org/plugins/the-events-calendar/
 * Hybrid Core - https://github.com/justintadlock/hybrid-core/
 * CMB2 - https://github.com/WebDevStudios/CMB2
+* Bootstrap v.3.3.5 SASS port - http://getbootstrap.com/
+* Font Awesome 4.4.0 - served by maxcdn - http://fortawesome.github.io/Font-Awesome/
+* Google Fonts - https://www.google.com/fonts
+* Subtle Patterns - http://subtlepatterns.com/
 
 Development
 ---------------
-Development happening on - http://45.55.219.172/ - with the main Style Guide - http://45.55.219.172/style-guide/ - growing and taking shape. 
+Development happening on - http://45.55.219.172/
+with the main Style Guide - http://45.55.219.172/style-guide/ - growing and taking shape.
+
+Icon Guide - http://45.55.219.172/icon-guide/
