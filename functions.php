@@ -139,7 +139,8 @@ function happyhour_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
+	wp_enqueue_script( 'happyhour-holder', '//cdnjs.cloudflare.com/ajax/libs/holder/2.8.1/holder.min.js', array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'happyhour-maps', '//maps.googleapis.com/maps/api/js?sensor=false', array('jquery'), '1.0.0', true );	
 	wp_enqueue_script( 'happyhour-js', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery'), '1.0.0', true );	
 }
 add_action( 'wp_enqueue_scripts', 'happyhour_scripts' );

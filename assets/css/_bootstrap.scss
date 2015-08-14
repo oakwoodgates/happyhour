@@ -672,7 +672,7 @@ word-wrap: break-word;
 }
 img {
 	max-width:100%;
-	height:auto;
+	height:auto!important;
 }
 /*--------------------------------------------------------------
 ## Menus
@@ -1078,7 +1078,9 @@ object {
 .bkg-darker {
   background-color: $gray-darker;
 }
-
+.bkg-dark {
+  background-color: $gray-dark;
+}
 .event-simple {
   background-color: $gray-dark;
   line-height: 1.2;
@@ -1096,7 +1098,8 @@ object {
 .event-simple .media-left {
   padding: 2px 5px;
   text-align: center;
-  vertical-align: middle;  
+  vertical-align: middle;
+  min-width:48px; 
 }
 .event-simple .media-body {
   padding:10px;
@@ -1139,20 +1142,38 @@ object {
 .event-column-one .event-simple.card-one .overlay {
   opacity: 0.65;
 }
-.event-column-one .event-simple.card-one .media-body {
+.event-column-one .card-one .media-body {
   padding: 30px 15px;
 }
-
+.event-simple.card-one.card-two .media-body {
+  padding:0;
+}
 .darker .event-simple {
   border-color: $gray-base;
 }
 
-.row.marg {
+.row.marg,
+.marg {
   margin-bottom:30px;
+}
+.marg-15 {
+  margin-bottom:15px;
 }
 
 embed, iframe, object {
     max-width: 100%!important;
     width: 100%!important;
     min-width: 0px!important;
+}
+
+#map {
+    width: 1200px;
+    height: auto;
+    min-height: 300px;
+    max-width: 100%;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
 }

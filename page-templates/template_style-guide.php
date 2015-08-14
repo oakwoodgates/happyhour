@@ -1344,6 +1344,42 @@ get_header();
         </a>
         </div>
       </div>    
+<div class="marg"></div>
+      <div class="media event-simple card-one event-primary marg">
+    <div class="media-header">
+      <img src="//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/10.jpg" />
+    </div>      
+        <div class="media-left">
+          <a href="javascript:void(0)">
+            <span class="day">M-F</span>
+            <span class="date"><i class="fa fa-star-o fa-lg"></i></span>
+            <span class="month">4-7pm</span>
+          </a>
+        </div>
+        <div class="media-body" style="">
+        <a class="event-description" href="javascript:void(0)">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla.
+        </a>
+      <div class="overlay bkg-base"></div>        
+        </div>
+      </div>
+
+      <div class="media event-simple card-one card-two event-primary marg">     
+        <div class="media-left">
+          <a href="javascript:void(0)">
+            <span class="day">M-F</span>
+            <span class="date"><i class="fa fa-star-o fa-lg"></i></span>
+            <span class="month">4-7pm</span>
+          </a>
+        </div>
+        <div class="media-body" style="">
+        <a class="event-description" href="javascript:void(0)">
+      <img src="//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/10.jpg" />
+        </a>
+      <div class="overlay bkg-base"></div>        
+        </div>
+      </div>
 
     </div>
 <?php // end two ?>
@@ -2060,7 +2096,23 @@ get_header();
     </div>
   </div>
 </div>
-
+     <div class="page-header">
+        <h1>Maps</h1>
+      </div>  
+        <style type="text/css">
+            /* Set a size for our map container, the Google Map will take up 100% of this container */
+            #map {
+                width: 750px;
+                height: auto;
+                min-height: 300px;
+                max-width: 100%;
+            }
+        </style>
+<div class="row">
+  <div class="col-md-8">
+    <div id="map"></div>
+  </div>
+</div>      
 <!--
      <div class="page-header">
         <h1>Collape</h1>
