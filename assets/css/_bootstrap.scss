@@ -672,7 +672,7 @@ word-wrap: break-word;
 }
 img {
 	max-width:100%;
-	height:auto;
+	height:auto!important;
 }
 /*--------------------------------------------------------------
 ## Menus
@@ -1078,7 +1078,9 @@ object {
 .bkg-darker {
   background-color: $gray-darker;
 }
-
+.bkg-dark {
+  background-color: $gray-dark;
+}
 .event-simple {
   background-color: $gray-dark;
   line-height: 1.2;
@@ -1096,7 +1098,8 @@ object {
 .event-simple .media-left {
   padding: 2px 5px;
   text-align: center;
-  vertical-align: middle;  
+  vertical-align: middle;
+  min-width:48px; 
 }
 .event-simple .media-body {
   padding:10px;
@@ -1139,16 +1142,22 @@ object {
 .event-column-one .event-simple.card-one .overlay {
   opacity: 0.65;
 }
-.event-column-one .event-simple.card-one .media-body {
+.event-column-one .card-one .media-body {
   padding: 30px 15px;
 }
-
+.event-simple.card-one.card-two .media-body {
+  padding:0;
+}
 .darker .event-simple {
   border-color: $gray-base;
 }
 
-.row.marg {
+.row.marg,
+.marg {
   margin-bottom:30px;
+}
+.marg-15 {
+  margin-bottom:15px;
 }
 
 embed, iframe, object {
@@ -1156,3 +1165,80 @@ embed, iframe, object {
     width: 100%!important;
     min-width: 0px!important;
 }
+
+#map {
+    width: 1200px;
+    height: auto;
+    min-height: 300px;
+    max-width: 100%;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.neon {
+  font-size:48px;
+  font-weight:300;
+}
+.neon-sign {
+  background-color: #000;
+  padding: 50px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+$red: #ff0202;
+.neon-red {
+  text-shadow:
+  0 0 5px $red, 
+  0 0 10px $red, 
+  0 0 15px $red, 
+  0 0 20px $red, 
+  0 0 25px $red, 
+  0 0 30px $red, 
+  0 0 35px $red, 
+  0 0 40px $red
+}
+
+$purple: #fc02ff;
+.neon-purple {
+  text-shadow:
+  0 0 5px $purple, 
+  0 0 10px $purple, 
+  0 0 15px $purple, 
+  0 0 20px $purple, 
+  0 0 25px $purple, 
+  0 0 30px $purple, 
+  0 0 35px $purple, 
+  0 0 40px $purple
+}
+
+$green: #02ff08;
+.neon-green {
+  text-shadow:
+  0 0 5px $green, 
+  0 0 10px $green, 
+  0 0 15px $green, 
+  0 0 20px $green, 
+  0 0 25px $green, 
+  0 0 30px $green, 
+  0 0 35px $green, 
+  0 0 40px $green
+}
+
+$blue: #02AEFF;
+.neon-blue {
+  text-shadow:
+  0 0 5px $blue, 
+  0 0 10px $blue, 
+  0 0 15px $blue, 
+  0 0 20px $blue, 
+  0 0 25px $blue, 
+  0 0 30px $blue, 
+  0 0 35px $blue, 
+  0 0 40px $blue
+}
+
