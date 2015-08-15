@@ -337,6 +337,28 @@ get_header();
     </div>
   </div>
 
+  <!-- Neon -->
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 id="type-neon">Neon</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs12">
+      <div class="bs-component">
+      <p class="neon neon-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <p class="neon neon-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <p class="neon neon-purple">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <p class="neon neon-red">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <p class="neon neon-sign neon-blue">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+      <p class="neon neon-sign neon-green">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+      <p class="neon neon-sign neon-purple">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+      <p class="neon neon-sign neon-red">Lorem ipsum dolor sit amet, consectetur adipiscing</p>      
+      </div>
+    </div>
+  </div>
+
   <!-- Blockquotes -->
 
   <div class="row">
@@ -1084,6 +1106,25 @@ get_header();
     </div>
   </div>
 </div>
+<!-- Sccial
+================================================== -->
+<div class="bs-docs-section">
+  <h1 id="media" class="page-header">Social Embeds</h1>
+
+  <p class="lead">Embeded content from 3rd party services</p>
+  <div class="row marg">
+    <div class="col-xs-12 col-md-6">
+      <?php get_sidebar(); ?>
+    </div>
+  </div>
+  <div class="row marg">
+    <div class="col-xs-12">
+      <div class="fb-post" data-href="https://www.facebook.com/nighttripstulsa/posts/926174207440764" data-width="500"></div>
+
+      <div class="fb-post" data-href="https://www.facebook.com/eshankles/posts/10201670641200132" data-width="500"></div>
+    </div>
+  </div>
+</div>  
 <!-- Media
 ================================================== -->
 <div class="bs-docs-section">
@@ -1344,11 +1385,11 @@ get_header();
         </a>
         </div>
       </div>    
-<div class="marg"></div>
+      <div class="marg"></div>
       <div class="media event-simple card-one event-primary marg">
-    <div class="media-header">
-      <img src="//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/10.jpg" />
-    </div>      
+        <div class="media-header">
+          <img src="//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/10.jpg" />
+        </div>      
         <div class="media-left">
           <a href="javascript:void(0)">
             <span class="day">M-F</span>
@@ -1357,11 +1398,11 @@ get_header();
           </a>
         </div>
         <div class="media-body" style="">
-        <a class="event-description" href="javascript:void(0)">
-          <h4 class="media-heading">Media heading</h4>
-          Cras sit amet nibh libero, in gravida nulla.
-        </a>
-      <div class="overlay bkg-base"></div>        
+          <a class="event-description" href="javascript:void(0)">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla.
+          </a>
+          <div class="overlay bkg-base"></div>        
         </div>
       </div>
 
@@ -1374,10 +1415,10 @@ get_header();
           </a>
         </div>
         <div class="media-body" style="">
-        <a class="event-description" href="javascript:void(0)">
-      <img src="//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/10.jpg" />
-        </a>
-      <div class="overlay bkg-base"></div>        
+          <a class="event-description" href="javascript:void(0)">
+             <img src="//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/10.jpg" />
+          </a>
+          <div class="overlay bkg-base"></div>        
         </div>
       </div>
 
@@ -2096,18 +2137,20 @@ get_header();
     </div>
   </div>
 </div>
-     <div class="page-header">
-        <h1>Maps</h1>
-      </div>  
-        <style type="text/css">
-            /* Set a size for our map container, the Google Map will take up 100% of this container */
-            #map {
-                width: 750px;
-                height: auto;
-                min-height: 300px;
-                max-width: 100%;
-            }
-        </style>
+<!-- maps
+================================================== -->
+<div class="page-header">
+  <h1>Maps</h1>
+</div>  
+  <style type="text/css">
+      /* Set a size for our map container, the Google Map will take up 100% of this container */
+      #map {
+          width: 750px;
+          height: auto;
+          min-height: 300px;
+          max-width: 100%;
+      }
+  </style>
 <div class="row">
   <div class="col-md-8">
     <div id="map"></div>

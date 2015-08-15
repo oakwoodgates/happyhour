@@ -30,11 +30,38 @@ get_header();
 	</div>
 </div>
 <div class="row marg">
-	<div class="col-md-8">
+	<div class="col-xs-12 col-md-6 col-lg-5">
 		<div class="fb-post" data-href="https://www.facebook.com/nighttripstulsa/posts/926174207440764" data-width="500"></div>
 	</div>
-</div>
+	<div class="col-xs-12 col-md-6 col-lg-7">
+		<div class="row marg">
+			<div class="col-xs-12 col-md-12">
+				<img data-src="holder.js/851x315?bg=684190&fg=ffffff">
+						<?php echo do_shortcode( '[gallery type="columns" size="large" ids="977,1261,1038,967,1040,807"]' ); ?>	
 
+			</div>
+		</div>
+		<div class="row marg">
+			<div class="col-xs-12 col-sm-6">
+		<?php // echo do_shortcode( '[gallery type="columns" size="large" ids="977,1261,1038,967,1040,807"]' ); ?>	
+
+			</div>			
+		</div>		
+	</div>	
+</div>
+</div>
+<div  class="marg neon-sign">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+  <div class="bs-component">
+	  <p class="neon neon-purple">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-bottom" class="site-content container">
 <div class="row marg">
 	<div class="col-md-8 col-xs-12">
 	<div class="col-xs-12">
@@ -98,6 +125,24 @@ get_header();
 						</a>
 					</div>
 				</div>				
+			</div>
+			<div class="col-xs-12 event-column-one">
+				<div class="media event-simple card-one event-info">
+				<div class="media-left bkg-base">
+				<a href="javascript:void(0)">
+				<span class="day">day</span>
+				<span class="date">23</span>
+				<span class="month">month</span>
+				</a>
+				</div>
+				<div class="media-body" style="background-image:url('//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/7.jpg');">
+				<a class="event-description" href="javascript:void(0)">
+				<h4 class="media-heading">Media heading</h4>
+				Cras sit amet nibh libero, in gravida nulla.
+				</a>
+				<div class="overlay bkg-base" style=""></div>
+				</div>
+				</div>			
 			</div>	
 		</div><!-- /row no-gutter -->
 	</div>
@@ -189,8 +234,7 @@ get_header();
       <div class="overlay bkg-base" style=""></div>
         </div>
       </div>   
-
-      <div class="media event-simple card-one event-danger">
+      <div class="media event-simple card-one event-primary">
         <div class="media-left">
           <a href="javascript:void(0)">
             <span class="day">day</span>
@@ -198,17 +242,16 @@ get_header();
             <span class="month">month</span>
           </a>
         </div>
-        <div class="media-body" style="background-image:url('//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/7.jpg');">
+        <div class="media-body" style="background-image:url('//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/6.jpg');">
         <a class="event-description" href="javascript:void(0)">
           <h4 class="media-heading">Media heading</h4>
           Cras sit amet nibh libero, in gravida nulla.
         </a>
       <div class="overlay bkg-base" style=""></div>
         </div>
-      </div>    
-
-      <div class="media event-simple card-one event-darker">
-        <div class="media-left bkg-base">
+      </div> 
+      <div class="media event-simple card-one event-danger">
+        <div class="media-left">
           <a href="javascript:void(0)">
             <span class="day">day</span>
             <span class="date">23</span>
@@ -222,8 +265,8 @@ get_header();
         </a>
       <div class="overlay bkg-base" style=""></div>
         </div>
-      </div>
-		
+      </div>    
+
 	</div>
 
 </div>
@@ -242,6 +285,12 @@ get_header();
 	</div>
 	<div class="col-md-5">
 		<img data-src="holder.js/600x400?bg=684190&fg=ffffff">
+	</div>
+</div>
+
+<div class="row marg">
+	<div class="col-md-12">
+			<?php get_sidebar(); ?>
 	</div>
 </div>
 

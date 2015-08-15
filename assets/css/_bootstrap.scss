@@ -1177,3 +1177,68 @@ embed, iframe, object {
     padding-right:0;
     padding-left:0;
 }
+
+.neon {
+  font-size:48px;
+  font-weight:300;
+}
+.neon-sign {
+  background-color: #000;
+  padding: 50px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+$red: #ff0202;
+.neon-red {
+  text-shadow:
+  0 0 5px $red, 
+  0 0 10px $red, 
+  0 0 15px $red, 
+  0 0 20px $red, 
+  0 0 25px $red, 
+  0 0 30px $red, 
+  0 0 35px $red, 
+  0 0 40px $red
+}
+
+$purple: #fc02ff;
+.neon-purple {
+  text-shadow:
+  0 0 5px $purple, 
+  0 0 10px $purple, 
+  0 0 15px $purple, 
+  0 0 20px $purple, 
+  0 0 25px $purple, 
+  0 0 30px $purple, 
+  0 0 35px $purple, 
+  0 0 40px $purple
+}
+
+$green: #02ff08;
+.neon-green {
+  text-shadow:
+  0 0 5px $green, 
+  0 0 10px $green, 
+  0 0 15px $green, 
+  0 0 20px $green, 
+  0 0 25px $green, 
+  0 0 30px $green, 
+  0 0 35px $green, 
+  0 0 40px $green
+}
+
+$blue: #02AEFF;
+.neon-blue {
+  text-shadow:
+  0 0 5px $blue, 
+  0 0 10px $blue, 
+  0 0 15px $blue, 
+  0 0 20px $blue, 
+  0 0 25px $blue, 
+  0 0 30px $blue, 
+  0 0 35px $blue, 
+  0 0 40px $blue
+}
+

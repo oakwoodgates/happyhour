@@ -25,6 +25,12 @@ get_header();
     </div>
   </div>
 </div>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="fb-post" data-href="https://www.facebook.com/nighttripstulsa/posts/926174207440764" data-width="500"></div>
+		<div class="fb-post" data-href="https://www.facebook.com/eshankles/posts/10201670641200132" data-width="500"></div>
+	</div>
+</div>
 
 <div class="row marg">
 			<?php while ( have_posts() ) : the_post(); ?>

@@ -22,6 +22,8 @@ Supports & Supported by
 * Subtle Patterns - http://subtlepatterns.com/
 * FitVids - http://fitvidsjs.com/
 * Responsive oEmbeds - More about oEmbeds in WordPress - https://codex.wordpress.org/Embeds
+* Added Holder.js for quick prototyping of layouts. Will remove for production - http://imsky.github.io/holder/
+* Google Maps - https://developers.google.com/maps/web/
 
 Development
 ---------------
@@ -31,3 +33,5 @@ with the main Style Guide - http://45.55.219.172/style-guide/ - growing and taki
 The Icon Guide - http://45.55.219.172/icon-guide/ - is from Font Awesome.
 
 We can test oEmbeds here - http://45.55.219.172/oembed/ - to make sure our embeded media and iframes are responsive, etc.
+
+Wireframing/Layouts is starting here - http://45.55.219.172/layout/
