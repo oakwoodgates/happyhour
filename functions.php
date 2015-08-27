@@ -110,6 +110,15 @@ function happyhour_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar', 'happyhour' ),
+		'id'            => 'sidebar-2',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );	
 }
 add_action( 'widgets_init', 'happyhour_widgets_init' );
 
@@ -120,7 +129,7 @@ add_action( 'widgets_init', 'happyhour_widgets_init' );
 // Lato:400,100,300,300italic,400italic,700,700italic,900,900italic,100italic
 function happyhour_scripts() {
 	$query_args = array(
-		'family' => 'Playfair+Display:400, 700|Lato:400,100,300,300italic,400italic,700,700italic,900,900italic,100italic',
+		'family' => 'Anton:400|Lato:400,100,300,300italic,400italic,700,700italic,900,900italic,100italic',
 		'subset' => 'latin,latin-ext,cyrillic',
 	);
 	wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
