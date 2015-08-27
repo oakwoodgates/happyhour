@@ -354,7 +354,12 @@ get_header();
       <p class="neon neon-sign neon-blue">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
       <p class="neon neon-sign neon-green">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
       <p class="neon neon-sign neon-purple">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-      <p class="neon neon-sign neon-red">Lorem ipsum dolor sit amet, consectetur adipiscing</p>      
+      <p class="neon neon-sign neon-red">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+      <h3>zwartevilt pattern</h3> 
+      <p class="neon neon-sign neon-blue pattern-zwartevilt">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+      <p class="neon neon-sign neon-green pattern-zwartevilt">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+      <p class="neon neon-sign neon-purple pattern-zwartevilt">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+      <p class="neon neon-sign neon-red pattern-zwartevilt">Lorem ipsum dolor sit amet, consectetur adipiscing</p> 
       </div>
     </div>
   </div>
@@ -1812,8 +1817,12 @@ get_header();
 
   </div> <!-- /row -->
 
-
-  <div class="row">
+</div>
+</div>
+</div>
+<div  class="marg pattern-zwartevilt fixed">
+<div class="container">
+  <div class="row pad-x">
     <div class="col-md-6 event-column-one">
 
       <div class="media event-simple card-one event-default">
@@ -1825,13 +1834,14 @@ get_header();
           </a>
         </div>
         <div class="media-body" style="background-image:url('//45.55.219.172/wp-content/themes/happyhour/assets/img/demo/1.jpg');">
-        <a class="event-description" href="javascript:void(0)">
-          <h4 class="media-heading">Media heading</h4>
-          Cras sit amet nibh libero, in gravida nulla.
-        </a>
-      <div class="overlay bkg-base"></div>        
+          <a class="event-description" href="javascript:void(0)">
+            <h4 class="media-heading">Media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla.
+          </a>
+          <div class="overlay bkg-base">
+          </div>
         </div>
-      </div>
+        </div>
 
       <div class="media event-simple card-one event-primary">
         <div class="media-left">
@@ -2035,6 +2045,12 @@ get_header();
     </div>
 
   </div><!-- /row -->
+</div>
+</div>
+<div id="content-bottom" class="site-content container">
+<div class="bs-docs-section clearfix">
+
+
 
 
 </div>

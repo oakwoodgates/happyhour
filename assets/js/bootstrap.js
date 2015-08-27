@@ -2398,6 +2398,7 @@ if (typeof jQuery === 'undefined') {
       var selectors = [
         'iframe[src*="player.vimeo.com"]',
         'iframe[src*="youtube.com"]',
+        'iframe[src*="facebook.com"]',
         'iframe[src*="youtube-nocookie.com"]',
         'iframe[src*="kickstarter.com"][src*="video.html"]',
         'object',
@@ -2489,3 +2490,28 @@ function init() {
     });
 }
 
+// twitter
+window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));
+
+twttr.widgets.createTweet(
+  '635507199431737344',
+  document.getElementById('funk'),
+  {
+    theme: 'dark'
+  }
+);

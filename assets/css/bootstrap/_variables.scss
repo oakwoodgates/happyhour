@@ -10,6 +10,7 @@ $bootstrap-sass-asset-helper: false !default;
 
 $gray-base:              #000 !default;
 // $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-notblack:			 #0A0A0A !default;
 $gray-darker:            #151515 !default;
 $gray-dark:              #2D2D2D !default;
 $gray:                   #666 !default;
@@ -17,11 +18,11 @@ $gray-light:             #bbb !default;
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 // $brand-primary:         #684190 !default;
-$brand-primary:         #6A1B9A !default;
-$brand-success:         #2E7D32 !default;
-$brand-info:            #0D47A1 !default;
-$brand-warning:         #EF6C00 !default;
-$brand-danger:          #D81B60 !default;
+$brand-primary:         #922CBF !default;
+$brand-success:         #22D65E !default;
+$brand-info:            #009CFD !default;
+$brand-warning:         #EACB16 !default;
+$brand-danger:          #F93A9D !default;
 
 $gray-bkg:				#212121 !default;
 //== Scaffolding
@@ -48,7 +49,7 @@ $link-hover-decoration: underline !default;
 //## Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       "Playfair Display", Georgia, "Times New Roman", Times, serif !default;
+$font-family-serif:       "Lato", Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
