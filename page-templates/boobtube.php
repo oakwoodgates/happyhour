@@ -12,8 +12,8 @@ get_header();
 
 <div class="row marg">
 	<div class="col-xs-12">
-		<h2>BoobTube</h2>
-		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+		<h1><?php the_title(); ?></h1>
+		<p class="lead"><?php the_excerpt(); ?></p>
 	</div>
 </div>
 <div class="row">
@@ -61,6 +61,9 @@ get_header();
 				$count = $count + 1;
 			}
 			?>
+			<div class="col-xs-12">
+				<?php the_content(); ?>
+			</div>
 		</div>
 	</main>
 	<div class="col-md-4">

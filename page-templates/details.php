@@ -27,6 +27,11 @@ get_header();
 		<?php get_template_part( 'content-blocks/map-inside' ); ?>
 	</div>	
 </div>
+<div class="row marg">
+	<div class="col-xs-12">
+		<?php the_content(); ?>
+	</div>	
+</div>
 <?php
 get_template_part( 'content-blocks/subfooter-actions' );
 get_footer();

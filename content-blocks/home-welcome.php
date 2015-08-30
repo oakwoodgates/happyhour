@@ -13,8 +13,8 @@
 </div>
 <div class="row marg">
 	<div class="col-xs-12 text-center">
-		<h1>Welcome and such</h1>
-		<p class="lead">lions, tigers, and bears; oh my</p>
+		<h1><?php the_title(); ?></h1>
+		<p class="lead"><?php the_excerpt(); ?></p>
 	</div>
 </div>
 <div class="row marg">
