@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Boobtube
+ * Template Name: zDemo Boobtube
  *
  * @package WordPress
  * @subpackage happyhour

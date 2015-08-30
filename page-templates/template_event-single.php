@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Single Event
+ * Template Name: zDemo Single Event
  *
  * @package WordPress
  * @subpackage happyhour

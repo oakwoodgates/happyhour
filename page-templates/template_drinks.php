@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Drinks
+ * Template Name: zDemo Drinks
  *
  * @package WordPress
  * @subpackage happyhour

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Style Guide
+ * Template Name: zDemo Style Guide
  *
  * @package WordPress
  * @subpackage happyhour
