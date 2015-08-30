@@ -21,7 +21,10 @@
 	<div class="col-xs-12 col-md-8">
 		<div class="panel nt-featured-vid">
 			<div class="panel-heading">
-				<?php echo $embed_code = wp_oembed_get('https://www.youtube.com/watch?v=8y3HUdkyUr4'); ?>
+			  <?php 
+				$video = esc_url( cmb2_get_option( 'happyhour_options', 'happyhour_home_youtube' ) );
+				echo wp_oembed_get( $video );
+			  ?>
 			</div>
 			<div class="panel-body">
 				<h4 class="media-heading">Media heading</h4>
@@ -30,6 +33,7 @@
 		</div>						
 	</div>
 	<div class="col-xs-12 col-md-4">
-		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent.jpg">
+		<?php get_template_part( 'content-blocks/happyhour-vertical-img' ); ?>
+
 	</div>
 </div>

@@ -30,9 +30,10 @@
 			</div>
 			<div class="col-xs-12 col-sm-6">
 				<div class="twitter-box">
-					<?php echo $embed_code = wp_oembed_get('https://twitter.com/SamuelLJackson/status/619826409104613376'); ?>
-				<!--	<div id="funk"></div>
-					<div id="twitter-wjs"></div> -->
+				  <?php 
+					$tweet = esc_url( cmb2_get_option( 'happyhour_options', 'happyhour_twitter_post' ) );
+					echo wp_oembed_get( $tweet );
+				  ?>				
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">

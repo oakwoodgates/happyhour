@@ -11,7 +11,7 @@
 		<h2>Actions</h2>
 	</div>
 	<div class="col-xs-12 col-sm-4">
-		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent-682x1024.jpg">
+		<?php get_template_part( 'content-blocks/happyhour-vertical-img' ); ?>
 	</div>
 	<div class="col-xs-12 col-sm-4">
 		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/03/AsaAkiraTNTFB.jpg">

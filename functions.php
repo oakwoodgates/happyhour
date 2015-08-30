@@ -185,5 +185,24 @@ new Hybrid();
 
 /* Just load the stuff for now until we finalize it */
 require get_template_directory() . '/oakwood-happyhour/hybrid/template.php';
-require get_template_directory() . '/oakwood-happyhour/cmb2-options/oembed-test.php';
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings.php';
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-boobtube.php';
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-kitchen.php';
+remove_filter( 'the_excerpt', 'wpautop' );
+// require get_template_directory() . '/oakwood-happyhour/cmb2-options/oembed-test.php';
 
+
+// Hook for adding admin menus
+// add_action('admin_menu', 'mt_add_pages');
+
+// action function for above hook
+// function mt_add_pages() {
+    // Add a new top-level menu (ill-advised):
+//	    					add_menu_page(__('Test Toplevel','menu-test'), __('Test Toplevel','menu-test'), 'manage_options', 	'mt-top-level-handle', 	'mt_toplevel_page' );
+// $this->options_page = 	add_menu_page( $this->title, 				   $this->title,					'manage_options', 	$this->key, 			array( $this, 'admin_page_display' ) );
+
+    // Add a submenu to the custom top-level menu:
+//    add_submenu_page('mt-top-level-handle', __('Test Sublevel','menu-test'), __('Test Sublevel','menu-test'), 'manage_options', 'sub-page', 'mt_sublevel_page');
+//    add_submenu_page('myprefix_options', __('Test Sublevel','menu-test'), __('Test Sublevel','menu-test'), 'manage_options', 'sub-page', 'mt_sublevel_page');
+
+// }

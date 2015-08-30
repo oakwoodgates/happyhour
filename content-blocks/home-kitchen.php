@@ -13,7 +13,9 @@
 	</div>
 
 	<div class="col-xs-12 col-md-6 col-lg-5">
-		<div class="fb-post marg" data-href="https://www.facebook.com/nighttripstulsa/posts/926174207440764" data-width="500"></div>
+		<?php $facebook = esc_url( cmb2_get_option( 'happyhour_options', 'happyhour_facebook_post' ) );  ?>
+
+		<div class="fb-post marg" data-href="<?php echo $facebook; ?>" data-width="500"></div>
         <div class="jumbotron mini-jumbotron panel bkg-notblack">
           <h4>Our Awesome Bar &amp; Kitchen</h4>
           <p class="info">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>

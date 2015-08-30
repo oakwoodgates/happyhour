@@ -10,10 +10,11 @@ get_header();
 ?>
 <div class="row marg">
 	<div class="col-xs-12">
-		<h2>Come Visit</h2>
-		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+		<h1><?php the_title(); ?></h1>
+		<p class="lead"><?php the_excerpt(); ?></p>
 	</div>
-
+</div>
+<div class="row marg">
 	<div class="col-xs-12 col-md-6 marg">
 		<?php get_template_part( 'content-blocks/map-iframe' ); ?>
 	

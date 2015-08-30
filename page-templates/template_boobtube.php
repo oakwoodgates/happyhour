@@ -10,9 +10,9 @@ get_header();
 ?>
 
 
-<div class="row marg">
+<div class="row">
 	<div class="col-xs-12">
-		<h2>BoobTube</h2>
+		<h1>BoobTube</h1>
 		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 	</div>
 </div>
