@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Layout
+ * Template Name: zDemo Layout
  *
  * @package WordPress
  * @subpackage happyhour
@@ -84,16 +84,16 @@ get_header();
 	</div>	
 </div>
 </div>
-<div  class="marg neon-sign">
-<div class="">
-<div class="row">
-<div class="col-xs-12">
-  <div class="bs-component">
-	  <p class="neon neon-purple">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-  </div>
-</div>
-</div>
-</div>
+<div class="marg neon-sign">
+	<div class="">
+		<div class="row">
+			<div class="col-xs-12">
+			  <div class="bs-component">
+				  <p class="neon neon-purple">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+			  </div>
+			</div>
+		</div>
+	</div>
 </div>
 <div id="content-bottom" class="site-content container">
 <div class="row marg">

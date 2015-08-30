@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Oembed Test
+ * Template Name: zDemo Oembed Test
  *
  * @package WordPress
  * @subpackage happyhour

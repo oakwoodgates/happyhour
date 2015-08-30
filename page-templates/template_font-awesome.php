@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Font Awesome
+ * Template Name: zDemo Font Awesome
  *
  * @package WordPress
  * @subpackage happyhour

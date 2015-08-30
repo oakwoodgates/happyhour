@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: VIP
+ * Template Name: zDemo VIP
  *
  * @package WordPress
  * @subpackage happyhour

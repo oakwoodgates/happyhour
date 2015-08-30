@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Playground
+ * Template Name: zDemo Playground
  *
  * @package WordPress
  * @subpackage happyhour
