@@ -17,22 +17,54 @@
 	<div class="col-xs-12 col-md-7">
 		<div class="row">
 			<div class="col-xs-12">
-				<div class="panel nt-featured-vid">
-					<div class="panel-heading">
-						<h5>Latest from the BoobTube &hellip;</h5>
-						<?php echo $embed_code = wp_oembed_get('https://www.youtube.com/watch?v=HJAzpr3YXTI'); ?>
-					</div>
-					<div class="panel-body">
-						<h4 class="media-heading">Media heading</h4>
-						Cras sit amet nibh libero, in gravida nulla.
-					</div>
-				</div>	
-			</div>
+				<?php
+				$entries = cmb2_get_option( 'boobtube_options', 'boobtube_group_videos' );
+				$count = 1;
+				$entries = array_reverse($entries);
+				foreach ( (array) $entries as $key => $entry ) {
+
+				    $title = $desc = $video = '';
+
+				    if ( isset( $entry['boobtube_title'] ) )
+				    $title = esc_html( $entry['boobtube_title'] );
+
+				    if ( isset( $entry['boobtube_description'] ) )
+				    $desc = esc_html( $entry['boobtube_description'] ); 
+
+				    if ( isset( $entry['boobtube_single_video'] ) )
+				    $video = esc_url( $entry['boobtube_single_video'] );
+
+					if ( $count < 4 ) : 
+						$class = 'col-xs-12';
+					else :
+						$class = 'col-xs-12 col-md-6';
+					endif;
+
+				?>
+					<div class="panel nt-featured-vid">
+						<div class="panel-heading">
+							<h5>Latest from the BoobTube &hellip;</h5>
+							<?php echo wp_oembed_get( $video ); ?>
+						</div>
+						<div class="panel-body">
+							<h4 class="media-heading"><?php echo $title; ?></h4>
+							<?php echo $desc; ?>
+						</div>
+					</div>	
+
+					<?php 
+
+					break;
+				}
+				?>
+			</div>		
+
 			<div class="col-xs-12 col-sm-6">
 				<div class="twitter-box">
-					<?php echo $embed_code = wp_oembed_get('https://twitter.com/SamuelLJackson/status/619826409104613376'); ?>
-				<!--	<div id="funk"></div>
-					<div id="twitter-wjs"></div> -->
+				  <?php 
+					$tweet = esc_url( cmb2_get_option( 'happyhour_options', 'happyhour_twitter_post' ) );
+					echo wp_oembed_get( $tweet );
+				  ?>				
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">

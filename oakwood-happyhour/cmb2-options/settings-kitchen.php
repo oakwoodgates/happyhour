@@ -1,6 +1,6 @@
 <?php
 /**
- * Settings
+ * Kitchen Settings
  *
  * @package     Oakwood meets happyhour
  * @subpackage  CMB2
@@ -11,19 +11,20 @@
  * @see 		https://github.com/WebDevStudios/CMB2/wiki CMB2 Wiki
  * @since       1.0.0
  */
-class Happyhour_Admin {
+
+class Kitchen_Admin {
 
 	/**
  	 * Option key, and option page slug
  	 * @var string
  	 */
-	private $key = 'happyhour_options';
+	private $key = 'kitchen_options';
 
 	/**
  	 * Options page metabox id
  	 * @var string
  	 */
-	private $metabox_id = 'happyhour_option_metabox';
+	private $metabox_id = 'kitchen_option_metabox';
 
 	/**
 	 * Options Page title
@@ -43,7 +44,7 @@ class Happyhour_Admin {
 	 */
 	public function __construct() {
 		// Set our title
-		$this->title = __( 'Site Options', 'happyhour' );
+		$this->title = __( 'Kitchen Options', 'happyhour' );
 	}
 
 	/**
@@ -73,7 +74,7 @@ class Happyhour_Admin {
 	 * @since 0.1.0
 	 */
 	public function add_options_page() {
-		$this->options_page = add_menu_page( $this->title, $this->title, 'manage_options', $this->key, array( $this, 'admin_page_display' ) );
+		$this->options_page = add_submenu_page( 'happyhour_options', $this->title, $this->title, 'manage_options', $this->key, array( $this, 'admin_page_display' ) );
 
 		// Include CMB CSS in the head to avoid FOUT
 		add_action( "admin_print_styles-{$this->options_page}", array( 'CMB2_hookup', 'enqueue_cmb_css' ) );
@@ -109,13 +110,24 @@ class Happyhour_Admin {
 			),
 		) );
 
-		$prefix = 'happyhour_';
+		$prefix = 'kitchen_';
 
 		// Set our CMB2 fields
 		$cmb->add_field( array(
-		    'name'    => 'Home Page Banner',
-		    'desc'    => 'This is the banner at the top of your Home page.',
-		    'id'      => $prefix . 'home_banner',
+		    'name'    => 'Drinks #1',
+		    'desc'    => '',
+		    'id'      => $prefix . 'drinks_1',
+		    'type'    => 'file',
+		    // Optional:
+		    'options' => array(
+		        'url' => false, // Hide the text input for the url
+		        'add_upload_file_text' => 'Upload Image' // Change upload button text. Default: "Add or Upload File"
+		    ),
+		) );
+		$cmb->add_field( array(
+		    'name'    => 'Drinks #2',
+		    'desc'    => '',
+		    'id'      => $prefix . 'drinks_2',
 		    'type'    => 'file',
 		    // Optional:
 		    'options' => array(
@@ -125,16 +137,9 @@ class Happyhour_Admin {
 		) );
 
 		$cmb->add_field( array(
-		    'name' => 'YouTube Promo Video',
-		    'desc' => 'Enter a YouTube url to your promo video. This video is meant to be a promo or commercial, not necessarily your latest boobtube video.',
-		    'id'   => $prefix . 'home_youtube',
-		    'type' => 'text_url',
-		) );
-
-		$cmb->add_field( array(
-		    'name'    => 'Happy Hour Table Tent Promo Image',
-		    'desc'    => 'This is the sitewide image for Happy Hour. This image should be your Table Tent size (i.e. vertical/portrait/tall).',
-		    'id'      => $prefix . 'happy_hour_vertical',
+		    'name'    => 'Drinks #3',
+		    'desc'    => '',
+		    'id'      => $prefix . 'drinks_3',
 		    'type'    => 'file',
 		    // Optional:
 		    'options' => array(
@@ -144,28 +149,40 @@ class Happyhour_Admin {
 		) );
 
 		$cmb->add_field( array(
-		    'name' => __( 'Featured Facebook Post', 'cmb' ),
-		    'desc'    => 'Enter the url of your Facebook post to appear on the home page and elsewhere.',
-		    'id'   => $prefix . 'facebook_post',
-		    'type' => 'text_url',
-		    // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
+		    'name'    => 'Drinks #4',
+		    'desc'    => '',
+		    'id'      => $prefix . 'drinks_4',
+		    'type'    => 'file',
+		    // Optional:
+		    'options' => array(
+		        'url' => false, // Hide the text input for the url
+		        'add_upload_file_text' => 'Upload Image' // Change upload button text. Default: "Add or Upload File"
+		    ),
+		) );
+
+		$cmb->add_field( array(
+		    'name'    => 'Eats #1',
+		    'desc'    => '',
+		    'id'      => $prefix . 'eats_1',
+		    'type'    => 'file',
+		    // Optional:
+		    'options' => array(
+		        'url' => false, // Hide the text input for the url
+		        'add_upload_file_text' => 'Upload Image' // Change upload button text. Default: "Add or Upload File"
+		    ),
+		) );
+
+		$cmb->add_field( array(
+		    'name'    => 'Eats #2',
+		    'desc'    => '',
+		    'id'      => $prefix . 'eats_2',
+		    'type'    => 'file',
+		    // Optional:
+		    'options' => array(
+		        'url' => false, // Hide the text input for the url
+		        'add_upload_file_text' => 'Upload Image' // Change upload button text. Default: "Add or Upload File"
+		    ),
 		) );		
-
-		$cmb->add_field( array(
-		    'name' => __( 'Featured Tweet', 'cmb' ),
-		    'desc'    => 'Enter the url of a single Tweet to appear on the home page and elsewhere.',
-		    'id'   => $prefix . 'twitter_post',
-		    'type' => 'text_url',
-		    // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
-		) );
-
-		$cmb->add_field( array(
-		    'name' => __( 'Inside View', 'cmb' ),
-		    'desc'    => 'Enter the embed code from google maps for the inside view of the club. This must be an iframe.',
-		    'id'   => $prefix . 'inside_view',
-		    'type' => 'textarea_code',
-		    // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
-		) );
 	}
 
 	/**
@@ -186,14 +203,14 @@ class Happyhour_Admin {
 }
 
 /**
- * Helper function to get/return the Happyhour_Admin object
+ * Helper function to get/return the Kitchen_Admin object
  * @since  0.1.0
- * @return Happyhour_Admin object
+ * @return Kitchen_Admin object
  */
-function happyhour_admin() {
+function kitchen_admin() {
 	static $object = null;
 	if ( is_null( $object ) ) {
-		$object = new Happyhour_Admin();
+		$object = new Kitchen_Admin();
 		$object->hooks();
 	}
 
@@ -206,9 +223,9 @@ function happyhour_admin() {
  * @param  string  $key Options array key
  * @return mixed        Option value
  */
-function happyhour_get_option( $key = '' ) {
-	return cmb2_get_option( happyhour_admin()->key, $key );
+function kitchen_get_option( $key = '' ) {
+	return cmb2_get_option( kitchen_admin()->key, $key );
 }
 
 // Get it started
-happyhour_admin();
+kitchen_admin();

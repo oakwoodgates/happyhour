@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'happyhour' ); ?></a>
 
 	<header id="masthead" class="site-header container" role="banner">
-
+	  <div class="row">
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -67,6 +67,7 @@
 			</div>
 
 		</nav>
+	  </div>
 
 	</header><!-- #masthead -->
 

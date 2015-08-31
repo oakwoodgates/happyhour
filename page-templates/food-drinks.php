@@ -10,8 +10,8 @@ get_header();
 ?>
 <div class="row marg">
 	<div class="col-xs-12">
-		<h1>Heading</h1>
-		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+		<h1><?php the_title(); ?></h1>
+		<p class="lead"><?php the_excerpt(); ?></p>
 	</div>
 </div>
 
@@ -23,17 +23,17 @@ get_header();
 	</div>
 </div>
 <div class="row marg no-gutter">
-	<div class="col-xs-12 col-sm-6 col-md-3">
-		<img class="center-block" src="//nighttrips.com/Tulsa/wp-content/uploads/2014/02/Night-Trips-Drink-Menu-P1.jpg">
+	<div class="col-xs-12 col-sm-6 col-lg-3">
+		<?php echo wp_get_attachment_image( cmb2_get_option( 'kitchen_options', 'kitchen_drinks_1_id' ), 'full', false, array( 'class' => "center-block attachment-full" ) ); ?>
 	</div>
-	<div class="col-xs-12 col-sm-6 col-md-3">
-		<img class="center-block" src="//nighttrips.com/Tulsa/wp-content/uploads/2014/02/Night-Trips-Drink-Menu-P2.jpg">
+	<div class="col-xs-12 col-sm-6 col-lg-3">
+		<?php echo wp_get_attachment_image( cmb2_get_option( 'kitchen_options', 'kitchen_drinks_2_id' ), 'full', false, array( 'class' => "center-block attachment-full" ) ); ?>
 	</div>
-	<div class="col-xs-12 col-sm-6 col-md-3">
-		<img class="center-block" src="//nighttrips.com/Tulsa/wp-content/uploads/2013/12/1.jpg">
+	<div class="col-xs-12 col-sm-6 col-lg-3">
+		<?php echo wp_get_attachment_image( cmb2_get_option( 'kitchen_options', 'kitchen_drinks_3_id' ), 'full', false, array( 'class' => "center-block attachment-full" ) ); ?>
 	</div>
-	<div class="col-xs-12 col-sm-6 col-md-3">
-		<img class="center-block" src="//nighttrips.com/Tulsa/wp-content/uploads/2014/02/Night-Trips-Drink-Menu-P4.jpg">
+	<div class="col-xs-12 col-sm-6 col-lg-3">
+		<?php echo wp_get_attachment_image( cmb2_get_option( 'kitchen_options', 'kitchen_drinks_4_id' ), 'full', false, array( 'class' => "center-block attachment-full" ) ); ?>
 	</div>	
 </div>
 
@@ -44,14 +44,18 @@ get_header();
 	</div>
 </div>
 <div class="row marg no-gutter">
-	<div class="col-xs-12 col-sm-6">
-		<img class="center-block" src="//nighttrips.com/Tulsa/wp-content/uploads/2013/11/TNT-Menu-As-of-10-24-13-p1.jpg">
+	<div class="col-xs-12 col-md-6">
+		<?php echo wp_get_attachment_image( cmb2_get_option( 'kitchen_options', 'kitchen_eats_1_id' ), 'full', false, array( 'class' => "center-block attachment-full" ) ); ?>
 	</div>
-	<div class="col-xs-12 col-sm-6">
-		<img class="center-block" src="//nighttrips.com/Tulsa/wp-content/uploads/2013/11/TNT-Menu-As-of-10-24-13-p2.jpg">
+	<div class="col-xs-12 col-md-6">
+		<?php echo wp_get_attachment_image( cmb2_get_option( 'kitchen_options', 'kitchen_eats_2_id' ), 'full', false, array( 'class' => "center-block attachment-full" ) ); ?>
 	</div>	
 </div>
-
+<div class="row marg">
+	<div class="col-xs-12">
+		<?php the_content(); ?>
+	</div>	
+</div>
 <?php
 get_template_part( 'content-blocks/subfooter-actions' );
 get_template_part( 'content-blocks/subfooter-general' );

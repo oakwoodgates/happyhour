@@ -15,10 +15,13 @@
 <div id="secondary" class="widget-area row" role="complementary">
 
 	<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 marg">
-		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent-682x1024.jpg">
+		<?php get_template_part( 'content-blocks/happyhour-vertical-img' ); ?>
 	</div>
 	<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 marg">
-		<?php echo $embed_code = wp_oembed_get('https://twitter.com/SamuelLJackson/status/619826409104613376'); ?>
+	  <?php 
+		$tweet = esc_url( cmb2_get_option( 'happyhour_options', 'happyhour_twitter_post' ) );
+		echo wp_oembed_get( $tweet );
+	  ?>
 	</div>
 	<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 marg">
 		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/03/AsaAkiraTNTFB.jpg">
