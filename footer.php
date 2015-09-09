@@ -29,19 +29,40 @@
     <input id="layout10" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="p2"></input>    
     <input id="layout11" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="c8190"></input>    
 
+
+    <input id="layout12" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n1"></input>
+    <input id="layout13" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n2"></input>    
+    <input id="layout14" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n3"></input>    
+    <input id="layout15" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n4"></input>
+    <input id="layout16" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n5"></input>    
+    <input id="layout17" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n6"></input>    
+    <input id="layout18" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n7"></input>
+    <input id="layout19" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n8"></input>    
+    <input id="layout20" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n9"></input>    
+    <input id="layout21" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n10"></input>    
+    <input id="layout22" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n11"></input>    
+    <input id="layout23" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n12"></input>    
+    <input id="layout24" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n13"></input>    
+
+
 </div>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
       <div class="row marg footer-headline">
         <div class="col-xs-12">
-          <h3 class="headline">Some awesome headline</h3>
+          <h3 class="headline">Come Join The Party!</h3>
         </div>        
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <img data-src="holder.js/400x300?text=Logo">
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="">
+            <img src="http://nighttrips.com/Tulsa/wp-content/themes/NightTripsTulsaTemplate/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block" >
+          </a>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="">
+            <img src="http://nighttrips.com/OKC/wp-content/themes/NightTripsOKCTemplate/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block" >
+          </a>          
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="col-xs-6 col-sm-6 col-md-3">
           <h4>Links</h4>
           <ul class="fa-ul">
             <li><a href="#">link</a></li>
@@ -52,8 +73,8 @@
             <li><a href="#">link</a></li>
           </ul>
         </div>
-        <div class="clearfix visible-sm-block"></div>
-        <div class="col-xs-12 col-sm-6 col-md-3 footer-social">
+      <!--  <div class="clearfix visible-sm-block"></div> -->
+        <div class="col-xs-6 col-sm-6 col-md-3 footer-social">
           <h4>Social</h4>
           <ul class="fa-ul">
             <li><a href="https://www.facebook.com/nighttripstulsa"><i class="fa fa-li fa-facebook"></i>Facebook</a></li>
@@ -108,18 +129,7 @@
     jQuery('body').addClass( myval );
   });  
 </script>
-<script>window.fbAsyncInit = function() {
-  FB.init({
-    xfbml      : true,
-    version    : 'v2.3'
-  });
-  }; (function(d, s, id){
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+
 <?php wp_footer(); ?>
 
 </body>

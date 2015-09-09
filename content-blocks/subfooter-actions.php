@@ -17,6 +17,6 @@
 		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/03/AsaAkiraTNTFB.jpg">
 	</div>
 	<div class="col-xs-12 col-sm-4">
-		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png">
+		<?php get_template_part( 'content-blocks/pluxh-vertical-img' ); ?>
 	</div>	
 </div>

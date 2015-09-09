@@ -32,6 +32,6 @@
 	</div>
 
 	<div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 marg">
-		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png">
+		<?php get_template_part( 'content-blocks/pluxh-vertical-img' ); ?>
 	</div>		
 </div><!-- #secondary -->

@@ -10,7 +10,9 @@
 	<div class="panel panel-vip panel-pluxh">
 		<div class="panel-body">
 			<div class="col-md-5">
-				<img data-src="holder.js/600x900?text=Pluxh callout.">
+				<?php get_template_part( 'content-blocks/pluxh-vertical-img' ); ?>
+
+			<!--	<img data-src="holder.js/600x900?text=Pluxh callout."> -->
 			<!--	<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent.jpg">
 
 				<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png"> -->

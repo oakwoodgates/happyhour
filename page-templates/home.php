@@ -20,7 +20,7 @@ get_header();
 		<div class="row">
 			<div class="col-xs-12">
 			  <div class="bs-component">
-				  <p class="neon neon-purple">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+				  <p class="neon neon-purple">Check Yourself for Glitter!</p>
 			  </div>
 			</div>
 		</div>
