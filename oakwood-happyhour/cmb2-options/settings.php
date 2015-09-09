@@ -144,6 +144,18 @@ class Happyhour_Admin {
 		) );
 
 		$cmb->add_field( array(
+		    'name'    => 'Drink Special',
+		    'desc'    => 'This is the sitewide image for your current drink special. This image should be horizontal.',
+		    'id'      => $prefix . 'drink_special',
+		    'type'    => 'file',
+		    // Optional:
+		    'options' => array(
+		        'url' => false, // Hide the text input for the url
+		        'add_upload_file_text' => 'Upload Image' // Change upload button text. Default: "Add or Upload File"
+		    ),
+		) );
+
+		$cmb->add_field( array(
 		    'name' => __( 'Featured Facebook Post', 'cmb' ),
 		    'desc'    => 'Enter the url of your Facebook post to appear on the home page and elsewhere.',
 		    'id'   => $prefix . 'facebook_post',
@@ -158,6 +170,14 @@ class Happyhour_Admin {
 		    'type' => 'text_url',
 		    // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
 		) );
+
+		$cmb->add_field( array(
+		    'name' => __( 'Featured Pinterest Post', 'cmb' ),
+		    'desc'    => 'Enter the url of your Pinterest post to appear on the home page and elsewhere.',
+		    'id'   => $prefix . 'pinterest_post',
+		    'type' => 'text_url',
+		    // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
+		) );		
 
 		$cmb->add_field( array(
 		    'name' => __( 'Inside View', 'cmb' ),

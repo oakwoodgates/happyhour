@@ -35,12 +35,6 @@
 				    if ( isset( $entry['boobtube_single_video'] ) )
 				    $video = esc_url( $entry['boobtube_single_video'] );
 
-					if ( $count < 4 ) : 
-						$class = 'col-xs-12';
-					else :
-						$class = 'col-xs-12 col-md-6';
-					endif;
-
 				?>
 					<div class="panel nt-featured-vid">
 						<div class="panel-heading">
@@ -73,7 +67,8 @@
 
 			</div>
 			<div class="col-xs-12 col-sm-5">
-<a data-pin-do="embedPin" href="https://www.pinterest.com/pin/99360735500167749/"></a>
+				<?php $pin = esc_url( cmb2_get_option( 'happyhour_options', 'happyhour_pinterest_post' ) ); ?>
+<a data-pin-do="embedPin" href="<?php echo $pin; ?>"></a>
 <!-- Please call pinit.js only once per page -->
 <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 			</div>			
