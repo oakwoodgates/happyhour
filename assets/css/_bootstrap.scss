@@ -1085,7 +1085,7 @@ object {
   background-color: $gray-notblack;
 }
 .event-simple {
-  background-color: $gray-dark;
+  background-color: $gray-darker;
   line-height: 1.2;
   border-bottom: 1px solid $gray-darker;
   margin-top:0;
@@ -1311,13 +1311,10 @@ $blue: #02AEFF;
 .panel-club-info .list-group {
   margin-bottom: 0;
 }
-.open-hours .list-group-item,
+.panel.open-hours .list-group-item,
 .panel-club-info .list-group-item {
-    padding: 5px 15px;
-    border-left: 0;
-    border-right: 0;
-    margin-bottom: -2px;
-    box-shadow: inset 0px 1px 0px 0px #232323, inset 0px -1px 0px 0px #191818;
+    padding: 5px 15px 7px;
+    border:0;
     background-color: transparent;
 }
 .open-hours .list-group-item:first-child,
@@ -1329,6 +1326,77 @@ $blue: #02AEFF;
   margin-bottom: 10px;
 }
 
+.panel-club-info ul.list-group{
+    margin:10px 0 0 10px;
+
+}
+
+.open-hours ul.list-group li,
+.panel-club-info ul.list-group li{
+    display:block;
+    position:relative;
+}
+
+.open-hours ul.list-group li:after,
+.panel-club-info ul.list-group li:after{
+    position:absolute;
+    content:"";
+    left:0;
+    right:0;
+    bottom:0;
+    margin-left:15px;
+    margin-right:15px;
+    border-bottom: solid 1px #1B1A1A;
+    border-top: solid 1px #0C0C0C;
+}
+
+.open-hours ul.list-group li:last-child:after,
+.panel-club-info ul.list-group li:last-child:after{
+    position:absolute;
+    content:"";
+    left:0;
+    right:0;
+    bottom:0;
+    border:0;
+}
+
+.open-hours ul.list-group li a,
+.panel-club-info ul.list-group li a{
+    display:inline-block;
+    font-size:16px;
+    color:#989898;
+    line-height:45px;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+.open-hours ul.list-group li a:hover,
+.panel-club-info ul.list-group li a:hover{
+    color:#fff;
+}
+
+.tribe-events-single-section.tribe-events-event-meta h3 {
+    font-size: 1.4em;
+    margin: 20px 0 10px;
+}
+
+.tribe-events-single-section.tribe-events-event-meta dd, 
+.tribe-events-single-section.tribe-events-event-meta dt {
+  display:inline;
+}
+
+.tribe-events-list .tribe-events-event-image {
+  float: none;
+  width: 100%;
+  margin: 0;
+}
+.tribe-events-list .type-tribe_events {
+    border-bottom: 0px;
+    padding: 0;
+}
+#tribe-events-content.tribe-events-list {
+  margin:0;
+}
 body, body.base {
   background-image: url('../img/patterns/zwartevilt.png');
   background-attachment: fixed;
@@ -1463,6 +1531,10 @@ S2W Minimal Themes
 
 [id*='gpr_widget'].gpr-bare-bones-style div.gpr-review-content > p, [id*='gpr_widget'] .gpr-bare-bones-style div.gpr-review-content > p {
   color: #FFF;
+}
+
+#tribe-events-photo-events {
+  opacity:1 !important;
 }
 
 body.wordpress,

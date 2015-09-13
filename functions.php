@@ -186,10 +186,18 @@ new Hybrid();
 
 /* Just load the stuff for now until we finalize it */
 require get_template_directory() . '/oakwood-happyhour/hybrid/template.php';
+
+require get_template_directory() . '/oakwood-happyhour/extras/cpt.php';
+require get_template_directory() . '/oakwood-happyhour/extras/cmb2_post_search_field.php';
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/attached-posts.php';
+
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings.php';
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-boobtube.php';
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-kitchen.php';
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-promo.php';
+
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-events.php';
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-promos.php';
 
 
 remove_filter( 'the_excerpt', 'wpautop' );

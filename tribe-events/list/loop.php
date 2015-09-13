@@ -21,15 +21,16 @@ $more = false;
 <div class="tribe-events-loop vcalendar">
 
 	<?php 
-//	$i = 1;
+	$i = 0;
 //	if ( is_archive() ){
 //		echo 'archive';
 //	}
 	while ( have_posts() ) : the_post(); ?>
+		<?php $i++; ?>
 		<?php do_action( 'tribe_events_inside_before_loop' ); ?>
 
 		<!-- Month / Year Headers -->
-		<?php tribe_events_list_the_date_headers(); ?>
+		<?php // tribe_events_list_the_date_headers(); ?>
 
 		<!-- Event  -->
 		<?php
@@ -37,18 +38,20 @@ $more = false;
 		if ( $post->post_parent ) {
 			$post_parent = ' data-parent-post-id="' . absint( $post->post_parent ) . '"';
 		}
+		if ( $i > 1 ) {
+			$class = 'col-xs-12 col-sm-6';
+		} else {
+			$class = 'col-xs-12';
+		}
 		?>
-		<div id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes() ?>" <?php echo $post_parent; ?>>
-		<?php // echo $i++; ?>
+		<div id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes() ?> <?php echo $class; ?>" <?php // echo $post_parent; ?>>
+		
 			<?php tribe_get_template_part( 'list/single', 'event' ) ?>
 		</div><!-- .hentry .vevent -->
 
 
-		<?php do_action( 'tribe_events_inside_after_loop' ); ?>
-		<?php // if ( $i > 2 ) {
-		//	break;
-	//	}
-		?>
+		<?php // do_action( 'tribe_events_inside_after_loop' ); ?>
+
 	<?php endwhile; ?>
 
 </div><!-- .tribe-events-loop -->

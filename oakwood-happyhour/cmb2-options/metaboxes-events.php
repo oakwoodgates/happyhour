@@ -12,8 +12,8 @@
  * @since       1.0.0
  */
 
-add_action( 'cmb2_init', 'happyhour_event_meta' );
-function happyhour_event_meta() {
+add_action( 'cmb2_init', 'happyhour_promo_meta' );
+function happyhour_promo_meta() {
 
 	$prefix = '_happyhour_';
 
