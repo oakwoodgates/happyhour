@@ -22,7 +22,11 @@ do_action( 'tribe_events_before_template' );
 
 	<!-- Main Events Content -->
 <?php tribe_get_template_part( 'list/content' ); ?>
-
+<?php
+if( !is_single() ) {
+	get_template_part( 'content-blocks/subfooter-general' );	
+}
+ ?>
 	<div class="tribe-clear"></div>
 
 <?php

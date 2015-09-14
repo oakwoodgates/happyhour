@@ -82,5 +82,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 </div><!-- #tribe-events-content -->
 
-<?php
-get_template_part( 'content-blocks/subfooter-general' );
