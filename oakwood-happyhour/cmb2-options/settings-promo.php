@@ -137,7 +137,17 @@ class Promo_Admin {
 		    // Will replace any selection with selection from modal. Default is 'add'
 		    'select_behavior' => 'replace'
 		) );
-
+		$cmb->add_field( array(
+		    'name'        => __( 'Venue post' ),
+		    'id'          => $prefix . 'venue_post',
+		    'type'        => 'post_search_text', // This field type
+		    // post type also as array
+		    'post_type'   => 'tribe_venue',
+		    // Default is 'checkbox', used in the modal view to select the post type
+		    'select_type' => 'radio',
+		    // Will replace any selection with selection from modal. Default is 'add'
+		    'select_behavior' => 'replace'
+		) );
 		// Add new field
 		$cmb->add_field( array(
 			'name'    => __( 'Attached Posts', 'cmb2' ),

@@ -198,6 +198,6 @@ require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-pro
 
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-events.php';
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-promos.php';
-
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-venue.php';
 
 remove_filter( 'the_excerpt', 'wpautop' );

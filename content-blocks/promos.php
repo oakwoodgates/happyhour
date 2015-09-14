@@ -54,5 +54,3 @@ if ( $the_query->have_posts() ) { ?>
 }
 /* Restore original Post Data */
 wp_reset_postdata();
-
-?>
