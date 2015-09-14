@@ -9,7 +9,7 @@
 <div class="row marg">
 	<div class="col-xs-12">
 		<h2>Food &amp; Drinks</h2>
-		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+		<p class="lead">Night Trips Tulsa features a full kitchen, ice cold beer, seasonal craft beers and a hand crafted cocktail menu. Featuring our signature drink, the <a href="#">Citrus Mule</a>.</p>
 	</div>
 
 	<div class="col-xs-12 col-md-6 col-lg-5">
@@ -17,8 +17,8 @@
 
 		<div class="fb-post marg" data-href="<?php echo $facebook; ?>" data-width="500"></div>
         <div class="jumbotron mini-jumbotron panel bkg-notblack">
-          <h4>Our Awesome Bar &amp; Kitchen</h4>
-          <p class="info">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <h4>Our Food &amp; Drink Menu</h4>
+          <p class="info">Take a look at our delicious food and drink items. Now featuring a classic rib eye steak.</p>
           <p class="action text-right"><a class="btn btn-primary btn-lg">View Menu</a></p>
         </div>			
 	</div>

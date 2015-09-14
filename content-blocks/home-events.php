@@ -8,12 +8,13 @@
 ?>
 <div class="row marg">
 	<div class="col-xs-12">
-		<h2>Late Night Fun</h2>
-		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+		<h2>Only at Night Trips</h2>
+		<p class="lead">Featuring top Porn Stars and exciting events</p>
 	</div>
 
 
 	<div class="col-xs-12">
+	<div class="panel bkg-notblack pull-left">
 		<div class="col-xs-12 col-md-8">		
 			<div class="row no-gutter">
 
@@ -85,14 +86,14 @@
 			<div class="row no-gutter">
 				<div class="col-xs-12">
 			      	<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/05/MissNTTULSAFB.jpg">
-			        <div class="jumbotron mini-jumbotron panel bkg-notblack">
-			          <h4>Our Events are the Best!</h4>
-			          <p class="info">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-			          <p class="action text-right"><a class="btn btn-primary btn-lg">See All</a></p>
+			        <div class="jumbotron mini-jumbotron bkg-notblack">
+			          <h4>Upcoming Events</h4>
+			          <p class="info">There is always something happening at Night Trips.</p>
+			          <p class="action text-right"><a class="btn btn-primary btn-lg">See More</a></p>
 			        </div>	      
 				</div>
 			</div>
 		</div>
-
+	</div>
 	</div>	
 </div>

@@ -136,6 +136,7 @@ function happyhour_scripts() {
 
 	// CDN ftw
 	wp_enqueue_style( 'happyhour-fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );	
+	wp_enqueue_script( 'happyhour-fontawesome', '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4' );	
 
 	wp_enqueue_style( 'happyhour-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css' );	
 
@@ -185,24 +186,18 @@ new Hybrid();
 
 /* Just load the stuff for now until we finalize it */
 require get_template_directory() . '/oakwood-happyhour/hybrid/template.php';
+
+require get_template_directory() . '/oakwood-happyhour/extras/cpt.php';
+require get_template_directory() . '/oakwood-happyhour/extras/cmb2_post_search_field.php';
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/attached-posts.php';
+
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings.php';
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-boobtube.php';
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-kitchen.php';
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-promo.php';
+
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-events.php';
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-promos.php';
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-venue.php';
+
 remove_filter( 'the_excerpt', 'wpautop' );
-// require get_template_directory() . '/oakwood-happyhour/cmb2-options/oembed-test.php';
-
-
-// Hook for adding admin menus
-// add_action('admin_menu', 'mt_add_pages');
-
-// action function for above hook
-// function mt_add_pages() {
-    // Add a new top-level menu (ill-advised):
-//	    					add_menu_page(__('Test Toplevel','menu-test'), __('Test Toplevel','menu-test'), 'manage_options', 	'mt-top-level-handle', 	'mt_toplevel_page' );
-// $this->options_page = 	add_menu_page( $this->title, 				   $this->title,					'manage_options', 	$this->key, 			array( $this, 'admin_page_display' ) );
-
-    // Add a submenu to the custom top-level menu:
-//    add_submenu_page('mt-top-level-handle', __('Test Sublevel','menu-test'), __('Test Sublevel','menu-test'), 'manage_options', 'sub-page', 'mt_sublevel_page');
-//    add_submenu_page('myprefix_options', __('Test Sublevel','menu-test'), __('Test Sublevel','menu-test'), 'manage_options', 'sub-page', 'mt_sublevel_page');
-
-// }

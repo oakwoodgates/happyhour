@@ -21,7 +21,12 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
+		<?php if ( has_post_thumbnail()) : ?>
+		   <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+		   <?php the_post_thumbnail(); ?>
+		   </a>
+		 <?php 
+		 	endif;
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'happyhour' ), array( 'span' => array( 'class' => array() ) ) ),

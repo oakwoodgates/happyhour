@@ -21,12 +21,13 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'happyhour' ); ?></a>
 
 	<header id="masthead" class="site-header container" role="banner">
 	  <div class="row">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-inverse panel">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -36,11 +37,15 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<?php if ( is_front_page() && is_home() ) : ?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-title navbar-bran">
+						<img src="http://nighttrips.com/Tulsa/wp-content/themes/NightTripsTulsaTemplate/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" width="300px" >
+					</a>
+
+					<?php /* if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title navbar-brand"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<?php else : ?>
 						<p class="site-title navbar-brand"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php endif; ?>			
+					<?php endif; */ ?>			
 				</div>
 				<?php
 				$defaults = array(

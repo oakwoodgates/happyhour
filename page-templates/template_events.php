@@ -18,7 +18,7 @@ get_header();
 <div class="row marg">
 
 	<div class="col-xs-12">
-		<div class="col-xs-12 col-md-8">		
+		<div class="col-xs-12 col-sm-8">		
 			<div class="row no-gutter">
 
 				<div class="col-xs-12">
@@ -85,11 +85,13 @@ get_header();
 			</div>	
 		</div>
 
-		<div class="col-xs-12 col-md-4 event-column-one">
+		<div class="col-xs-12 col-sm-4 event-column-one">
 			<div class="row no-gutter">
 				<div class="col-xs-12">
 		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent-682x1024.jpg">
 		<img data-src="holder.js/900x501?text=Pluxh callout.">
+<?php // echo wp_get_attachment_image( cmb2_get_option( 'happyhour_options', 'happyhour_drink_special_id' ), 'full', false, array( 'class'	=> "center-block attachment-full" ) );
+?>
 
 			     <!--   <div class="jumbotron mini-jumbotron panel bkg-notblack">
 			          <h4>Our Events are the Best!</h4>
@@ -201,7 +203,7 @@ get_header();
 		
 
 
-	<div class="col-xs-12 col-md-4 event-column-one">
+	<div class="col-xs-12 col-sm-4 event-column-one">
 		<h3>Special Hours</h3>
       <div class="media event-simple event-default">
         <div class="media-left">

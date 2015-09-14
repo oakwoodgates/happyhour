@@ -1085,7 +1085,7 @@ object {
   background-color: $gray-notblack;
 }
 .event-simple {
-  background-color: $gray-dark;
+  background-color: $gray-darker;
   line-height: 1.2;
   border-bottom: 1px solid $gray-darker;
   margin-top:0;
@@ -1251,16 +1251,6 @@ $blue: #02AEFF;
   0 0 40px $blue
 }
 
-.twitter-box .EmbeddedTweet,
-.EmbeddedTweet,
-.embeddedtweet,
-iframe.twitter-tweet {
-    background-color: $gray-dark;
-    color: $gray-lighter;
-    border-color: $gray-darker;
-    border-radius: 0;
-}
-
 .footer-headline {
   text-align: center;
 }
@@ -1321,13 +1311,10 @@ iframe.twitter-tweet {
 .panel-club-info .list-group {
   margin-bottom: 0;
 }
-.open-hours .list-group-item,
+.panel.open-hours .list-group-item,
 .panel-club-info .list-group-item {
-    padding: 5px 15px;
-    border-left: 0;
-    border-right: 0;
-    margin-bottom: -2px;
-    box-shadow: inset 0px 1px 0px 0px #232323, inset 0px -1px 0px 0px #191818;
+    padding: 5px 15px 7px;
+    border:0;
     background-color: transparent;
 }
 .open-hours .list-group-item:first-child,
@@ -1339,6 +1326,77 @@ iframe.twitter-tweet {
   margin-bottom: 10px;
 }
 
+.panel-club-info ul.list-group{
+    margin:10px 0 0 10px;
+
+}
+
+.open-hours ul.list-group li,
+.panel-club-info ul.list-group li{
+    display:block;
+    position:relative;
+}
+
+.open-hours ul.list-group li:after,
+.panel-club-info ul.list-group li:after{
+    position:absolute;
+    content:"";
+    left:0;
+    right:0;
+    bottom:0;
+    margin-left:15px;
+    margin-right:15px;
+    border-bottom: solid 1px #1B1A1A;
+    border-top: solid 1px #0C0C0C;
+}
+
+.open-hours ul.list-group li:last-child:after,
+.panel-club-info ul.list-group li:last-child:after{
+    position:absolute;
+    content:"";
+    left:0;
+    right:0;
+    bottom:0;
+    border:0;
+}
+
+.open-hours ul.list-group li a,
+.panel-club-info ul.list-group li a{
+    display:inline-block;
+    font-size:16px;
+    color:#989898;
+    line-height:45px;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+.open-hours ul.list-group li a:hover,
+.panel-club-info ul.list-group li a:hover{
+    color:#fff;
+}
+
+.tribe-events-single-section.tribe-events-event-meta h3 {
+    font-size: 1.4em;
+    margin: 20px 0 10px;
+}
+
+.tribe-events-single-section.tribe-events-event-meta dd, 
+.tribe-events-single-section.tribe-events-event-meta dt {
+  display:inline;
+}
+
+.tribe-events-list .tribe-events-event-image {
+  float: none;
+  width: 100%;
+  margin: 0;
+}
+.tribe-events-list .type-tribe_events {
+    border-bottom: 0px;
+    padding: 0;
+}
+#tribe-events-content.tribe-events-list {
+  margin:0;
+}
 body, body.base {
   background-image: url('../img/patterns/zwartevilt.png');
   background-attachment: fixed;
@@ -1380,6 +1438,103 @@ footer.site-footer {
 
 .col-marg .col-xs-12 {
   margin-bottom:15px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #542a7e;
+    max-width: 800px;
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color:#B19DC1;
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    float: right;  
+  }
+  .navbar-nav > li > a {
+      padding-top: 22.5px;
+      padding-bottom: 22.5px;
+      font-size:18px;
+  }  
+}
+
+img.attachment-post-thumbnail {
+    margin-bottom: 20px;
+}
+
+/*--------------------------------
+S2W Minimal Themes
+------------------------------------*/
+
+[id*='gpr_widget'].gpr-minimal-light-style .gpr-widget-title, [id*='gpr_widget'].gpr-bare-bones-style .gpr-widget-title, [id*='gpr_widget'] .gpr-bare-bones-style .gpr-widget-title, [id*='gpr_widget'] .gpr-minimal-light-style .gpr-widget-title, [id*='gpr_widget'] .gpr-bare-bones-style .gpr-widget-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: #757575;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #EBE6E2;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  margin: 0 0 15px;
+  line-height: 1.4em;
+}
+
+[id*='gpr_widget'] .gpr-rating-time {
+  font-style: italic;
+}
+
+.gpr-business-avatar {
+  border-radius: 50%;
+}
+
+/* Links */
+
+[id*='gpr_widget'] a, [id*='gpr_widget'] a:hover, [id*='gpr_widget'] a.leave-review, [id*='gpr_widget'] a.leave-review:visited, [id*='gpr_widget'] a.leave-review:visited, .gpr-minimal-light-style a, .gpr-minimal-light-style a:hover, .gpr-minimal-light-style a.leave-review, .gpr-minimal-light-style a.leave-review:visited, .gpr-minimal-light-style a.leave-review:visited {
+  color: $brand-primary;
+  text-decoration: none;
+}
+
+[id*='gpr_widget'] a:hover, [id*='gpr_widget'] a.leave-review:hover, .gpr-minimal-light-style a:hover, .gpr-minimal-light-style a.leave-review:hover {
+  /* text-decoration: underline; */
+}
+
+[id*='gpr_widget'] span.no-reviews-header, .gpr-minimal-light-style span.no-reviews-header {
+  display: block;
+  margin: 0 0 8px;
+  line-height: 1em;
+}
+
+[id*='gpr_widget'] span.no-reviews-header > a.leave-review, .gpr-minimal-light-style span.no-reviews-header > a.leave-review {
+  font-size: 12px;
+  color: #7E7975;
+}
+
+/* Dark */
+
+.gpr-bare-bones-style {
+  padding: 15px;
+  position: relative;
+  background: $gray-darker;
+  border-radius: 4px;
+  color: #CCC;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+[id*='gpr_widget'].gpr-bare-bones-style .gpr-widget-title, [id*='gpr_widget'] .gpr-bare-bones-style .gpr-widget-title, [id*='gpr_widget'].gpr-inset-dark-style .gpr-widget-title {
+  color: #FFFFFF;
+  border-bottom: 1px solid #1F1F1F;
+  text-shadow: 0 2px 0 rgba(14, 14, 14, 0.8);
+  box-shadow: 0 1px 0 rgba(92, 92, 92, 0.8);
+}
+
+[id*='gpr_widget'].gpr-bare-bones-style div.gpr-review-content > p, [id*='gpr_widget'] .gpr-bare-bones-style div.gpr-review-content > p {
+  color: #FFF;
+}
+
+#tribe-events-photo-events {
+  opacity:1 !important;
 }
 
 body.wordpress,
@@ -1436,4 +1591,45 @@ body.p2 {
 
 body.c8190 {
   background-image: url('../img/club/IMG_8190.jpg');
+}
+
+body.n1 {
+  background-image: url("http://i2.minus.com/iuNIkKytJui9Q.jpg"); 
+}
+body.n2 {
+  background-image: url("http://orig02.deviantart.net/6638/f/2011/167/c/1/grunge_background_by_bella_beauty-d3j1mp9.jpg"); 
+}
+body.n3 {
+  background-image: url("http://bgfons.com/upload/iron_texture1045.jpg"); 
+}
+body.n4 {
+  background-image: url("http://thegreatsouthernbrainfart.com/wp-content/uploads/black_background_metal-wallpaper-2400x1350.jpg"); 
+}
+body.n5 {
+  background-image: url("http://content.wallpapers-room.com/resolutions/1920x1200/B/Wallpapers-room_com___Black_Background_Set_Leather_by_iAmFreeman_1920x1200.jpg"); 
+}
+body.n6 {
+  background-image: url("http://www.lavueny.com/wp-content/uploads/2014/09/Grunge_Background_005.jpg"); 
+}
+body.n7 {
+  background-image: url("http://content.wallpapers-room.com/resolutions/1920x1200/g/Wallpapers-room_com___grungy_by_alexander-gg_1920x1200.jpg"); 
+}
+body.n8 {
+  background-image: url("http://orig06.deviantart.net/d2f6/f/2011/168/a/6/grunge_background_2_by_bs4711-d3j6se2.jpg"); 
+}
+body.n9 {
+  background-image: url("http://pre01.deviantart.net/42da/th/pre/f/2012/259/2/d/abstract_background_by_ciphonw-d5eyfb2.jpg"); 
+}
+body.n10 {
+  background-image: url("http://www.download-hd-wallpapers.com/wp-content/uploads/2014/08/dark-abstract-wallpaper2.jpg"); 
+}
+body.n11 {
+  background-image: url("http://www.wallpaperup.com/uploads/wallpapers/2014/02/17/257303/0a34f92c4e5ae4066086a16a401da8b2.jpg"); 
+}
+
+body.n12 {
+  background-image: url("https://i.ytimg.com/vi/SKTvZNTRKfQ/maxresdefault.jpg"); 
+}
+body.n13 {
+  background-image: url("http://imgstocks.com/wp-content/uploads/2013/11/Cool-wallpapers-abstract-light-yellow-abstract-background-abstract.jpg"); 
 }

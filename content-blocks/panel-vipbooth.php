@@ -15,7 +15,7 @@
 			<div class="col-xs-12 col-md-4 col-md-pull-8">
 		        <div class="jumbotron mini-jumbotron bkg-darker">
 		          <h3>VIP Booths</h3>
-		          <p class="info">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		          <p class="info">Want to sit in the best seats in the house? Rent one of our VIP Booths right in front of the main stage.</p>
 		          <p class="action"><a class="btn btn-primary btn-lg">More Info</a></p>
 		        </div>
 			</div>

@@ -8,7 +8,7 @@
 ?>
 <div class="row marg">
 	<div class="col-xs-12">
-		<img data-src="holder.js/1140x315?bg=684190&fg=ffffff">
+		<?php echo wp_get_attachment_image( cmb2_get_option( 'happyhour_options', 'happyhour_home_banner_id' ), 'full', false, array( 'class'	=> "center-block attachment-full" ) ); ?>
 	</div>
 </div>
 <div class="row marg">

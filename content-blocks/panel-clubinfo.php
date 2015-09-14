@@ -46,10 +46,12 @@
 		</div>
     </div>
 	<div class="panel-footer">
+	<?php if ( get_post_type() != 'tribe_events' ) : ?>
 		<ul class="list-inline text-center">
 			<li class="text-danger"><i class="fa fa-2x fa-female"></i> ALWAYS FREE</li>
 			<li class="text-info"><i class="fa fa-2x fa-male"></i> ONLY $5</li>
-		</ul>          
+		</ul>
+	<?php endif; ?>        
 		<ul class="list-inline text-center">
 			<li><i class="fa fa-2x fa-cc-visa" data-toggle="tooltip" data-placement="top" title="VISA" data-original-title="VISA"></i></li>
 			<li><i class="fa fa-2x fa-cc-mastercard" data-toggle="tooltip" data-placement="top" title="MasterCard" data-original-title="MasterCard"></i></i></li>

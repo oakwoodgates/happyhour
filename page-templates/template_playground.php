@@ -9,44 +9,35 @@
 get_header();
 ?>
 <h1 class="page-header">Playground before adding to Style Guide</h1>
+<?php
+$rel = cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_venue_post' );
+// echo cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_events_list' );
+// The Query
+$args = array(
+    'post_type' => 'tribe_venue',
+    'p' => $rel
+);
 
-  <div class="row marg">
-     <div class="col-lg-4">
-      <div class="bs-component">
+// $loop = new WP_Query( $args );
+$the_query = new WP_Query( $args );
 
-        <div class="panel panel-danger">
-          <div class="panel-heading">
-            <h3 class="panel-title">Panel danger</h3>
-          </div>
-          <div class="panel-body">
-            Panel content
-          </div>
-        </div>
-
-        <div class="panel panel-info">
-          <div class="panel-heading">
-            <h3 class="panel-title">Panel info</h3>
-          </div>
-          <div class="panel-body">
-            Panel content
-          </div>
-        </div>
-
-      </div>
-    </div>   
-  </div><!-- /row -->
-
-<div class="row">
-    <div class="col-xs-12">
-    <?php echo do_shortcode( '[gallery type="rectangular" size="thumbnail" link="file" ids="1462,1463,1464,1465,1466,1467,1468"]' ); ?>
-    <?php echo do_shortcode( '[gallery type="columns" size="medium" ids="1469,1468,1467,1466,1465,1464,1463,1462"]' ); ?>
-    <?php // echo do_shortcode( '[gallery type="columns" link="file" size="medium" ids="1445,1447,1448,1449,1450,1451,1444"]' ); ?>
-    <?php // echo do_shortcode( '[gallery type="thumbnails" link="file" size="medium" ids="1445,1447,1448,1449,1450,1451,1444"]' ); ?>
-    <?php // echo do_shortcode( '[gallery type="columns" link="file" size="medium" ids="1445,1447,1448,1449,1450,1451,1444"]' ); ?>
-   
-    </div>
-</div>
-
+// The Loop
+if ( $the_query->have_posts() ) { ?>
 
 <?php
+  // echo '<ul>';
+  while ( $the_query->have_posts() ) {
+    $the_query->the_post();
+
+    the_title();
+    the_content();
+ }
+//  echo '</ul>';
+
+} else {
+  // no posts found
+}
+/* Restore original Post Data */
+wp_reset_postdata();
+
 get_footer();
