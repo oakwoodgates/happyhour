@@ -11,7 +11,7 @@
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>
+<head <?php hybrid_attr( 'head' ); ?>>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -20,14 +20,14 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php hybrid_attr( 'body' ); ?>>
 
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'happyhour' ); ?></a>
 
-	<header id="masthead" class="site-header container" role="banner">
+	<header <?php hybrid_attr( 'header' ); ?>>
 	  <div class="row">
-		<nav class="navbar navbar-inverse panel">
+	    <nav <?php hybrid_attr( 'menu', 'primary' ); ?>>
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -37,9 +37,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="site-title navbar-bran">
-						<img src="http://nighttrips.com/Tulsa/wp-content/themes/NightTripsTulsaTemplate/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" width="300px" >
-					</a>
+<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
 
 					<?php /* if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title navbar-brand"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

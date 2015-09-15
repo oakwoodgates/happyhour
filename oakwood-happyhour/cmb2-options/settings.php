@@ -132,6 +132,18 @@ class Happyhour_Admin {
 		) );
 
 		$cmb->add_field( array(
+			'name' => __( 'Video Title', 'happyhour' ),
+			'id' => $prefix . 'video_title',
+			'type' => 'text',
+		) );
+
+		$cmb->add_field( array(
+			'name' => __( 'Video Description', 'happyhour' ),
+			'id' => $prefix . 'video_desc',
+			'type' => 'text',
+		) );
+
+{/*		$cmb->add_field( array(
 		    'name'    => 'Happy Hour Table Tent Promo Image',
 		    'desc'    => 'This is the sitewide image for Happy Hour. This image should be your Table Tent size (i.e. vertical/portrait/tall).',
 		    'id'      => $prefix . 'happy_hour_vertical',
@@ -154,7 +166,7 @@ class Happyhour_Admin {
 		        'add_upload_file_text' => 'Upload Image' // Change upload button text. Default: "Add or Upload File"
 		    ),
 		) );
-
+*/}
 		$cmb->add_field( array(
 		    'name' => __( 'Featured Facebook Post', 'cmb' ),
 		    'desc'    => 'Enter the url of your Facebook post to appear on the home page and elsewhere.',
@@ -186,6 +198,19 @@ class Happyhour_Admin {
 		    'type' => 'textarea_code',
 		    // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
 		) );
+
+		// Set our CMB2 fields
+		$cmb->add_field( array(
+		    'name'        => __( 'Location post' ),
+		    'id'          => $prefix . 'location_post',
+		    'type'        => 'post_search_text', // This field type
+		    // post type also as array
+		    'post_type'   => 'page',
+		    // Default is 'checkbox', used in the modal view to select the post type
+		    'select_type' => 'radio',
+		    // Will replace any selection with selection from modal. Default is 'add'
+		    'select_behavior' => 'replace'
+		) );		
 	}
 
 	/**
