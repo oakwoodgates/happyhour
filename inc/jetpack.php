@@ -32,3 +32,17 @@ function happyhour_infinite_scroll_render() {
 
 // run jetpack in dev mode for now
 // add_filter( 'jetpack_development_mode', '__return_true' );
+
+/*
+ * JetPack logo ftw
+ */
+
+add_theme_support( 'site-logo', array(
+    'size' => 'full',
+) );
+
+function jptweak_remove_share() {
+    remove_filter( 'the_excerpt', 'sharing_display',19 );
+}
+ 
+add_action( 'loop_start', 'jptweak_remove_share' );
