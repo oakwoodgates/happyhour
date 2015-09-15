@@ -50,3 +50,64 @@ function happyhour_venue_meta() {
 	) );
 
 }
+
+add_action( 'cmb2_init', 'happyhour_social_meta' );
+function happyhour_social_meta() {
+
+	$prefix = '_happyhour_venue_';
+
+	$cmb = new_cmb2_box( array(
+		'id'           => $prefix . 'metabox',
+		'title'        => __( 'Holiday &amp; Special Hours', 'happyhour' ),
+		'object_types' => array( 'tribe_venue' ),
+	//	'context'      => 'side',
+		'priority'     => 'default',
+	) );
+
+		// Set our CMB2 fields
+		$group_field_id = $cmb->add_field( array(
+		    'id'          => $prefix . 'special_hours',
+		    'type'        => 'group',
+		    'description' => __( 'Add special and holiday hours, etc', 'cmb' ),
+		    'options'     => array(
+		        'group_title'   => __( 'Day {#}', 'cmb' ), // since version 1.1.4, {#} gets replaced by row number
+		        'add_button'    => __( 'Add Another Day', 'cmb' ),
+		        'remove_button' => __( 'Remove Day', 'cmb' ),
+		        'sortable'      => true, // beta
+		    ),
+		) );
+
+		// Id's for group's fields only need to be unique for the group. Prefix is not needed.
+
+		$cmb->add_group_field( $group_field_id, array(
+			'name' => __( 'Title', 'happyhour' ),
+			'id' => 'title',
+			'type' => 'text',
+			'desc' => __( 'ex: Labor Day', 'happyhour' ),
+		) );
+
+		$cmb->add_group_field( $group_field_id, array(
+			'name' => __( 'Date from', 'happyhour' ),
+			'id' => 'datefrom',
+			'type' => 'text_date',
+		) );
+
+		$cmb->add_group_field( $group_field_id, array(
+			'name' => __( 'Date until', 'happyhour' ),
+			'id' => 'dateto',
+			'type' => 'text_date',
+		) );
+
+		$cmb->add_group_field( $group_field_id, array(
+			'name' => __( 'Open Time', 'happyhour' ),
+			'id' => 'open',
+			'type' => 'text_time',
+		) );
+
+		$cmb->add_group_field( $group_field_id, array(
+			'name' => __( 'Close Time', 'happyhour' ),
+			'id' => 'close',
+			'type' => 'text_time',
+		) );
+
+}

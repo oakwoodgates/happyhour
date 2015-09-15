@@ -46,7 +46,7 @@
 
 
 </div>
-	<footer id="colophon" class="site-footer" role="contentinfo">
+  <footer <?php hybrid_attr( 'footer' ); ?>>
 		<div class="site-info container">
       <div class="row marg footer-headline">
         <div class="col-xs-12">

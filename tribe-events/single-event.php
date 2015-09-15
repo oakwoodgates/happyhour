@@ -15,6 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $events_label_singular = tribe_get_event_label_singular();
 $events_label_plural = tribe_get_event_label_plural();
 $event_id = get_the_ID();
+$event = get_post( $event_id );
 ?>
 <div class="row">
 <div id="tribe-events-content" class="tribe-events-single vevent hentry">
@@ -24,7 +25,7 @@ $event_id = get_the_ID();
 		<?php tribe_events_the_notices() ?>
 
 		<?php the_title( '<h1 class="tribe-events-single-event-title summary entry-title">', '</h1>' ); ?>	
-		<p class="lead"><?php the_excerpt(); ?></p>
+		<p class="lead"><?php echo $event->post_excerpt; // the_excerpt(); ?></p>
 
 	</div>
 	<?php while ( have_posts() ) :  the_post(); ?>
@@ -36,7 +37,7 @@ $event_id = get_the_ID();
 
 			<!-- Event content -->
 			<div class="col-xs-12 col-sm-12 col-md-6">
-				<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
+				<?php // do_action( 'tribe_events_single_event_before_the_content' ) ?>
 				<div class="tribe-events-single-event-description tribe-events-content entry-content description">
 					<?php the_content(); ?>
 				</div>
