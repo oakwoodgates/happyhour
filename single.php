@@ -34,4 +34,6 @@ get_header(); ?>
 
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php
+get_template_part( 'content-blocks/subfooter-general' );
+get_footer(); ?>

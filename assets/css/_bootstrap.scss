@@ -515,7 +515,14 @@ input[type="checkbox"],
   border: none;
   @include box-shadow(0 1px 4px rgba(0,0,0,.3));
 }
+ul#footer-menu {
+    list-style: none;
+    padding-left: 10px;
+}
 
+.site-logo {
+    padding: 10px 10px 20px;
+}
 // Indicators =================================================================
 
 .alert {
@@ -1151,6 +1158,9 @@ object {
 .event-simple.card-one.card-two .media-body {
   padding:0;
 }
+.event-simple.card-one.card-three .media-body {
+    padding: 0 0 10px;
+}
 .darker .event-simple {
   border-color: $gray-base;
 }
@@ -1464,7 +1474,12 @@ footer.site-footer {
 img.attachment-post-thumbnail {
     margin-bottom: 20px;
 }
-
+h4.drink-promo {
+  padding:10px 15px 0;
+}
+span.drink-promo-excerpt {
+  padding:0 15px 15px;
+}
 /*--------------------------------
 S2W Minimal Themes
 ------------------------------------*/

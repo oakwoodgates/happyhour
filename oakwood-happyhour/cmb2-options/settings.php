@@ -199,9 +199,32 @@ class Happyhour_Admin {
 		    // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
 		) );
 
-		// Set our CMB2 fields
 		$cmb->add_field( array(
-		    'name'        => __( 'Location post' ),
+		    'name'        => __( 'VIP page' ),
+		    'id'          => $prefix . 'vip_post',
+		    'type'        => 'post_search_text', // This field type
+		    // post type also as array
+		    'post_type'   => 'page',
+		    // Default is 'checkbox', used in the modal view to select the post type
+		    'select_type' => 'radio',
+		    // Will replace any selection with selection from modal. Default is 'add'
+		    'select_behavior' => 'replace'
+		) );
+
+		$cmb->add_field( array(
+		    'name'        => __( 'Menu page' ),
+		    'id'          => $prefix . 'menu_post',
+		    'type'        => 'post_search_text', // This field type
+		    // post type also as array
+		    'post_type'   => 'page',
+		    // Default is 'checkbox', used in the modal view to select the post type
+		    'select_type' => 'radio',
+		    // Will replace any selection with selection from modal. Default is 'add'
+		    'select_behavior' => 'replace'
+		) );
+
+		$cmb->add_field( array(
+		    'name'        => __( 'Location page' ),
 		    'id'          => $prefix . 'location_post',
 		    'type'        => 'post_search_text', // This field type
 		    // post type also as array
@@ -210,7 +233,8 @@ class Happyhour_Admin {
 		    'select_type' => 'radio',
 		    // Will replace any selection with selection from modal. Default is 'add'
 		    'select_behavior' => 'replace'
-		) );		
+		) );	
+		
 	}
 
 	/**

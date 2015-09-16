@@ -35,13 +35,12 @@ if ( $the_query->have_posts() ) { ?>
 		      </a>
 		    </div>
 
-		    <div class="media-body" style="background-image:url('<?php echo $img; ?>');">
-		      <a class="event-description" href="<?php the_permalink(); ?>">
+		      <a class="media-body event-description" href="<?php the_permalink(); ?>" style="background-image:url('<?php echo $img; ?>');">
 		        <h4 class="media-heading"><?php the_title(); ?></h4>
-		        <?php the_excerpt(); ?>
+		        <span class="media-heading"><?php the_excerpt(); ?></span>  
+		        <span class="overlay bkg-base"></span>
 		      </a>
-		  	  <div class="overlay bkg-base" style=""></div>
-		    </div>
+
 		  </div>  
 <?php	}
 //	echo '</ul>';

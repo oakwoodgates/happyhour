@@ -9,7 +9,7 @@
 <div class="row marg">
 	<div class="col-xs-12">
 		<h2>Come Visit</h2>
-		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+		<p class="lead">We are a short distance from the Tulsa International Airport, downtown Tulsa and the BOK Center.</p>
 	</div>
 	<div class="col-xs-12 col-md-6 marg">
 		<?php get_template_part( 'content-blocks/map-iframe' ); ?>

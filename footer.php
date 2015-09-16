@@ -64,14 +64,13 @@
         </div>
         <div class="col-xs-6 col-sm-6 col-md-3">
           <h4>Links</h4>
-          <ul class="fa-ul">
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-          </ul>
+          <?php 
+            wp_nav_menu( array( 
+              'theme_location' => 'footer',
+              'menu_id' => 'footer-menu'
+              ) 
+            ); 
+          ?>          
         </div>
       <!--  <div class="clearfix visible-sm-block"></div> -->
         <div class="col-xs-6 col-sm-6 col-md-3 footer-social">
@@ -80,9 +79,9 @@
             <li><a href="https://www.facebook.com/nighttripstulsa"><i class="fa fa-li fa-facebook"></i>Facebook</a></li>
             <li><a href="https://twitter.com/nighttripstulsa"><i class="fa fa-li fa-twitter"></i>Twitter</a></li>
             <li><a href="https://www.youtube.com/user/nighttripstv"><i class="fa fa-li fa-youtube-play"></i>YouTube</a></li>
-            <li><a href="http://www.yelp.com/biz/night-trips-tulsa"><i class="fa fa-li fa-yelp"></i>Yelp</a></li>
+<!--            <li><a href="http://www.yelp.com/biz/night-trips-tulsa"><i class="fa fa-li fa-yelp"></i>Yelp</a></li> -->
             <li><a href="http://nighttripspics.tumblr.com/"><i class="fa fa-li fa-tumblr"></i>Tumblr</a></li>
-            <li><a href="https://plus.google.com/113504749391687494200/about"><i class="fa fa-li fa-google-plus"></i>Google+</a></li>
+            <li><a href="https://https://plus.google.com/+NightTripsTulsa/posts"><i class="fa fa-li fa-google-plus"></i>Google+</a></li>
           </ul>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 footer-details">

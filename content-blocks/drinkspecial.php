@@ -7,10 +7,11 @@
  */
 
 $drinkspecial = cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_drink_special_post' );
+$dspost = get_post( $drinkspecial );
 ?>
 
 
-  <div class="media event-simple card-one card-two event-warning">     
+  <div class="media event-simple card-one card-three event-warning">     
     <div class="media-left">
       <a href="<?php echo post_permalink( $drinkspecial ); ?>">
         <span class="day">all</span>
@@ -20,7 +21,9 @@ $drinkspecial = cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_drink_spe
     </div>
     <div class="media-body">
       <a class="event-description" href="<?php echo post_permalink( $drinkspecial ); ?>">
-		<?php echo get_the_post_thumbnail( $drinkspecial, 'full', array( 'class' => '"center-block attachment-full' ) ); ?>
+		    <?php echo get_the_post_thumbnail( $drinkspecial, 'full', array( 'class' => '"center-block attachment-full' ) ); ?>
+        <h4 class="media-heading drink-promo"><?php echo get_the_title( $drinkspecial ) ?></h4>
+        <span class="drink-promo-excerpt"><?php echo $dspost->post_excerpt; // the_excerpt(); ?></span>
       </a>
     </div>
   </div>
