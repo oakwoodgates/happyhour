@@ -31,3 +31,4 @@ if( !is_single() ) {
 
 <?php
 do_action( 'tribe_events_after_template' );
+

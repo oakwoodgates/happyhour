@@ -12,7 +12,7 @@
 ?>
 
 	</div><!-- #content container-->
-<div id="input_layout" class="image ui-buttonset">
+<!-- <div id="input_layout" class="image ui-buttonset">
 
 <div class="customizer-subtitle"></div>
     <input id="layout0" class="image-select ui-helper-hidden-accessible" type="radio" checked="checked" data-customize-setting-link="layout" name="_customize-radio-layout" value="base"></input>
@@ -45,7 +45,7 @@
     <input id="layout24" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n13"></input>    
 
 
-</div>
+</div> -->
   <footer <?php hybrid_attr( 'footer' ); ?>>
 		<div class="site-info container">
       <div class="row marg footer-headline">
@@ -111,10 +111,8 @@
             </div>
           </div>        
         </div>                        
-        <div class="col-xs-12">
-          <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'happyhour' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'happyhour' ), 'WordPress' ); ?></a>
-          <span class="sep"> | </span>
-          <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'happyhour' ), 'happyhour', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>         
+        <div class="col-xs-12 text-center small">
+        &copy; 2015 Night Trips<span class="sep">  |  </span><a href="http://wpguru4u.com/" rel="designer">Web Design by WPguru4u</a>         
         </div>
       </div>
 		</div><!-- .site-info container-->

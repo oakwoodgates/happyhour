@@ -40,7 +40,7 @@
 					<i class="fa fa-diamond fa-fw"></i>  VIP
 				</li>
 				<li class="list-group-item">
-					<i class="fa fa-music fa-fw"></i>  music
+					<i class="fa fa-music fa-fw"></i>  Music
 				</li>                
 			</ul>         		
 		</div>
