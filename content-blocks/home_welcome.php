@@ -27,13 +27,12 @@
 			  ?>
 			</div>
 			<div class="panel-body">
-				<h4 class="media-heading">Media heading</h4>
-				Cras sit amet nibh libero, in gravida nulla.
+				<h4 class="media-heading"><?php echo esc_attr( cmb2_get_option( 'happyhour_options', 'happyhour_video_title' ) ); ?></h4>
+				<?php echo esc_attr( cmb2_get_option( 'happyhour_options', 'happyhour_video_desc' ) ); ?>
 			</div>
 		</div>						
 	</div>
 	<div class="col-xs-12 col-md-4">
 		<?php get_template_part( 'content-blocks/happyhour-vertical-img' ); ?>
-
 	</div>
 </div>

@@ -25,7 +25,7 @@
 							<ul class="list-group">
 								<li class="list-group-item"><i class="fa fa-magic fa-lg fa-fw"></i> Private Stage</li>
 								<li class="list-group-item"><i class="fa fa-key fa-lg fa-fw"></i> Private Bar</li>
-								<li class="list-group-item"><i class="fa fa-users fa-lg fa-fw"></i>Private Security</li>									
+								<li class="list-group-item"><i class="fa fa-users fa-lg fa-fw"></i> Private Security</li>									
 							</ul>
 						</div>
 						<div class="col-xs-12 col-sm-6 panel-club-info">

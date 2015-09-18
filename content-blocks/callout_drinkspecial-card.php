@@ -9,8 +9,6 @@
 $drinkspecial = cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_drink_special_post' );
 $dspost = get_post( $drinkspecial );
 ?>
-
-
 <div class="media event-simple card-one card-three event-warning">     
   <a class="media-left" href="<?php echo post_permalink( $drinkspecial ); ?>">
     <span class="day">all</span>

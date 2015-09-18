@@ -1,11 +1,10 @@
 <?php
-$rel = cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_events_list' );
-// echo cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_events_list' );
+$promos = cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_events_list' );
 // The Query
 $args = array(
     'post_type' => array( 'promos' ),
     'orderby' => 'post__in',
-    'post__in' => $rel
+    'post__in' => $promos
 );
 
 // $loop = new WP_Query( $args );
@@ -42,9 +41,7 @@ if ( $the_query->have_posts() ) { ?>
 		      </a>
 
 		  </div>  
-<?php	}
-//	echo '</ul>';
-?>
+<?php } ?>
 
 </div>
 <?php

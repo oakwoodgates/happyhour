@@ -18,13 +18,13 @@ class Promo_Admin {
  	 * Option key, and option page slug
  	 * @var string
  	 */
-	private $key = 'happyhour_weekly';
+	private $key = 'happyhour_status';
 
 	/**
  	 * Options page metabox id
  	 * @var string
  	 */
-	private $metabox_id = 'happyhour_weekly_metabox';
+	private $metabox_id = 'happyhour_status_metabox';
 
 	/**
 	 * Options Page title
@@ -44,7 +44,7 @@ class Promo_Admin {
 	 */
 	public function __construct() {
 		// Set our title
-		$this->title = __( 'Weekly Options', 'happyhour' );
+		$this->title = __( 'Permanent Options', 'happyhour' );
 	}
 
 	/**
@@ -110,7 +110,7 @@ class Promo_Admin {
 			),
 		) );
 
-		$prefix = 'happyhour_weekly_';
+		$prefix = 'happyhour_status_';
 
 		// Set our CMB2 fields
 		$cmb->add_field( array(
@@ -125,18 +125,7 @@ class Promo_Admin {
 		    'select_behavior' => 'replace'
 		) );
 
-		// Add new field
-		$cmb->add_field( array(
-		    'name'        => __( 'Drink Special post' ),
-		    'id'          => $prefix . 'drink_special_post',
-		    'type'        => 'post_search_text', // This field type
-		    // post type also as array
-		    'post_type'   => 'promos',
-		    // Default is 'checkbox', used in the modal view to select the post type
-		    'select_type' => 'radio',
-		    // Will replace any selection with selection from modal. Default is 'add'
-		    'select_behavior' => 'replace'
-		) );
+
 		$cmb->add_field( array(
 		    'name'        => __( 'Venue post' ),
 		    'id'          => $prefix . 'venue_post',
@@ -148,21 +137,59 @@ class Promo_Admin {
 		    // Will replace any selection with selection from modal. Default is 'add'
 		    'select_behavior' => 'replace'
 		) );
-		// Add new field
 		$cmb->add_field( array(
-			'name'    => __( 'Attached Posts', 'cmb2' ),
-			'desc'    => __( 'Drag posts from the left column to the right column to attach them to this page.<br />You may rearrange the order of the posts in the right column by dragging and dropping.', 'cmb2' ),
-			'id'      => $prefix . 'events_list',
-			'type'    => 'custom_attached_posts',
+			'name' => __( 'Where am I?', 'cmb2' ),
+			'id' => $prefix . 'where_am_i',
+			'type' => 'radio',
 			'options' => array(
-				'show_thumbnails' => true, // Show thumbnails on the left
-				'filter_boxes'    => true, // Show a text box for filtering the results
-				'query_args'      => array( 
-										'posts_per_page' => 10,
-										'post_type' => 'promos'
-									 ), // override the get_posts args
-			)
+				'Tulsa' => __( '1', 'cmb2' ),
+				'OKC' => __( '2', 'cmb2' ),
+			),
 		) );
+
+		$cmb->add_field( array(
+		    'name' => __( 'Inside View', 'cmb' ),
+		    'desc'    => 'Enter the embed code from google maps for the inside view of the club. This must be an iframe.',
+		    'id'   => $prefix . 'inside_view',
+		    'type' => 'textarea_code',
+		    // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
+		) );
+
+		$cmb->add_field( array(
+		    'name'        => __( 'VIP page' ),
+		    'id'          => $prefix . 'vip_post',
+		    'type'        => 'post_search_text', // This field type
+		    // post type also as array
+		    'post_type'   => 'page',
+		    // Default is 'checkbox', used in the modal view to select the post type
+		    'select_type' => 'radio',
+		    // Will replace any selection with selection from modal. Default is 'add'
+		    'select_behavior' => 'replace'
+		) );
+
+		$cmb->add_field( array(
+		    'name'        => __( 'Menu page' ),
+		    'id'          => $prefix . 'menu_post',
+		    'type'        => 'post_search_text', // This field type
+		    // post type also as array
+		    'post_type'   => 'page',
+		    // Default is 'checkbox', used in the modal view to select the post type
+		    'select_type' => 'radio',
+		    // Will replace any selection with selection from modal. Default is 'add'
+		    'select_behavior' => 'replace'
+		) );
+
+		$cmb->add_field( array(
+		    'name'        => __( 'Location page' ),
+		    'id'          => $prefix . 'location_post',
+		    'type'        => 'post_search_text', // This field type
+		    // post type also as array
+		    'post_type'   => 'page',
+		    // Default is 'checkbox', used in the modal view to select the post type
+		    'select_type' => 'radio',
+		    // Will replace any selection with selection from modal. Default is 'add'
+		    'select_behavior' => 'replace'
+		) );		
 
 	}
 
@@ -188,10 +215,10 @@ class Promo_Admin {
  * @since  0.1.0
  * @return Boobtube_Admin object
  */
-function promo_admin() {
+function status_admin() {
 	static $object = null;
 	if ( is_null( $object ) ) {
-		$object = new Promo_Admin();
+		$object = new Status_Admin();
 		$object->hooks();
 	}
 
@@ -204,9 +231,9 @@ function promo_admin() {
  * @param  string  $key Options array key
  * @return mixed        Option value
  */
-function promo_get_option( $key = '' ) {
-	return cmb2_get_option( promo_admin()->key, $key );
+function status_get_option( $key = '' ) {
+	return cmb2_get_option( status_admin()->key, $key );
 }
 
 // Get it started
-promo_admin();
+status_admin();

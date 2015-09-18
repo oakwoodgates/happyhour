@@ -16,6 +16,5 @@
 	</div>
 	<div class="col-xs-12 col-md-6">
 		<?php get_template_part( 'content-blocks/panel-clubinfo' ); ?>
-
 	</div>
 </div>

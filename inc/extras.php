@@ -57,3 +57,14 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	add_filter( 'wp_title', 'happyhour_wp_title', 10, 2 );
 
 endif;
+
+
+function happyhour_where_am_i(){
+	if( cmb2_get_option( 'happyhour_status', 'happyhour_status_where_am_i' ) == 2 ) {
+		$iam = 'okc';
+	}else{
+		$iam = 'tulsa';
+	}
+
+	return $iam;
+}
