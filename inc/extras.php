@@ -59,12 +59,12 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 endif;
 
 
-function happyhour_where_am_i(){
+function tulsa_or_okc(){
 	if( cmb2_get_option( 'happyhour_status', 'happyhour_status_where_am_i' ) == 2 ) {
 		$iam = 'okc';
 	}else{
 		$iam = 'tulsa';
 	}
 
-	return $iam;
+	return trailingslashit( $iam );
 }

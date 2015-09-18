@@ -197,8 +197,8 @@ require get_template_directory() . '/oakwood-happyhour/cmb2-options/attached-pos
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings.php';
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-boobtube.php';
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-kitchen.php';
-require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-promo.php';
-require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-location.php';
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-permanent.php';
+// require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-location.php';
 
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-events.php';
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-promos.php';

@@ -6,7 +6,7 @@
  * @package happyhour
  */
 
-$drinkspecial = cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_drink_special_post' );
+$drinkspecial = cmb2_get_option( 'happyhour_options', 'happyhour_drink_special_post' );
 $dspost = get_post( $drinkspecial );
 ?>
 <div class="media event-simple card-one card-three event-warning">     
