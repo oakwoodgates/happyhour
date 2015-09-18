@@ -45,6 +45,7 @@ function happyhour_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'happyhour' ),
+		'footer'  => esc_html__( 'Footer Menu', 'happyhour' ),
 	) );
 
 	/*
@@ -204,18 +205,3 @@ require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-pr
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-venue.php';
 
 remove_filter( 'the_excerpt', 'wpautop' );
-
-/*
- * JetPack logo ftw
- */
-
-add_theme_support( 'site-logo', array(
-    'size' => 'full',
-) );
-
-function jptweak_remove_share() {
-    remove_filter( 'the_excerpt', 'sharing_display',19 );
-
-}
- 
-add_action( 'loop_start', 'jptweak_remove_share' );

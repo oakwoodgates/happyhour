@@ -143,30 +143,6 @@ class Happyhour_Admin {
 			'type' => 'text',
 		) );
 
-{/*		$cmb->add_field( array(
-		    'name'    => 'Happy Hour Table Tent Promo Image',
-		    'desc'    => 'This is the sitewide image for Happy Hour. This image should be your Table Tent size (i.e. vertical/portrait/tall).',
-		    'id'      => $prefix . 'happy_hour_vertical',
-		    'type'    => 'file',
-		    // Optional:
-		    'options' => array(
-		        'url' => false, // Hide the text input for the url
-		        'add_upload_file_text' => 'Upload Image' // Change upload button text. Default: "Add or Upload File"
-		    ),
-		) );
-
-		$cmb->add_field( array(
-		    'name'    => 'Drink Special',
-		    'desc'    => 'This is the sitewide image for your current drink special. This image should be horizontal.',
-		    'id'      => $prefix . 'drink_special',
-		    'type'    => 'file',
-		    // Optional:
-		    'options' => array(
-		        'url' => false, // Hide the text input for the url
-		        'add_upload_file_text' => 'Upload Image' // Change upload button text. Default: "Add or Upload File"
-		    ),
-		) );
-*/}
 		$cmb->add_field( array(
 		    'name' => __( 'Featured Facebook Post', 'cmb' ),
 		    'desc'    => 'Enter the url of your Facebook post to appear on the home page and elsewhere.',
@@ -192,25 +168,32 @@ class Happyhour_Admin {
 		) );		
 
 		$cmb->add_field( array(
-		    'name' => __( 'Inside View', 'cmb' ),
-		    'desc'    => 'Enter the embed code from google maps for the inside view of the club. This must be an iframe.',
-		    'id'   => $prefix . 'inside_view',
-		    'type' => 'textarea_code',
-		    // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
-		) );
-
-		// Set our CMB2 fields
-		$cmb->add_field( array(
-		    'name'        => __( 'Location post' ),
-		    'id'          => $prefix . 'location_post',
+		    'name'        => __( 'Drink Special post' ),
+		    'id'          => $prefix . 'drink_special_post',
 		    'type'        => 'post_search_text', // This field type
 		    // post type also as array
-		    'post_type'   => 'page',
+		    'post_type'   => 'promos',
 		    // Default is 'checkbox', used in the modal view to select the post type
 		    'select_type' => 'radio',
 		    // Will replace any selection with selection from modal. Default is 'add'
 		    'select_behavior' => 'replace'
-		) );		
+		) );
+
+		$cmb->add_field( array(
+			'name'    => __( 'Promo List', 'cmb2' ),
+			'desc'    => __( 'Drag posts from the left column to the right column to attach them to this page.<br />You may rearrange the order of the posts in the right column by dragging and dropping.', 'cmb2' ),
+			'id'      => $prefix . 'events_list',
+			'type'    => 'custom_attached_posts',
+			'options' => array(
+				'show_thumbnails' => true, // Show thumbnails on the left
+				'filter_boxes'    => true, // Show a text box for filtering the results
+				'query_args'      => array( 
+										'posts_per_page' => 10,
+										'post_type' => 'promos'
+									 ), // override the get_posts args
+			)
+		) );
+		
 	}
 
 	/**

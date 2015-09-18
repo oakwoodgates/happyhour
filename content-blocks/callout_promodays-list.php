@@ -1,11 +1,10 @@
 <?php
-$rel = cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_events_list' );
-// echo cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_events_list' );
+$promos = cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_events_list' );
 // The Query
 $args = array(
     'post_type' => array( 'promos' ),
     'orderby' => 'post__in',
-    'post__in' => $rel
+    'post__in' => $promos
 );
 
 // $loop = new WP_Query( $args );
@@ -35,17 +34,14 @@ if ( $the_query->have_posts() ) { ?>
 		      </a>
 		    </div>
 
-		    <div class="media-body" style="background-image:url('<?php echo $img; ?>');">
-		      <a class="event-description" href="<?php the_permalink(); ?>">
+		      <a class="media-body event-description" href="<?php the_permalink(); ?>" style="background-image:url('<?php echo $img; ?>');">
 		        <h4 class="media-heading"><?php the_title(); ?></h4>
-		        <?php the_excerpt(); ?>
+		        <span class="media-heading"><?php the_excerpt(); ?></span>  
+		        <span class="overlay bkg-base"></span>
 		      </a>
-		  	  <div class="overlay bkg-base" style=""></div>
-		    </div>
+
 		  </div>  
-<?php	}
-//	echo '</ul>';
-?>
+<?php } ?>
 
 </div>
 <?php

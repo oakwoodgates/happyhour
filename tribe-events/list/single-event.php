@@ -28,17 +28,14 @@ $organizer = tribe_get_organizer();
 		<?php echo tribe_event_featured_image( null, 'full' ) ?>
 		
 	</div>
-	<div class="media-left bkg-darker vcard">
-		<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title() ?>" rel="bookmark">
-			<span class="day">day</span>
-			<span class="date">23</span>
-			<span class="month">month</span>
-		</a>
-	</div>
-	<div class="media-body bkg-darker description entry-summary">
-		<a class="event-description url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title() ?>" rel="bookmark">
-			<h4 class="media-heading"><?php the_title(); ?></h4>
-			<?php the_excerpt(); ?>
-		</a>
-	</div>
+	<a class="media-left bkg-darker vcard" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title() ?>" rel="bookmark">
+		<span class="day">day</span>
+		<span class="date">23</span>
+		<span class="month">month</span>
+	</a>
+
+	<a class="event-description url media-body bkg-darker description entry-summary" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title() ?>" rel="bookmark">
+		<h4 class="media-heading"><?php the_title(); ?></h4>
+		<?php the_excerpt(); ?>
+	</a>
 </div>

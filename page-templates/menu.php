@@ -18,7 +18,7 @@ get_header();
 <div class="row marg">
 	<div class="col-xs-12">
 		<h2>Drinks</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+		<p>Hand crafted cocktails, signature whiskeys and craft beers for the distinguished palettes. </p>
 
 	</div>
 </div>
@@ -34,13 +34,15 @@ get_header();
 	</div>
 	<div class="col-xs-12 col-sm-6 col-lg-3">
 		<?php echo wp_get_attachment_image( cmb2_get_option( 'kitchen_options', 'kitchen_drinks_4_id' ), 'full', false, array( 'class' => "center-block attachment-full" ) ); ?>
-	</div>	
+	</div>		
 </div>
+
+		<p>We are proudly serving Remy Martin; reserved distinctly for gentlemen. As Tulsa’s premier Gentlemen’s Club we consider it our duty to offer Louis XIII to the discerning liquor connoisseur.</p>
 
 <div class="row marg">
 	<div class="col-xs-12">
 		<h2>Eats</h2>
-		<p><i class="fa fa-exclamation-triangle"></i> Kitchen open till 1 am</p>
+		<p>Featuring a variety of food items to satisfy all types of hunger. Kitchen open till 1am.</p>
 	</div>
 </div>
 <div class="row marg no-gutter">

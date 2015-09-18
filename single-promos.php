@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area row">
-		<main id="main" class="site-main col-md-8" role="main">
+		<main id="main" class="site-main col-md-7" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -28,10 +28,13 @@ get_header(); ?>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
-		<div class="col-md-4">
+		<div class="col-md-5">
 			<?php get_sidebar(); ?>
 		</div>
 
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php
+get_template_part( 'content-blocks/subfooter-actions' );
+get_template_part( 'content-blocks/subfooter-general' );
+get_footer(); ?>

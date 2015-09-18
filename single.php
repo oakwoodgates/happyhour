@@ -29,9 +29,12 @@ get_header(); ?>
 
 		</main><!-- #main -->
 		<div class="col-md-4">
-			<?php get_sidebar(); ?>
+			<?php get_sidebar('single-post'); ?>
 		</div>
 
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php
+get_template_part( 'content-blocks/subfooter-actions' );
+get_template_part( 'content-blocks/subfooter-general' );
+get_footer(); ?>

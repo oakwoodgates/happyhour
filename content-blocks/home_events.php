@@ -89,7 +89,7 @@
 			        <div class="jumbotron mini-jumbotron bkg-notblack">
 			          <h4>Upcoming Events</h4>
 			          <p class="info">There is always something happening at Night Trips.</p>
-			          <p class="action text-right"><a class="btn btn-primary btn-lg">See More</a></p>
+			          <p class="action text-right"><a class="btn btn-primary btn-lg" href="<?php echo esc_url( site_url( '/events/' ) ); ?>">See More</a></p>
 			        </div>	      
 				</div>
 			</div>

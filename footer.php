@@ -12,7 +12,7 @@
 ?>
 
 	</div><!-- #content container-->
-<div id="input_layout" class="image ui-buttonset">
+<!-- <div id="input_layout" class="image ui-buttonset">
 
 <div class="customizer-subtitle"></div>
     <input id="layout0" class="image-select ui-helper-hidden-accessible" type="radio" checked="checked" data-customize-setting-link="layout" name="_customize-radio-layout" value="base"></input>
@@ -45,7 +45,7 @@
     <input id="layout24" class="image-select ui-helper-hidden-accessible" type="radio" data-customize-setting-link="layout" name="_customize-radio-layout" value="n13"></input>    
 
 
-</div>
+</div> -->
   <footer <?php hybrid_attr( 'footer' ); ?>>
 		<div class="site-info container">
       <div class="row marg footer-headline">
@@ -64,14 +64,13 @@
         </div>
         <div class="col-xs-6 col-sm-6 col-md-3">
           <h4>Links</h4>
-          <ul class="fa-ul">
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-            <li><a href="#">link</a></li>
-          </ul>
+          <?php 
+            wp_nav_menu( array( 
+              'theme_location' => 'footer',
+              'menu_id' => 'footer-menu'
+              ) 
+            ); 
+          ?>          
         </div>
       <!--  <div class="clearfix visible-sm-block"></div> -->
         <div class="col-xs-6 col-sm-6 col-md-3 footer-social">
@@ -80,9 +79,9 @@
             <li><a href="https://www.facebook.com/nighttripstulsa"><i class="fa fa-li fa-facebook"></i>Facebook</a></li>
             <li><a href="https://twitter.com/nighttripstulsa"><i class="fa fa-li fa-twitter"></i>Twitter</a></li>
             <li><a href="https://www.youtube.com/user/nighttripstv"><i class="fa fa-li fa-youtube-play"></i>YouTube</a></li>
-            <li><a href="http://www.yelp.com/biz/night-trips-tulsa"><i class="fa fa-li fa-yelp"></i>Yelp</a></li>
+<!--            <li><a href="http://www.yelp.com/biz/night-trips-tulsa"><i class="fa fa-li fa-yelp"></i>Yelp</a></li> -->
             <li><a href="http://nighttripspics.tumblr.com/"><i class="fa fa-li fa-tumblr"></i>Tumblr</a></li>
-            <li><a href="https://plus.google.com/113504749391687494200/about"><i class="fa fa-li fa-google-plus"></i>Google+</a></li>
+            <li><a href="https://https://plus.google.com/+NightTripsTulsa/posts"><i class="fa fa-li fa-google-plus"></i>Google+</a></li>
           </ul>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 footer-details">
@@ -112,10 +111,8 @@
             </div>
           </div>        
         </div>                        
-        <div class="col-xs-12">
-          <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'happyhour' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'happyhour' ), 'WordPress' ); ?></a>
-          <span class="sep"> | </span>
-          <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'happyhour' ), 'happyhour', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>         
+        <div class="col-xs-12 text-center small">
+        &copy; 2015 Night Trips<span class="sep">  |  </span><a href="http://wpguru4u.com/" rel="designer">Web Design by WPguru4u</a>         
         </div>
       </div>
 		</div><!-- .site-info container-->
