@@ -30,11 +30,26 @@ $event = get_post( $event_id );
 	</div>
 	<?php while ( have_posts() ) :  the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<div class="col-xs-12 col-md-12">
-				<!-- Event featured image, but exclude link -->
-				<?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
-			</div>
+<?php
+	$featuredimg = tribe_event_featured_image( $event_id, 'full', false );
+	$vertimage = wp_get_attachment_image( get_post_meta( $event_id, '_happyhour_event_vertical_image_id', true ), 'full' );
+	$video = esc_url( get_post_meta( $event_id, '_happyhour_event_video', true ) );
 
+	if ( !empty( $video ) ) : ?>
+		<div class="col-xs-12 col-md-6">
+			<?php echo $vertimage; ?>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<?php echo wp_oembed_get( $video ); ?>
+		</div>
+	<?php 
+	else : ?>
+		<div class="col-xs-12 col-md-12">
+			<!-- Event featured image, but exclude link -->
+
+			<?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
+		</div>
+	<?php endif; ?>
 			<!-- Event content -->
 			<div class="col-xs-12 col-sm-12 col-md-6">
 				<?php // do_action( 'tribe_events_single_event_before_the_content' ) ?>
@@ -67,10 +82,10 @@ $event = get_post( $event_id );
 	<?php endwhile; ?>
 
 	<div class="col-xs-12 col-md-6 marg">
-		<?php get_template_part( 'content-blocks/map-iframe' ); ?>
+		<?php get_template_part( 'content-blocks/callout_map' ); ?>
 	</div>
 	<div class="col-xs-12 col-md-6">
-		<?php get_template_part( 'content-blocks/panel-clubinfo' ); ?>
+		<?php get_template_part( 'content-blocks/' . tulsa_or_okc() . 'callout_clubinfo' ); ?>
 	</div>
 	<!-- Event footer -->
 	<div id="tribe-events-footer">
@@ -89,12 +104,13 @@ $event = get_post( $event_id );
 </div>
 <div class="row marg col-marg">
 	<div class="col-xs-12 col-sm-6 col-md-4">
-		<?php get_template_part( 'content-blocks/happyhour-vertical-img' ); ?>
+		<?php get_template_part( 'content-blocks/callout_happyhour-vertimg' ); ?>
 	</div>
 	<div class="col-xs-12 col-sm-6 col-md-4">
-		<?php get_template_part( 'content-blocks/pluxh-vertical-img' ); ?>
+		<?php get_template_part( 'content-blocks/callout_pluxh-vertimg' ); ?>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-4 event-column-one">
-		<?php get_template_part( 'content-blocks/promos' ); ?>
+		<?php get_template_part( 'content-blocks/callout_drinkspecial-card' ); ?>
+		<?php get_template_part( 'content-blocks/callout_promodays-list' ); ?>
 	</div>		
 </div>

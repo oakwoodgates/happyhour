@@ -1182,7 +1182,7 @@ embed, iframe, object {
 #map {
     width: 1200px;
     height: auto;
-    min-height: 300px;
+    min-height: 450px;
     max-width: 100%;
 }
 
@@ -1334,6 +1334,9 @@ $blue: #02AEFF;
 
 .panel.open-hours {
   margin-bottom: 10px;
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;  
 }
 
 .panel-club-info ul.list-group{
@@ -1480,6 +1483,8 @@ h4.drink-promo {
 span.drink-promo-excerpt {
   padding:0 15px 15px;
 }
+
+.gm-style-iw *{display:block}.gm-style-iw h4,.gm-style-iw p{margin:0;padding:0}.gm-style-iw a{color:#4272db}
 /*--------------------------------
 S2W Minimal Themes
 ------------------------------------*/

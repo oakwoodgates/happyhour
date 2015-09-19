@@ -11,4 +11,4 @@
 
 $happyhour = cmb2_get_option( 'happyhour_status', 'happyhour_status_happy_hour_post' );
 ?>
-<a href="<?php echo post_permalink( $happyhour ); ?>"><?php echo get_the_post_thumbnail( $happyhour, 'full', array( 'class' => '"center-block attachment-full' ) ); ?></a>
+<a href="<?php echo get_permalink( $happyhour ); ?>"><?php echo get_the_post_thumbnail( $happyhour, 'full', array( 'class' => '"center-block attachment-full' ) ); ?></a>

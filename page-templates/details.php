@@ -16,15 +16,15 @@ get_header();
 </div>
 <div class="row marg">
 	<div class="col-xs-12 col-md-6 marg">
-		<?php get_template_part( 'content-blocks/map-iframe' ); ?>
+		<?php get_template_part( 'content-blocks/callout_map' ); ?>
 	
 	</div>
 	<div class="col-xs-12 col-md-6 marg">
-		<?php get_template_part( 'content-blocks/panel-clubinfo' ); ?>
+		<?php get_template_part( 'content-blocks/' . tulsa_or_okc() . 'callout_clubinfo' ); ?>
 
 	</div>
 	<div class="col-xs-12 col-md-12 marg">
-		<?php get_template_part( 'content-blocks/map-inside' ); ?>
+		<?php get_template_part( 'content-blocks/subfooter_inside' ); ?>
 	</div>	
 </div>
 <div class="row marg">
@@ -33,5 +33,5 @@ get_header();
 	</div>	
 </div>
 <?php
-get_template_part( 'content-blocks/subfooter-actions' );
+get_template_part( 'content-blocks/subfooter_actions' );
 get_footer();

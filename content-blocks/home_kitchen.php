@@ -19,7 +19,7 @@
         <div class="jumbotron mini-jumbotron panel bkg-notblack">
           <h4>Our Food &amp; Drink Menu</h4>
           <p class="info">Take a look at our delicious food and drink items. Now featuring a classic rib eye steak.</p>
-          <p class="action text-right"><a class="btn btn-primary btn-lg">View Menu</a></p>
+          <p class="action text-right"><a class="btn btn-primary btn-lg" href="<?php echo happyhour_kitchen_link() ?>">View Menu</a></p>
         </div>			
 	</div>
 	<div class="col-xs-12 col-md-6 col-lg-7">

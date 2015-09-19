@@ -68,3 +68,11 @@ function tulsa_or_okc(){
 
 	return trailingslashit( $iam );
 }
+
+function happyhour_kitchen_link() {
+	return get_permalink( cmb2_get_option( 'happyhour_status', 'happyhour_status_menu_post' ) );	
+}
+
+function happyhour_vip_link() {
+	return get_permalink( cmb2_get_option( 'happyhour_status', 'happyhour_status_vip_post' ) );	
+}

@@ -24,7 +24,7 @@ do_action( 'tribe_events_before_template' );
 <?php tribe_get_template_part( 'list/content' ); ?>
 <?php
 if( !is_single() ) {
-	get_template_part( 'content-blocks/subfooter-general' );	
+	get_template_part( 'content-blocks/subfooter_general' );	
 }
  ?>
 	<div class="tribe-clear"></div>

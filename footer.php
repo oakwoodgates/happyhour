@@ -50,7 +50,7 @@
 		<div class="site-info container">
       <div class="row marg footer-headline">
         <div class="col-xs-12">
-          <h3 class="headline">Come Join The Party!</h3>
+          <h3 class="headline neon neon-purple">Come Join The Party!</h3>
         </div>        
       </div>
       <div class="row">
@@ -89,7 +89,7 @@
           <div>
             <a href="#"><i class="fa fa-phone"></i> (918) 622-3858</a>
           </div>
-          <div>
+          <div class="small">
             <a href="#"><i class="fa fa-map-marker"></i> 3902 S. Sheridan Rd., Tulsa, OK 74145</a>
           </div>
           <div class="panel panel-info open-hours">

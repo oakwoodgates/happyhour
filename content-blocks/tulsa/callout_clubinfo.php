@@ -11,7 +11,7 @@
 		<h3 class="panel-title">Club Info</h3>
 	</div>
     <div class="panel-body">
-      	<p class="text-center"><em>over 200 of the Southwest’s most beautiful ladies rotating on 4 stages</em></p>
+      	<p class="text-center"><br /><em>over 200 of the Southwest’s most beautiful ladies rotating on 4 stages</em></p>
 		<div class="col col-xs-6">
 			<ul class="list-group">
 				<li class="list-group-item">
