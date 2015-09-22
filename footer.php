@@ -50,16 +50,16 @@
 		<div class="site-info container">
       <div class="row marg footer-headline">
         <div class="col-xs-12">
-          <h3 class="headline">Come Join The Party!</h3>
+          <h3 class="headline neon neon-purple">Come Join The Party!</h3>
         </div>        
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3">
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="">
-            <img src="http://nighttrips.com/Tulsa/wp-content/themes/NightTripsTulsaTemplate/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block" >
+            <img src="http://45.55.219.172/wp-content/uploads/2015/09/tulsa-logo.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block marg" >
           </a>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="">
-            <img src="http://nighttrips.com/OKC/wp-content/themes/NightTripsOKCTemplate/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block" >
+          <a href="http://nighttrips.com/OKC" class="">
+            <img src="http://45.55.219.172/wp-content/uploads/2015/09/Logo2_OKC.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block" >
           </a>          
         </div>
         <div class="col-xs-6 col-sm-6 col-md-3">
@@ -87,9 +87,9 @@
         <div class="col-xs-12 col-sm-6 col-md-3 footer-details">
           <h4>Details</h4>
           <div>
-            <a href="#"><i class="fa fa-phone"></i> (918) 622-3858</a>
+            <a href="tel:9186222858"><i class="fa fa-phone"></i> 918.622.3858</a>
           </div>
-          <div>
+          <div class="small">
             <a href="#"><i class="fa fa-map-marker"></i> 3902 S. Sheridan Rd., Tulsa, OK 74145</a>
           </div>
           <div class="panel panel-info open-hours">

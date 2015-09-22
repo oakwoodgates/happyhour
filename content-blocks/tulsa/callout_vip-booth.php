@@ -16,7 +16,7 @@
 		        <div class="jumbotron mini-jumbotron bkg-darker">
 		          <h3>VIP Booths</h3>
 		          <p class="info">Want to sit in the best seats in the house? Rent one of our VIP Booths right in front of the main stage.</p>
-		          <p class="action"><a class="btn btn-primary btn-lg">More Info</a></p>
+		          <p class="action"><a class="btn btn-primary btn-lg" href="<?php echo happyhour_vip_link() ?>">More Info</a></p>
 		        </div>
 			</div>
 		</div>

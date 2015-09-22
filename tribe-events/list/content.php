@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="row marg">
 	<div class="col-xs-12">
 		<h1><?php echo tribe_get_events_title() ?></h1>
-		<p class="lead">yada yada</p>
+		<p class="lead">Featuring top Porn Stars and exciting events - Only at Night Trips</p>
 	</div>
 </div>	
 
@@ -55,8 +55,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="col-xs-12 col-sm-4 event-column-one">
 			<div class="row no-gutter">
 				<div class="col-xs-12">
-					<?php get_template_part( 'content-blocks/happyhour-vertical-img' ); ?>
-					<?php get_template_part( 'content-blocks/promos' ); ?>
+					<?php get_template_part( 'content-blocks/callout_happyhour-vertimg' ); ?>
+					<?php get_template_part( 'content-blocks/callout_drinkspecial-card' ); ?>
+					<?php get_template_part( 'content-blocks/callout_promodays-list' ); ?>
 				</div>
 			</div>
 		</div>

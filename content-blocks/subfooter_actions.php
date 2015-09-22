@@ -9,12 +9,12 @@
 <div class="row marg">
 	<div class="col-xs-12 col-sm-4">
 		<?php // get_template_part( 'content-blocks/kitchen-callout' ); ?>
-		<?php get_template_part( 'content-blocks/happyhour-vertical-img' ); ?>
+		<?php get_template_part( 'content-blocks/callout_happyhour-vertimg' ); ?>
 	</div>
 	<div class="col-xs-12 col-sm-4">
-		<?php get_template_part( 'content-blocks/vertical-event' ); ?>
+		<?php get_template_part( 'content-blocks/callout_event-vertimg' ); ?>
 	</div>
 	<div class="col-xs-12 col-sm-4">
-		<?php get_template_part( 'content-blocks/pluxh-vertical-img' ); ?>
+		<?php get_template_part( 'content-blocks/callout_pluxh-vertimg' ); ?>
 	</div>	
 </div>

@@ -151,7 +151,7 @@ function happyhour_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 	wp_enqueue_script( 'happyhour-holder', '//cdnjs.cloudflare.com/ajax/libs/holder/2.8.1/holder.min.js', array('jquery'), '1.0.0', true );
-	wp_enqueue_script( 'happyhour-maps', '//maps.googleapis.com/maps/api/js?sensor=false', array('jquery'), '1.0.0', true );	
+	wp_enqueue_script( 'happyhour-maps', '//maps.googleapis.com/maps/api/js?key=AIzaSyA_wjmyCYdfeRV-17SNsa6SEJvhB8lN-Lk&sensor=false', array('jquery'), '1.0.0', true );	
 	wp_enqueue_script( 'happyhour-js', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery'), '1.0.0', true );	
 }
 add_action( 'wp_enqueue_scripts', 'happyhour_scripts' );
@@ -197,8 +197,8 @@ require get_template_directory() . '/oakwood-happyhour/cmb2-options/attached-pos
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings.php';
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-boobtube.php';
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-kitchen.php';
-require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-promo.php';
-require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-location.php';
+require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-permanent.php';
+// require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings-location.php';
 
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-events.php';
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-promos.php';

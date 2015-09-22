@@ -12,7 +12,7 @@
  * @since       1.0.0
  */
 
-class Promo_Admin {
+class Status_Admin {
 
 	/**
  	 * Option key, and option page slug
@@ -125,25 +125,13 @@ class Promo_Admin {
 		    'select_behavior' => 'replace'
 		) );
 
-
-		$cmb->add_field( array(
-		    'name'        => __( 'Venue post' ),
-		    'id'          => $prefix . 'venue_post',
-		    'type'        => 'post_search_text', // This field type
-		    // post type also as array
-		    'post_type'   => 'tribe_venue',
-		    // Default is 'checkbox', used in the modal view to select the post type
-		    'select_type' => 'radio',
-		    // Will replace any selection with selection from modal. Default is 'add'
-		    'select_behavior' => 'replace'
-		) );
 		$cmb->add_field( array(
 			'name' => __( 'Where am I?', 'cmb2' ),
 			'id' => $prefix . 'where_am_i',
 			'type' => 'radio',
 			'options' => array(
-				'Tulsa' => __( '1', 'cmb2' ),
-				'OKC' => __( '2', 'cmb2' ),
+				'1' => __( 'Tulsa', 'cmb2' ),
+				'2' => __( 'OKC', 'cmb2' ),
 			),
 		) );
 
@@ -189,7 +177,34 @@ class Promo_Admin {
 		    'select_type' => 'radio',
 		    // Will replace any selection with selection from modal. Default is 'add'
 		    'select_behavior' => 'replace'
-		) );		
+		) );
+
+		$cmb->add_field( array(
+		    'name'        => __( 'Venue post' ),
+		    'id'          => $prefix . 'venue_post',
+		    'type'        => 'post_search_text', // This field type
+		    // post type also as array
+		    'post_type'   => 'tribe_venue',
+		    // Default is 'checkbox', used in the modal view to select the post type
+		    'select_type' => 'radio',
+		    // Will replace any selection with selection from modal. Default is 'add'
+		    'select_behavior' => 'replace'
+		) );
+
+		$cmb->add_field( array(
+			'name'    => __( 'Promo List', 'cmb2' ),
+			'desc'    => __( 'Drag posts from the left column to the right column to attach them to this page.<br />You may rearrange the order of the posts in the right column by dragging and dropping.', 'cmb2' ),
+			'id'      => $prefix . 'events_list',
+			'type'    => 'custom_attached_posts',
+			'options' => array(
+				'show_thumbnails' => true, // Show thumbnails on the left
+				'filter_boxes'    => true, // Show a text box for filtering the results
+				'query_args'      => array( 
+										'posts_per_page' => 10,
+										'post_type' => 'promos'
+									 ), // override the get_posts args
+			)
+		) );
 
 	}
 

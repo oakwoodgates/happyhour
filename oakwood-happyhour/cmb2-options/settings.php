@@ -178,21 +178,6 @@ class Happyhour_Admin {
 		    // Will replace any selection with selection from modal. Default is 'add'
 		    'select_behavior' => 'replace'
 		) );
-
-		$cmb->add_field( array(
-			'name'    => __( 'Promo List', 'cmb2' ),
-			'desc'    => __( 'Drag posts from the left column to the right column to attach them to this page.<br />You may rearrange the order of the posts in the right column by dragging and dropping.', 'cmb2' ),
-			'id'      => $prefix . 'events_list',
-			'type'    => 'custom_attached_posts',
-			'options' => array(
-				'show_thumbnails' => true, // Show thumbnails on the left
-				'filter_boxes'    => true, // Show a text box for filtering the results
-				'query_args'      => array( 
-										'posts_per_page' => 10,
-										'post_type' => 'promos'
-									 ), // override the get_posts args
-			)
-		) );
 		
 	}
 

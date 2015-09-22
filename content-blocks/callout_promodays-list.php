@@ -14,11 +14,8 @@ $the_query = new WP_Query( $args );
 if ( $the_query->have_posts() ) { ?>
 <div class="event-column-one">
 
-<?php get_template_part( 'content-blocks/drinkspecial' ); ?>
-
-
+<?php // get_template_part( 'content-blocks/drinkspecial' ); ?>
 <?php
-	// echo '<ul>';
 	while ( $the_query->have_posts() ) {
 		$the_query->the_post(); 
 
@@ -33,20 +30,17 @@ if ( $the_query->have_posts() ) { ?>
 		        <span class="month">month</span>
 		      </a>
 		    </div>
-
 		      <a class="media-body event-description" href="<?php the_permalink(); ?>" style="background-image:url('<?php echo $img; ?>');">
 		        <h4 class="media-heading"><?php the_title(); ?></h4>
 		        <span class="media-heading"><?php the_excerpt(); ?></span>  
 		        <span class="overlay bkg-base"></span>
 		      </a>
+		  </div>
 
-		  </div>  
 <?php } ?>
 
 </div>
 <?php
-} else {
-	// no posts found
 }
 /* Restore original Post Data */
 wp_reset_postdata();

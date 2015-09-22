@@ -33,6 +33,6 @@
 		</div>						
 	</div>
 	<div class="col-xs-12 col-md-4">
-		<?php get_template_part( 'content-blocks/happyhour-vertical-img' ); ?>
+		<?php get_template_part( 'content-blocks/callout_happyhour-vertimg' ); ?>
 	</div>
 </div>

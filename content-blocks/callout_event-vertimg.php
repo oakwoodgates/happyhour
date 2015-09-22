@@ -10,6 +10,6 @@ foreach ( $events as $nextevent ) {
     setup_postdata( $nextevent );
 	$image = wp_get_attachment_image( get_post_meta( $nextevent->ID, '_happyhour_event_vertical_image_id', true ), 'full' );
 	?>
-	<a href="<?php echo get_the_permalink($nextevent->ID); ?>"><?php echo $image; ?></a>
+	<a href="<?php echo get_permalink($nextevent->ID); ?>"><?php echo $image; ?></a>
 
 <?php }

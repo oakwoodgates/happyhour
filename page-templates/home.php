@@ -11,8 +11,8 @@ get_header();
 
 <?php
 
-	get_template_part( 'content-blocks/home', 'welcome' );
-	get_template_part( 'content-blocks/home', 'kitchen' );
+	get_template_part( 'content-blocks/home_welcome' );
+	get_template_part( 'content-blocks/home_kitchen' );
 ?>
 </div>
 <div class="marg neon-sign">
@@ -30,10 +30,9 @@ get_header();
 
 	<?php
 	
-	get_template_part( 'content-blocks/home', 'events' );
-	get_template_part( 'content-blocks/home', 'vip' );
-	get_template_part( 'content-blocks/home', 'social' );
-	get_template_part( 'content-blocks/subfooter', 'home' );
+	get_template_part( 'content-blocks/home_events' );
+	get_template_part( 'content-blocks/home_vip' );
+	get_template_part( 'content-blocks/home_social' );
+	get_template_part( 'content-blocks/subfooter_home' );
 
 get_footer();
-?>
