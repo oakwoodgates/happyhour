@@ -72,5 +72,5 @@ get_header();
 </div>
 
 <?php
-get_template_part( 'content-blocks/subfooter-general' );
+get_template_part( 'content-blocks/subfooter_general' );
 get_footer();

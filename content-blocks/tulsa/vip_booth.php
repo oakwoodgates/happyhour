@@ -15,9 +15,10 @@
 			<div class="col-xs-12 col-md-4 col-md-pull-8">
 		        <div class="jumbotron mini-jumbotron bkg-darker">
 		          <h3>VIP Booths</h3>
-		          <p class="info">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		          <p class="info">Get maximum views and enjoy VIP comfort and service on our custom made couches. Perfect for groups or an intimate experience.</p>
 					<div class="well">
-			          Call me maybe
+			          $50 all night (Friday &amp; Saturday only)<br />
+			          -up to 6 people
 			        </div>
 		        </div>
 			</div>

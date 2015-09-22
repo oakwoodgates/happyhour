@@ -1206,6 +1206,8 @@ p.neon {
   padding: 50px;
   line-height: 1.2;
   text-align: center;
+    -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9);  
 }
 
 
@@ -1231,8 +1233,8 @@ $purple: #fc02ff;
   0 0 20px $purple, 
   0 0 25px $purple, 
   0 0 30px $purple, 
-  0 0 35px $purple, 
-  0 0 40px $purple
+  0 0 35px #F899F9, 
+  0 0 40px #F899F9
 }
 
 $green: #02ff08;
@@ -1382,7 +1384,10 @@ $blue: #02AEFF;
     text-decoration:none;
     margin-left:25px;
 }
-
+.well.panel-club-info ul.list-group li:after {
+    border-bottom-color: #353535;
+    border-top-color: #212121;
+}
 .open-hours ul.list-group li a:hover,
 .panel-club-info ul.list-group li a:hover{
     color:#fff;
@@ -1468,12 +1473,14 @@ footer.site-footer {
     float: right;  
   }
   .navbar-nav > li > a {
-      padding-top: 22.5px;
+      padding-top: 42.5px;
       padding-bottom: 22.5px;
       font-size:18px;
   }  
 }
-
+.navbar-toggle {
+      margin-top: 35px;
+}
 img.attachment-post-thumbnail {
     margin-bottom: 20px;
 }
@@ -1512,10 +1519,12 @@ S2W Minimal Themes
 /* Links */
 
 [id*='gpr_widget'] a, [id*='gpr_widget'] a:hover, [id*='gpr_widget'] a.leave-review, [id*='gpr_widget'] a.leave-review:visited, [id*='gpr_widget'] a.leave-review:visited, .gpr-minimal-light-style a, .gpr-minimal-light-style a:hover, .gpr-minimal-light-style a.leave-review, .gpr-minimal-light-style a.leave-review:visited, .gpr-minimal-light-style a.leave-review:visited {
-  color: $brand-primary;
+  color: $link-color !important;
   text-decoration: none;
 }
-
+[id*=gpr_widget] .star-rating-size {
+    -webkit-filter: hue-rotate(320deg);
+}
 [id*='gpr_widget'] a:hover, [id*='gpr_widget'] a.leave-review:hover, .gpr-minimal-light-style a:hover, .gpr-minimal-light-style a.leave-review:hover {
   /* text-decoration: underline; */
 }
@@ -1530,7 +1539,18 @@ S2W Minimal Themes
   font-size: 12px;
   color: #7E7975;
 }
+.gpr-review-content + [data-readmore-toggle], .gpr-review-content[data-readmore] {
+    font-size: 90%;
+    color: #639;
+}
 
+.wordpress [id*=gpr_widget] .gpr-business-name>a, .wordpress [id*=gpr_widget] .gpr-business-name>a:visited {
+    color: #639 !important;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 22px;
+}
 /* Dark */
 
 .gpr-bare-bones-style {
@@ -1555,6 +1575,16 @@ S2W Minimal Themes
 
 #tribe-events-photo-events {
   opacity:1 !important;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff; 
+    background: #B984EF;
+}
+
+::selection {
+    color: #fff; 
+    background: #B984EF;
 }
 
 body.wordpress,
