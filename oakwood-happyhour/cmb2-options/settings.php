@@ -178,6 +178,18 @@ class Happyhour_Admin {
 		    // Will replace any selection with selection from modal. Default is 'add'
 		    'select_behavior' => 'replace'
 		) );
+
+		$cmb->add_field( array(
+		    'name'    => 'Pluxh Callout Image',
+		    'desc'    => 'Vertical image for Pluxh Bar callout',
+		    'id'      => $prefix . 'pluxh_image',
+		    'type'    => 'file',
+		    // Optional:
+		    'options' => array(
+		        'url' => false, // Hide the text input for the url
+		        'add_upload_file_text' => 'Upload Image' // Change upload button text. Default: "Add or Upload File"
+		    ),
+		) );
 		
 	}
 
