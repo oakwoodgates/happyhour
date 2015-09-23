@@ -15,7 +15,7 @@
 			<div class="col-md-4">
 		        <div class="jumbotron mini-jumbotron bkg-darker">
 		          <h3>VIP Rooms</h3>
-		          <p class="info">5 private VIP Rooms with custome couches, quiet ambience and VIP service. Perfect for individuals who just want to be ‘alone’ with their companion.</p>
+		          <p class="info">5 private VIP Rooms with custom couches, quiet ambience and VIP service. Perfect for individuals who just want to be ‘alone’ with their companion.</p>
 		          <p class="action"><a class="btn btn-primary btn-lg" href="<?php echo happyhour_vip_link() ?>">More Info</a></p>
 		        </div>
 			</div>
