@@ -34,7 +34,7 @@
 					<i class="fa fa-television fa-fw"></i>  Sports
 				</li>
 				<li class="list-group-item">
-					<i class="fa fa-volume-up fa-fw"></i>  Speakers
+					<i class="fa fa-star-o fa-fw"></i>  4 Stages
 				</li>
 				<li class="list-group-item">
 					<i class="fa fa-diamond fa-fw"></i>  VIP
