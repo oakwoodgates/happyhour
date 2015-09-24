@@ -5,7 +5,7 @@
 		<h3 class="panel-title">Club Hours</h3>
 	</div>  
     <div class="panel-body">
-    <div class="col-sm-10 col-sm-offset-1">
+    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-sm-offset-2">
       <ul class="list-group">
         <li class="list-group-item">
           <span class="badge">12pm-2am</span>
@@ -21,9 +21,11 @@
         </li>                  
       </ul>    	
     </div>
-
+<div class="col-sm-12">
       <p class="text-center">Kitchen open till 1am - <a href="<?php echo happyhour_kitchen_link() ?>">View Menu</a></p>
-      <p class="text-center">Holiday Hours</p>
+</div>
+      <h5 class="text-center col-sm-12">Holiday Hours</h5>	
+
 	  <div class="col-sm-6">
 	      <ul class="list-group">
 	        <li class="list-group-item">

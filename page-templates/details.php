@@ -37,7 +37,7 @@ get_header();
 </div>
 <?php
 get_template_part( 'content-blocks/subfooter_actions' ); ?>
-<div class="row">
+<div class="row marg">
 	<div class="col-xs-12">
 		<div class="col-xs-12">
 			<?php get_template_part( 'content-blocks/callout_promodays-horizontal' ); ?>
