@@ -39,7 +39,7 @@
 		        </div>
 			</div>
 <div class="well text-center col-md-10 col-md-offset-1">
-<em>Now Available For Rent</em><br />
+<h4><em>Now Available For Rent</em></h4>
 *Bachelor Party&nbsp;&nbsp;&nbsp;&nbsp;*Divorce Party&nbsp;&nbsp;&nbsp;&nbsp;*Any Party<br /> 
 $300 Booking fee to be paid up front – non-refundable<br />
 <span class="small">*Includes 3 hours of use</span><br />
