@@ -33,6 +33,13 @@ get_header(); ?>
 		</div>
 
 	</div><!-- #primary -->
+	<div class="row marg">
+		<div class="col-xs-12">
+			<div class="col-xs-12">
+				<?php get_template_part( 'content-blocks/callout_promodays-horizontal' ); ?>
+			</div>
+		</div>			
+	</div>
 
 <?php
 get_template_part( 'content-blocks/subfooter_actions' );

@@ -8,14 +8,14 @@
  */
 get_header();
 ?>
-<div class="row marg">
+<div class="row">
 	<div class="col-xs-12">
 		<h1><?php the_title(); ?></h1>
 		<p class="lead"><?php the_excerpt(); ?></p>
 	</div>
 </div>
 
-<div class="row marg">
+<div class="row">
 	<div class="col-xs-12">
 		<h2>Drinks</h2>
 		<p>Hand crafted cocktails, signature whiskeys and craft beers for the distinguished palettes. </p>
@@ -39,7 +39,7 @@ get_header();
 
 		<p>We are proudly serving Remy Martin; reserved distinctly for gentlemen. As Tulsa’s premier Gentlemen’s Club we consider it our duty to offer Louis XIII to the discerning liquor connoisseur.</p>
 
-<div class="row marg">
+<div class="row">
 	<div class="col-xs-12">
 		<h2>Eats</h2>
 		<p>Featuring a variety of food items to satisfy all types of hunger. Kitchen open till 1am.</p>
@@ -56,6 +56,13 @@ get_header();
 <div class="row marg">
 	<div class="col-xs-12">
 		<?php the_content(); ?>
+	</div>	
+</div>
+<div class="row marg">
+	<div class="col-xs-12">
+		<div class="col-xs-12">
+			<?php get_template_part( 'content-blocks/callout_promodays-horizontal' ); ?>
+		</div>
 	</div>	
 </div>
 <?php

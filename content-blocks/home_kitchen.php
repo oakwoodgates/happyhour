@@ -24,5 +24,10 @@
 	</div>
 	<div class="col-xs-12 col-md-6 col-lg-7">
 		<?php echo do_shortcode( '[gallery type="rectangular" size="medium" ids="1478,1477,1496,1494,1483,1481"]' ); ?>
-	</div>	
+	</div>
+	<div class="col-xs-12">
+		<div class="col-xs-12">
+			<?php get_template_part( 'content-blocks/callout_promodays-horizontal' ); ?>
+		</div>
+	</div>		
 </div>
