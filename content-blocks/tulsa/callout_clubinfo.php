@@ -64,7 +64,7 @@
 		<ul class="list-inline text-center">
 			<li>ATM</li>
 			<li><i class="fa fa-star small text-primary"></i></li>
-			<li>wifi</li>
+			<li>WiFi</li>
 			<li><i class="fa fa-star small text-primary"></i></li>
 			<li>21+</li>
 		</ul>

@@ -9,7 +9,7 @@
 <div class="col-xs-12">
 	<div class="panel panel-vip panel-pluxh">
 		<div class="panel-body">
-			<div class="col-md-5">
+			<div class="col-md-5 marg">
 				<?php get_template_part( 'content-blocks/callout_pluxh-vertimg' ); ?>
 			</div>
 			<div class="col-md-7">

@@ -51,7 +51,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 		<div class="col-md-4">
-			<?php get_sidebar(); ?>
+			<?php get_sidebar('posts'); ?>
 		</div>
 
 	</div><!-- #primary -->

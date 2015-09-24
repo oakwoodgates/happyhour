@@ -28,10 +28,20 @@ get_header();
 	</div>	
 </div>
 <div class="row marg">
-	<div class="col-xs-12">
+	<div class="col-xs-12 col-md-5">
 		<?php the_content(); ?>
-	</div>	
+	</div>
+	<div class="col-xs-12 col-md-7">
+		<?php get_template_part( 'content-blocks/callout_details-hours' ); ?>
+	</div>		
 </div>
 <?php
-get_template_part( 'content-blocks/subfooter_actions' );
-get_footer();
+get_template_part( 'content-blocks/subfooter_actions' ); ?>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="col-xs-12">
+			<?php get_template_part( 'content-blocks/callout_promodays-horizontal' ); ?>
+		</div>
+	</div>	
+</div>
+<?php get_footer();
