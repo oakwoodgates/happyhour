@@ -45,7 +45,7 @@
 	  <div class="col-sm-6">
 	      <ul class="list-group">
 	        <li class="list-group-item">
-	          <span class="badge">12pm-2am</span>
+	          <span class="badge">CLOSED</span>
 	          Some Day - 01/01/15
 	        </li>
 	        <li class="list-group-item">
