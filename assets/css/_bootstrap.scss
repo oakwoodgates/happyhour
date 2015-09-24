@@ -1315,6 +1315,7 @@ $blue: #02AEFF;
   padding: 0;
 }
 
+.all-hours .badge,
 .open-hours .badge,
 .panel-club-info .badge {
   background-color: $gray;
@@ -1326,12 +1327,14 @@ $blue: #02AEFF;
   margin-bottom: 0;
 }
 .panel.open-hours .list-group-item,
+.panel.all-hours .list-group-item,
 .panel-club-info .list-group-item {
     padding: 5px 15px 7px;
     border:0;
     background-color: transparent;
 }
 .open-hours .list-group-item:first-child,
+.all-hours .list-group-item:first-child,
 .panel-club-info .list-group-item:first-child {
   border-top:0;
 }
@@ -1348,12 +1351,14 @@ $blue: #02AEFF;
 
 }
 
+.all-hours ul.list-group li,
 .open-hours ul.list-group li,
 .panel-club-info ul.list-group li{
     display:block;
     position:relative;
 }
 
+.all-hours ul.list-group li:after,
 .open-hours ul.list-group li:after,
 .panel-club-info ul.list-group li:after{
     position:absolute;
@@ -1367,6 +1372,7 @@ $blue: #02AEFF;
     border-top: solid 1px #0C0C0C;
 }
 
+.all-hours ul.list-group li:last-child:after,
 .open-hours ul.list-group li:last-child:after,
 .panel-club-info ul.list-group li:last-child:after{
     position:absolute;
