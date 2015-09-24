@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div id="tribe-events-content" class="tribe-events-list row marg">
 
 	<!-- List Title -->
-<div class="row marg">
+<div class="row">
 	<div class="col-xs-12">
 		<h1><?php echo tribe_get_events_title() ?></h1>
 		<p class="lead">Featuring top Porn Stars and exciting events - Only at Night Trips</p>

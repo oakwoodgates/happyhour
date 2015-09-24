@@ -8,7 +8,7 @@
  */
 get_header();
 ?>
-<div class="row marg">
+<div class="row">
 	<div class="col-xs-12">
 		<h1><?php the_title(); ?></h1>
 		<p class="lead"><?php the_excerpt(); ?></p>
