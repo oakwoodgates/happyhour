@@ -43,7 +43,7 @@
 *Bachelor Party&nbsp;&nbsp;&nbsp;&nbsp;*Divorce Party&nbsp;&nbsp;&nbsp;&nbsp;*Any Party<br /> 
 $300 Booking fee to be paid up front – non-refundable<br />
 <span class="small">*Includes 3 hours of use</span><br />
-Additional charge of $50 for each person in your party $100 for each additional hour<br />
+Additional charge of $50 for each person in your party. $100 for each additional hour<br />
 Come in and book in person or call us at <a href="tel:9186222858">918.622.3858</a>.<br />
 If you need to book online, please download, print and fill out the form below. <a href="http://nighttrips.com/Tulsa/wp-content/uploads/2014/02/TNT-Pluxh-CC-Form.pdf">Click here to download our Pluxh Rental Form and Agreement</a>. Once completed, email to <a href="mailto:pluxh@nighttrips.com">pluxh@nighttrips.com</a>.
 </div>							
