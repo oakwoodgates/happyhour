@@ -42,9 +42,9 @@ if ($events) : ?>
 									<?php echo $featuredimg; ?>
 								</a>
 								<a class="media-left bkg-darker vcard" href="<?php echo $link; ?>" title="<?php echo $event->post_title; ?>" rel="bookmark">
-									<span class="day">day</span>
-									<span class="date">23</span>
-									<span class="month">month</span>
+									<span class="day"><?php echo tribe_get_start_date( $event, false, 'D' ) ?></span>
+									<span class="date"><?php echo tribe_get_start_date( $event, false, 'j' ) ?></span>
+									<span class="month"><?php echo tribe_get_start_date( $event, false, 'M' ) ?></span>
 								</a>
 								<a class="event-description media-body bkg-darker"  href="<?php echo $link; ?>" title="<?php echo $event->post_title; ?>" rel="bookmark">
 									<h4 class="media-heading"><?php echo $event->post_title; ?></h4>
@@ -60,9 +60,9 @@ if ($events) : ?>
 									<?php echo $featuredimg; ?>
 								</a>
 								<a class="media-left bkg-darker vcard" href="<?php echo $link; ?>" title="<?php echo $event->post_title; ?>" rel="bookmark">
-									<span class="day">day</span>
-									<span class="date">23</span>
-									<span class="month">month</span>
+									<span class="day"><?php echo tribe_get_start_date( $event, false, 'D' ) ?></span>
+									<span class="date"><?php echo tribe_get_start_date( $event, false, 'j' ) ?></span>
+									<span class="month"><?php echo tribe_get_start_date( $event, false, 'M' ) ?></span>
 								</a>
 								<a class="event-description media-body bkg-darker"  href="<?php echo $link; ?>" title="<?php echo $event->post_title; ?>" rel="bookmark">
 									<h4 class="media-heading"><?php echo $event->post_title; ?></h4>

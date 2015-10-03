@@ -20,7 +20,7 @@ $has_venue_address = ( ! empty( $venue_details['address'] ) ) ? ' location' : ''
 
 // Organizer
 $organizer = tribe_get_organizer();
-
+$event = get_post( get_the_id() );
 ?>
 
 <div class="media event-simple card-one event-primary">
@@ -29,9 +29,9 @@ $organizer = tribe_get_organizer();
 		
 	</div>
 	<a class="media-left bkg-darker vcard" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title() ?>" rel="bookmark">
-		<span class="day">day</span>
-		<span class="date">23</span>
-		<span class="month">month</span>
+		<span class="day"><?php echo tribe_get_start_date( $event, false, 'D' ) ?></span>
+		<span class="date"><?php echo tribe_get_start_date( $event, false, 'j' ) ?></span>
+		<span class="month"><?php echo tribe_get_start_date( $event, false, 'M' ) ?></span>
 	</a>
 
 	<a class="event-description url media-body bkg-darker description entry-summary" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title() ?>" rel="bookmark">

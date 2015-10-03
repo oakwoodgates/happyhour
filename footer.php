@@ -8,7 +8,11 @@
  *
  * @package happyhour
  */
-
+$venue = cmb2_get_option( 'happyhour_status', 'happyhour_status_venue_post' );
+$mon_fri_open = get_post_meta( $venue, '_happyhour_venue_week_open', true );
+$sat_open = get_post_meta( $venue, '_happyhour_venue_sat_open', true );
+$sun_open = get_post_meta( $venue, '_happyhour_venue_sun_open', true );
+$club_close = get_post_meta( $venue, '_happyhour_venue_club_close', true );
 ?>
 
 	</div><!-- #content container-->
@@ -96,15 +100,15 @@
             <div class="panel-body">
               <ul class="list-group">
                 <li class="list-group-item">
-                  <span class="badge">12pm-2am</span>
+                  <span class="badge"><?php echo date("ga", strtotime($mon_fri_open)) . '-' . date("ga", strtotime($club_close)); ?></span>
                   Mon-Fri
                 </li>
                 <li class="list-group-item">
-                  <span class="badge">2pm-2am</span>
+                  <span class="badge"><?php echo date("ga", strtotime($sat_open)) . '-' . date("ga", strtotime($club_close)); ?></span>
                   Saturday
                 </li>
                 <li class="list-group-item">
-                  <span class="badge">7pm-2am</span>
+                  <span class="badge"><?php echo date("ga", strtotime($sun_open)) . '-' . date("ga", strtotime($club_close)); ?></span>
                   Sunday
                 </li>                  
               </ul>

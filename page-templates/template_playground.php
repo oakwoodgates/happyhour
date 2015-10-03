@@ -8,6 +8,47 @@
  */
 get_header();
 ?>
+<?php 
+$venue = cmb2_get_option( 'happyhour_status', 'happyhour_status_venue_post' );
+$holidays = get_post_meta( $venue, '_happyhour_venue_special_hours', true );
+foreach ( (array) $holidays as $key => $holiday ) {
+
+    $title = $datefrom = $dateto = $open = $close = $test = '';
+
+    if ( isset( $holiday['title'] ) )
+        $title = esc_html( $holiday['title'] );
+
+    if ( isset( $holiday['datefrom'] ) )
+        $datefrom = esc_html( $holiday['datefrom'] );
+
+    if ( isset( $holiday['dateto'] ) )
+        $dateto = esc_html( $holiday['dateto'] );
+
+    if ( isset( $holiday['open'] ) )
+        $open = esc_html( $holiday['open'] );
+
+    if ( isset( $holiday['close'] ) )
+        $close = esc_html( $holiday['close'] );
+
+    if ( isset( $holiday['test'] ) )
+        $test = esc_html( $holiday['test'] ); 
+
+   $manip = mktime(6, 0, 0);
+   $strtotime_test = strtotime("Monday 6pm");
+?>
+<li class="list-group-item col-sm-6">
+<?php echo 'title: ' . $title . '<br />'; ?>
+<?php echo 'datefrom: ' . $datefrom . '<br />'; ?>
+<?php echo 'dateto: ' . $dateto . '<br />'; ?>
+<?php echo 'open: ' . $open . '<br />'; ?>
+<?php echo 'close: ' . $close . '<br />'; ?>
+<?php echo 'test: ' . $test . '<br />'; ?>
+<?php echo 'manip: ' . $manip . '<br />'; ?>
+<?php echo 'foo: ' . date("g:i A", $manip) . '<br />'; ?>
+<?php echo 'strtotime test: ' . date("M d y, ga", $strtotime_test) . '<br />'; ?>
+</li>
+<?php }
+?>
 <?php
 $promos = cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_events_list' );
 // The Query
