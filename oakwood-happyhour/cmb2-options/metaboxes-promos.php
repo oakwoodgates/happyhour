@@ -113,4 +113,15 @@ function happyhour_event_meta_2() {
 		'type' => 'text_money',
 	) );
 
+	$cmb->add_field( array(
+		'name' => __( 'This is a...', 'happyhour' ),
+		'id' => $prefix . 'what_am_i',
+		'type' => 'radio',
+		'options' => array(
+			'1' => __( 'Happy Hour Promo', 'happyhour' ),
+			'2' => __( 'Fluff Day', 'happyhour' ),
+			'3' => __( 'Monthly Drink Special', 'happyhour' ),
+		),
+	) );
+
 }

@@ -12,9 +12,9 @@ $dspost = get_post( $drinkspecial );
 <div class="event-column-one">
   <div class="media event-simple card-one card-three event-warning">     
     <a class="media-left" href="<?php echo post_permalink( $drinkspecial ); ?>">
-      <span class="day">all</span>
+      <span class="day">All</span>
       <span class="date"><i class="fa fa-glass fa-lg"></i></span>
-      <span class="month">month</span>
+      <span class="month"><?php echo date("F", strtotime("tomorrow")); ?></span>
     </a>
     <a class="event-description media-body" href="<?php echo post_permalink( $drinkspecial ); ?>">
       <?php echo get_the_post_thumbnail( $drinkspecial, 'full', array( 'class' => '"center-block attachment-full' ) ); ?>
