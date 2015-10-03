@@ -102,12 +102,14 @@ function happyhour_social_meta() {
 			'name' => __( 'Open Time', 'happyhour' ),
 			'id' => 'open',
 			'type' => 'text_time',
+		//	'time_format' => 'c'
 		) );
 
 		$cmb->add_group_field( $group_field_id, array(
 			'name' => __( 'Close Time', 'happyhour' ),
 			'id' => 'close',
 			'type' => 'text_time',
-		) );
+		//	'time_format' => 'c'
 
+		) );
 }
