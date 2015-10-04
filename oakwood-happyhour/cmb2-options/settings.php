@@ -180,6 +180,18 @@ class Happyhour_Admin {
 		) );
 
 		$cmb->add_field( array(
+		    'name'        => __( 'Featured Blog post' ),
+		    'id'          => $prefix . 'featured_blog_post',
+		    'type'        => 'post_search_text', // This field type
+		    // post type also as array
+		    'post_type'   => 'post',
+		    // Default is 'checkbox', used in the modal view to select the post type
+		    'select_type' => 'radio',
+		    // Will replace any selection with selection from modal. Default is 'add'
+		    'select_behavior' => 'replace'
+		) );
+
+		$cmb->add_field( array(
 		    'name'    => 'Pluxh Callout Image',
 		    'desc'    => 'Vertical image for Pluxh Bar callout',
 		    'id'      => $prefix . 'pluxh_image',

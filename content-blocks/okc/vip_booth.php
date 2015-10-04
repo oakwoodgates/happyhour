@@ -16,12 +16,13 @@
 		        <div class="jumbotron mini-jumbotron bkg-darker">
 		          <h3>VIP Booths</h3>
 		          <p class="info">Get maximum views and enjoy VIP comfort and service on our custom made couches. Perfect for groups or an intimate experience.</p>
-					<div class="well">
-			          Main stage booths are $50 all night (Thursday, Friday &amp; Saturday only)<br />
-			          -up to 6 people<br />
-			          Private upstairs stage booths are $200 all night (Thursday, Friday &amp; Saturday only)<br />
-			          -up to 10 people			          
-			        </div>
+
+			<div class="well panel-club-info text-center">
+				<ul class="list-group">
+					<li class="list-group-item">Main stage booths are $50 all night<br /><span class="small">Thursday, Friday &amp; Saturday only - up to 6 people</span></li>
+					<li class="list-group-item">Private upstairs stage booths are $200 all night<br /><span class="small">Thursday, Friday &amp; Saturday only - up to 10 people</span></li>
+				</ul>
+	        </div>				        
 		        </div>
 			</div>
 		</div>			
