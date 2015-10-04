@@ -14,9 +14,6 @@ $events = tribe_get_events( array(
     'start_date' => date("Y-m-d h:m", strtotime("YESTERDAY"))
 ) );
 $loop = 0;
-?>
-
-<?php
 if ($events) : ?>
 <div class="row marg">
 	<div class="col-xs-12">
@@ -33,9 +30,8 @@ if ($events) : ?>
 				    setup_postdata( $event );
 					$featuredimg = tribe_event_featured_image( $event->ID, 'full', false );    
 					$link = get_permalink($event->ID);
-				?>
 
-					<?php if ($loop == 1) : ?>
+					if ($loop == 1) : ?>
 						<div class="col-xs-12">
 							<div class="media event-simple card-one event-primary">
 								<a href="<?php echo $link; ?>" class="media-header">
@@ -52,7 +48,6 @@ if ($events) : ?>
 								</a>
 							</div>
 						</div>
-
 					<?php else : ?>
 						<div class="col-xs-12 col-sm-6">
 							<div class="media event-simple card-one event-primary">

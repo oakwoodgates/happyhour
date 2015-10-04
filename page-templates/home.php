@@ -7,12 +7,8 @@
  * @since 1.0.0
  */
 get_header();
-?>
-
-<?php
-
-	get_template_part( 'content-blocks/home_welcome' );
-	get_template_part( 'content-blocks/home_kitchen' );
+get_template_part( 'content-blocks/home_welcome' );
+get_template_part( 'content-blocks/home_kitchen' );
 ?>
 </div>
 <div class="marg neon-sign">

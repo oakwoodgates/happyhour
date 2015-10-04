@@ -9,7 +9,11 @@
 <div class="row marg">
 	<div class="col-xs-12">
 		<h2>Come Visit Us</h2>
-		<p class="lead">Four stages, comfortable seating, LED bar and state of the art sound system and light show.</p>
+		<?php if( is_okc() ) : ?>
+			<p class="lead">Three stages, comfortable seating, LED bar and state of the art sound system and light show.</p>
+		<?php else : ?>
+			<p class="lead">Four stages, comfortable seating, LED bar and state of the art sound system and light show.</p>
+		<?php endif; ?>
 	</div>
 	<div class="col-xs-12 col-md-12 marg">
 		<?php get_template_part( 'content-blocks/subfooter_inside' ); ?>
@@ -19,6 +23,5 @@
 	</div>
 	<div class="col-xs-12 col-md-6">
 		<?php get_template_part( 'content-blocks/' . tulsa_or_okc() .  'callout_clubinfo' ); ?>
-
 	</div>
 </div>

@@ -8,11 +8,6 @@
  *
  * @package happyhour
  */
-$venue = cmb2_get_option( 'happyhour_status', 'happyhour_status_venue_post' );
-$mon_fri_open = get_post_meta( $venue, '_happyhour_venue_week_open', true );
-$sat_open = get_post_meta( $venue, '_happyhour_venue_sat_open', true );
-$sun_open = get_post_meta( $venue, '_happyhour_venue_sun_open', true );
-$club_close = get_post_meta( $venue, '_happyhour_venue_club_close', true );
 ?>
 
 	</div><!-- #content container-->
@@ -50,77 +45,8 @@ $club_close = get_post_meta( $venue, '_happyhour_venue_club_close', true );
 
 
 </div> -->
-  <footer <?php hybrid_attr( 'footer' ); ?>>
-		<div class="site-info container">
-      <div class="row marg footer-headline">
-        <div class="col-xs-12">
-          <h3 class="headline neon neon-purple">Come Join The Party!</h3>
-        </div>        
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="">
-            <img src="http://45.55.219.172/wp-content/uploads/2015/09/tulsa-logo.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block marg" >
-          </a>
-          <a href="http://nighttrips.com/OKC" class="">
-            <img src="http://45.55.219.172/wp-content/uploads/2015/09/Logo2_OKC.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block" >
-          </a>          
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-3">
-          <h4>Links</h4>
-          <?php 
-            wp_nav_menu( array( 
-              'theme_location' => 'footer',
-              'menu_id' => 'footer-menu'
-              ) 
-            ); 
-          ?>          
-        </div>
-      <!--  <div class="clearfix visible-sm-block"></div> -->
-        <div class="col-xs-6 col-sm-6 col-md-3 footer-social">
-          <h4>Social</h4>
-          <ul class="fa-ul">
-            <li><a href="https://www.facebook.com/nighttripstulsa"><i class="fa fa-li fa-facebook"></i>Facebook</a></li>
-            <li><a href="https://twitter.com/nighttripstulsa"><i class="fa fa-li fa-twitter"></i>Twitter</a></li>
-            <li><a href="https://www.youtube.com/user/nighttripstv"><i class="fa fa-li fa-youtube-play"></i>YouTube</a></li>
-<!--            <li><a href="http://www.yelp.com/biz/night-trips-tulsa"><i class="fa fa-li fa-yelp"></i>Yelp</a></li> -->
-            <li><a href="http://nighttripspics.tumblr.com/"><i class="fa fa-li fa-tumblr"></i>Tumblr</a></li>
-            <li><a href="https://https://plus.google.com/+NightTripsTulsa/posts"><i class="fa fa-li fa-google-plus"></i>Google+</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 footer-details">
-          <h4>Details</h4>
-          <div>
-            <a href="tel:9186222858"><i class="fa fa-phone"></i> 918.622.3858</a>
-          </div>
-          <div class="small">
-            <a href="#"><i class="fa fa-map-marker"></i> 3902 S. Sheridan Rd., Tulsa, OK 74145</a>
-          </div>
-          <div class="panel panel-info open-hours">
-            <div class="panel-body">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <span class="badge"><?php echo date("ga", strtotime($mon_fri_open)) . '-' . date("ga", strtotime($club_close)); ?></span>
-                  Mon-Fri
-                </li>
-                <li class="list-group-item">
-                  <span class="badge"><?php echo date("ga", strtotime($sat_open)) . '-' . date("ga", strtotime($club_close)); ?></span>
-                  Saturday
-                </li>
-                <li class="list-group-item">
-                  <span class="badge"><?php echo date("ga", strtotime($sun_open)) . '-' . date("ga", strtotime($club_close)); ?></span>
-                  Sunday
-                </li>                  
-              </ul>
-            </div>
-          </div>        
-        </div>                        
-        <div class="col-xs-12 text-center small">
-        &copy; 2015 Night Trips<span class="sep">  |  </span><a href="http://wpguru4u.com/" rel="designer">Web Design by WPguru4u</a>         
-        </div>
-      </div>
-		</div><!-- .site-info container-->
-	</footer><!-- #colophon -->
+<?php get_template_part( 'content-blocks/' . tulsa_or_okc() . 'footer' ); ?>
+
 </div><!-- #page -->
 <script>
   jQuery("input.image-select:radio").change(function($) {

@@ -16,11 +16,10 @@ get_header();
 </div>
 <div class="row marg">
 	<?php get_template_part( 'content-blocks/' . tulsa_or_okc() . 'vip_booth' ); ?>
+	<?php get_template_part( 'content-blocks/' . tulsa_or_okc() . 'vip_tabledance' ); ?>
 	<?php get_template_part( 'content-blocks/' . tulsa_or_okc() . 'vip_room' ); ?>
 	<?php get_template_part( 'content-blocks/' . tulsa_or_okc() . 'vip_pluxh' ); ?>
-
 </div>
-
 <?php
 get_template_part( 'content-blocks/subfooter_general' );
 get_footer();
