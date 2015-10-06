@@ -5,7 +5,7 @@
  * @author  WPguru4u
  * @package happyhour
  */
-$featured_post = cmb2_get_option( 'happyhour_options', 'happyhour_drink_special_post' );
+$featured_post = cmb2_get_option( 'happyhour_options', 'happyhour_featured_blog_post' );
 $featured = get_post( $featured_post );
 ?>
 <div class="row marg">

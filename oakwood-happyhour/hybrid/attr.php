@@ -121,7 +121,16 @@ add_filter( 'hybrid_attr_mainschema', 'happyhour_attr_mainschema', 10 );
 function happyhour_attr_mainschema( $attr ) {
 //	$attr['class'] = 'fa-ul';	
 	$attr['itemscope'] = 'itemscope';
-	$attr['itemtype']  = 'http://schema.org/Organization';
+	$attr['itemtype']  = 'http://schema.org/NightClub';
+
+	return $attr;	
+}
+
+add_filter( 'hybrid_attr_event', 'happyhour_attr_event', 10 );
+function happyhour_attr_event( $attr ) {
+//	$attr['class'] = 'fa-ul';	
+	$attr['itemscope'] = 'itemscope';
+	$attr['itemtype']  = 'http://schema.org/Event';
 
 	return $attr;	
 }
