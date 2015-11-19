@@ -1,5 +1,5 @@
 <?php
-$promos = cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_events_list' );
+$promos = cmb2_get_option( 'happyhour_status', 'happyhour_status_events_list' );
 // The Query
 $args = array(
     'post_type' => array( 'promos' ),
@@ -24,21 +24,44 @@ if ( $the_query->have_posts() ) { ?>
 		$img = get_post_meta( get_the_ID(), '_happyhour_promo_background_image', true );
 		$day = get_post_meta( get_the_ID(), '_happyhour_promo_data_day', true );
 		$start = get_post_meta( get_the_ID(), '_happyhour_promo_data_start_time', true );
-		$end = get_post_meta( get_the_ID(), '_happyhour_promo_data_end_time', true );		
+		$start_time = date("ga", strtotime($start));
+		$end = get_post_meta( get_the_ID(), '_happyhour_promo_data_end_time', true );
+		$end_time = date("ga", strtotime($end));
+		$location = cmb2_get_option( 'happyhour_status', 'happyhour_status_location_post' );
+		$name = get_post_meta( $location, '_jsg4u_general_name', true );
+		$url = get_post_meta( $location, '_jsg4u_general_url', true );
+		$streetAddress = get_post_meta( $location, '_jsg4u_location_streetaddress', true );
+		$addressLocality = get_post_meta( $location, '_jsg4u_location_addresslocality', true );
+		$addressRegion = get_post_meta( $location, '_jsg4u_location_addressregion', true );
+		$postalCode = get_post_meta( $location, '_jsg4u_location_postalcode', true );
+		$promo_start = date("D", strtotime($day)) . ' ' . $start_time;
+		$promo_end = date("D", strtotime($day)) . ' ' . $end_time;
 
 ?>
 <div class="col-sm-4">
-	<div class="media event-simple card-one event-danger">
+	<div class="media event-simple card-one event-danger" <?php hybrid_attr( 'promo' ); ?>>
 		<div class="media-left">
 		  <a href="<?php the_permalink() ?>">
+		  <meta itemprop="startDate" content="<?php echo date("c", strtotime($promo_start)); ?>">
+		  <meta itemprop="endDate" content="<?php echo date("c", strtotime($promo_end)); ?>">		  
 		    <span class="day"><?php echo date("D", strtotime($day)); ?></span>
 		    <span class="date"><i class="fa fa-star-o fa-lg"></i></span>
 		    <span class="month"><?php echo date("ga", strtotime($start)) . '-' . date("ga", strtotime($end)); ?></span>
+			<span itemprop="location" itemscope itemtype="http://schema.org/NightClub">
+				<meta itemprop="url" content="<?php echo $url; ?>">
+				<meta itemprop="name" content="<?php echo $name; ?>">
+				<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				  <meta itemprop="streetAddress" content="<?php echo $streetAddress; ?>">
+				  <meta itemprop="addressLocality" content="<?php echo $addressLocality; ?>">
+				  <meta itemprop="addressRegion" content="<?php echo $addressRegion; ?>">
+				  <meta itemprop="postalCode" content="<?php echo $postalCode; ?>">
+				</span>
+			</span>			    
 		  </a>
 		</div>
-		<a class="media-body event-description" href="<?php the_permalink(); ?>" style="background-image:url('<?php echo $img; ?>');">
-		  <h4 class="media-heading"><?php the_title(); ?></h4>
-		  <span class="media-heading"><?php the_excerpt(); ?></span>  
+		<a itemprop="url" class="media-body event-description" href="<?php the_permalink(); ?>" style="background-image:url('<?php echo $img; ?>');">
+		  <h4 itemprop="name" class="media-heading"><?php the_title(); ?></h4>
+		  <span itemprop="description" class="media-heading"><?php the_excerpt(); ?></span>  
 		  <span class="overlay bkg-base"></span>
 		</a>
 	</div>	

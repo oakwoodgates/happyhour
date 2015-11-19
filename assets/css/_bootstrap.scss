@@ -1126,8 +1126,6 @@ object {
 }
 .event-simple span.date {
     font-size: 180%;
-    padding-top: 5px;
-    margin-top: 5px;
     line-height: 1.6;  
 }
 
@@ -1609,97 +1607,15 @@ body.w5 {
   background-repeat: repeat;
   background-size: initial;
 }
-#input_layout.ui-buttonset {
-  position: fixed;
-  bottom: 0;
-  background-color: #000;
-}
-body.w1 {
-  background-image: url('../img/background/1.jpg');
-}
-
-body.w2 {
-  background-image: url('../img/background/2.jpg');
-}
-
-body.w3 {
-  background-image: url('../img/background/3.jpg');
-}
-
-body.w4 {
-  background-image: url('../img/background/4.jpg');
-}
-
-body.w5 {
-  background-image: url('../img/background/5.jpg');
-}
-
-body.w6 {
-  background-image: url('../img/background/6.jpg');
-}
-
-body.w7 {
-  background-image: url('../img/background/7.jpg');
-}
-
-body.w8 {
-  background-image: url('../img/background/8.jpg');
-}
-
-body.p1 {
-  background-image: url('../img/background/1.png');
-}
-
-body.p2 {
-  background-image: url('../img/background/2.png');
-}
-
-body.c8190 {
-  background-image: url('../img/club/IMG_8190.jpg');
-}
-
-body.n1 {
-  background-image: url("http://i2.minus.com/iuNIkKytJui9Q.jpg"); 
-}
-body.n2 {
-  background-image: url("http://orig02.deviantart.net/6638/f/2011/167/c/1/grunge_background_by_bella_beauty-d3j1mp9.jpg"); 
-}
-body.n3 {
-  background-image: url("http://bgfons.com/upload/iron_texture1045.jpg"); 
-}
-body.n4 {
-  background-image: url("http://thegreatsouthernbrainfart.com/wp-content/uploads/black_background_metal-wallpaper-2400x1350.jpg"); 
-}
-body.n5 {
-  background-image: url("http://content.wallpapers-room.com/resolutions/1920x1200/B/Wallpapers-room_com___Black_Background_Set_Leather_by_iAmFreeman_1920x1200.jpg"); 
-}
-body.n6 {
-  background-image: url("http://www.lavueny.com/wp-content/uploads/2014/09/Grunge_Background_005.jpg"); 
-}
-body.n7 {
-  background-image: url("http://content.wallpapers-room.com/resolutions/1920x1200/g/Wallpapers-room_com___grungy_by_alexander-gg_1920x1200.jpg"); 
-}
-body.n8 {
-  background-image: url("http://orig06.deviantart.net/d2f6/f/2011/168/a/6/grunge_background_2_by_bs4711-d3j6se2.jpg"); 
-}
-body.n9 {
-  background-image: url("http://pre01.deviantart.net/42da/th/pre/f/2012/259/2/d/abstract_background_by_ciphonw-d5eyfb2.jpg"); 
-}
-body.n10 {
-  background-image: url("http://www.download-hd-wallpapers.com/wp-content/uploads/2014/08/dark-abstract-wallpaper2.jpg"); 
-}
-body.n11 {
-  background-image: url("http://www.wallpaperup.com/uploads/wallpapers/2014/02/17/257303/0a34f92c4e5ae4066086a16a401da8b2.jpg"); 
-}
-
-body.n12 {
-  background-image: url("https://i.ytimg.com/vi/SKTvZNTRKfQ/maxresdefault.jpg"); 
-}
-body.n13 {
-  background-image: url("http://imgstocks.com/wp-content/uploads/2013/11/Cool-wallpapers-abstract-light-yellow-abstract-background-abstract.jpg"); 
-}
 
 .lead a {
   font-weight: 300;
   color: #DB0A5B;
+}
+.event-simple .media-left span {
+    float: left;
+    width: 100%;
+}
+.event-simple img {
+	width:100%;
 }

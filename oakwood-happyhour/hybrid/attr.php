@@ -68,3 +68,78 @@ function happyhour_attr_menu( $attr, $context ) {
 
 	return $attr;
 }
+add_filter( 'hybrid_attr_menu2',    'happyhour_attr_menu2',    10, 2 );
+function happyhour_attr_menu2( $attr, $context ) {
+
+//	$attr['class'] = 'navbar';
+	$attr['role']  = 'navigation';
+
+	if ( $context ) {
+
+//		$attr['class'] .= " navbar-inverse panel";
+//		$attr['id']     = "navbar-{$context}";
+
+		$menu_name = hybrid_get_menu_location_name( $context );
+
+		if ( $menu_name ) {
+			// Translators: The %s is the menu name. This is used for the 'aria-label' attribute.
+			$attr['aria-label'] = esc_attr( sprintf( _x( '%s', 'nav menu aria label', 'hybrid-core' ), $menu_name ) );
+		}
+	}
+
+	$attr['itemscope']  = 'itemscope';
+	$attr['itemtype']   = 'http://schema.org/SiteNavigationElement';
+
+	return $attr;
+}
+add_filter( 'hybrid_attr_menu1',    'happyhour_attr_menu1',    10, 2 );
+function happyhour_attr_menu1( $attr, $context ) {
+
+	$attr['class'] = 'navbar';
+//	$attr['role']  = 'navigation';
+
+	if ( $context ) {
+
+		$attr['class'] .= " navbar-inverse panel";
+		$attr['id']     = "navbar-{$context}";
+
+//		$menu_name = hybrid_get_menu_location_name( $context );
+
+//		if ( $menu_name ) {
+			// Translators: The %s is the menu name. This is used for the 'aria-label' attribute.
+//			$attr['aria-label'] = esc_attr( sprintf( _x( '%s', 'nav menu aria label', 'hybrid-core' ), $menu_name ) );
+//		}
+	}
+
+//	$attr['itemscope']  = 'itemscope';
+//	$attr['itemtype']   = 'http://schema.org/SiteNavigationElement';
+
+	return $attr;
+}
+
+add_filter( 'hybrid_attr_mainschema', 'happyhour_attr_mainschema', 10 );
+function happyhour_attr_mainschema( $attr ) {
+//	$attr['class'] = 'fa-ul';	
+	$attr['itemscope'] = 'itemscope';
+	$attr['itemtype']  = 'http://schema.org/NightClub';
+
+	return $attr;	
+}
+
+add_filter( 'hybrid_attr_event', 'happyhour_attr_event', 10 );
+function happyhour_attr_event( $attr ) {
+//	$attr['class'] = 'fa-ul';	
+	$attr['itemscope'] = 'itemscope';
+	$attr['itemtype']  = 'http://schema.org/Event';
+
+	return $attr;	
+}
+
+add_filter( 'hybrid_attr_promo', 'happyhour_attr_promo', 10 );
+function happyhour_attr_promo( $attr ) {
+//	$attr['class'] = 'fa-ul';	
+	$attr['itemscope'] = 'itemscope';
+	$attr['itemtype']  = 'http://schema.org/SaleEvent';
+
+	return $attr;
+}

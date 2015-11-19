@@ -1,5 +1,10 @@
 
 <?php
+function add_menu_atts( $atts, $item, $args ) {
+  $atts['itemprop'] = 'url';
+    return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'add_menu_atts', 10, 3 );
 /**
  * Handles output of Google structured data markup
  */
@@ -21,11 +26,6 @@ $location_id = cmb2_get_option( 'happyhour_weekly', 'happyhour_weekly_venue_post
 // Location post content
 $description = json_encode( get_post( $location_id )->post_content );
 // Logo from JetPack
-
-
-
-
-
 	$output= '
 <script type="application/ld+json">
 {

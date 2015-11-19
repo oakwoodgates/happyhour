@@ -27,8 +27,8 @@
 
 	<header <?php hybrid_attr( 'header' ); ?>>
 	  <div class="row">
-	    <nav <?php hybrid_attr( 'menu', 'primary' ); ?>>
-			<div class="container-fluid">
+	    <div <?php hybrid_attr( 'menu1', 'primary' ); ?>>
+			<div class="container-fluid" <?php hybrid_attr( 'mainschema' ); ?>>
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -45,6 +45,8 @@
 						<p class="site-title navbar-brand"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 					<?php endif; */ ?>			
 				</div>
+				<nav <?php hybrid_attr( 'menu2', 'primary' ); ?>>
+
 				<?php
 				$defaults = array(
 					'theme_location'  => 'primary',
@@ -67,9 +69,10 @@
 
 				wp_nav_menu( $defaults );
 				?>
+				</nav>
 			</div>
 
-		</nav>
+		</div>
 	  </div>
 
 	</header><!-- #masthead -->

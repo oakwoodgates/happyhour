@@ -126,33 +126,35 @@ add_action( 'widgets_init', 'happyhour_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-// Playfair+Display:400,400italic,700,700italic,900,900italic
-// Lato:400,100,300,300italic,400italic,700,700italic,900,900italic,100italic
 function happyhour_scripts() {
 	$query_args = array(
-		'family' => 'Anton:400|Lato:400,100,300,300italic,400italic,700,700italic,900,900italic,100italic',
+		'family' => 'Anton:400|Lato:400,100,300,300italic,400italic,700,700italic,900,100italic',
 		'subset' => 'latin,latin-ext,cyrillic',
 	);
 	wp_enqueue_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
 
 	// CDN ftw
 	wp_enqueue_style( 'happyhour-fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );	
-	wp_enqueue_script( 'happyhour-fontawesome', '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4' );	
-
-	wp_enqueue_style( 'happyhour-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css' );	
+	wp_enqueue_script( 'happyhour-facebook', '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4' );	
+	if ( is_okc() ) {
+		$site = 'okc';
+	} else {
+		$site = 'tulsa';
+	}
+	wp_enqueue_style( 'happyhour-bootstrap', get_template_directory_uri() . '/assets/css/style-' . $site . '.css' );	
 
 //	wp_enqueue_style( 'happyhour-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'happyhour-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+//	wp_enqueue_script( 'happyhour-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'happyhour-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+//	wp_enqueue_script( 'happyhour-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-	wp_enqueue_script( 'happyhour-holder', '//cdnjs.cloudflare.com/ajax/libs/holder/2.8.1/holder.min.js', array('jquery'), '1.0.0', true );
+//	wp_enqueue_script( 'happyhour-holder', '//cdnjs.cloudflare.com/ajax/libs/holder/2.8.1/holder.min.js', array('jquery'), '1.0.0', true );
 	wp_enqueue_script( 'happyhour-maps', '//maps.googleapis.com/maps/api/js?key=AIzaSyA_wjmyCYdfeRV-17SNsa6SEJvhB8lN-Lk&sensor=false', array('jquery'), '1.0.0', true );	
-	wp_enqueue_script( 'happyhour-js', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery'), '1.0.0', true );	
+	wp_enqueue_script( 'happyhour-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '1.0.0', true );	
 }
 add_action( 'wp_enqueue_scripts', 'happyhour_scripts' );
 
@@ -190,8 +192,8 @@ require get_template_directory() . '/oakwood-happyhour/hybrid/template.php';
 require get_template_directory() . '/oakwood-happyhour/hybrid/attr.php';
 
 require get_template_directory() . '/oakwood-happyhour/extras/cpt.php';
-require get_template_directory() . '/oakwood-happyhour/extras/cmb2_post_search_field.php';
-require get_template_directory() . '/oakwood-happyhour/extras/google_data_markup.php';
+// require get_template_directory() . '/oakwood-happyhour/extras/cmb2_post_search_field.php';
+// require get_template_directory() . '/oakwood-happyhour/extras/google_data_markup.php';
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/attached-posts.php';
 
 require get_template_directory() . '/oakwood-happyhour/cmb2-options/settings.php';

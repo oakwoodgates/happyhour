@@ -40,7 +40,7 @@ get_header();
 				if ( $count < 4 ) : 
 					$class = 'col-xs-12';
 				else :
-					$class = 'col-xs-12 col-md-6';
+					$class = 'col-xs-12 col-md-6 pull-left';
 				endif;
 
 			?>
@@ -55,8 +55,8 @@ get_header();
 						</div>
 					</div>	
 				</div>
-
-				<?php 
+		
+			<?php 
 
 				$count = $count + 1;
 			}

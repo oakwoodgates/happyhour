@@ -31,11 +31,12 @@ $club_close = get_post_meta( $venue, '_happyhour_venue_club_close', true );
 <div class="col-sm-12">
       <p class="text-center">Kitchen open till 1am - <a href="<?php echo happyhour_kitchen_link() ?>">View Menu</a></p>
 </div>
+<?php if( $holidays ) : ?>
       <h5 class="text-center col-sm-12">Holiday Hours</h5>	
 
 	      <ul class="list-group">
 <?php 
-foreach ( (array) $holidays as $key => $holiday ) {
+foreach ( $holidays as $key => $holiday ) {
 
     $title = $datefrom = $dateto = $open = $close = '';
 
@@ -72,6 +73,6 @@ foreach ( (array) $holidays as $key => $holiday ) {
 ?>	      
                 
 	      </ul>      	
-	  
+	 <?php endif; ?> 
     </div>
   </div> 
