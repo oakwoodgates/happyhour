@@ -18,13 +18,13 @@ $event_id = get_the_ID();
 $event = get_post( $event_id );
 ?>
 <div class="row">
-<div id="tribe-events-content" class="tribe-events-single vevent hentry">
+<div class="tribe-events-single event entry" itemscope itemtype="http://schema.org/Event">
 	<div class="col-xs-12">
 
 		<!-- Notices -->
 		<?php tribe_events_the_notices() ?>
 
-		<?php the_title( '<h1 class="tribe-events-single-event-title summary entry-title">', '</h1>' ); ?>	
+		<?php the_title( '<h1 class="tribe-events-single-event-title" itemprop="name">', '</h1>' ); ?>	
 		<p class="lead"><?php echo $event->post_excerpt; // the_excerpt(); ?></p>
 
 	</div>
@@ -53,7 +53,7 @@ $event = get_post( $event_id );
 			<!-- Event content -->
 			<div class="col-xs-12 col-sm-12 col-md-6">
 				<?php // do_action( 'tribe_events_single_event_before_the_content' ) ?>
-				<div class="tribe-events-single-event-description tribe-events-content entry-content description">
+				<div itemprop="description" class="tribe-events-single-event-description tribe-events-content entry-content description">
 					<?php the_content(); ?>
 				</div>
 			</div>

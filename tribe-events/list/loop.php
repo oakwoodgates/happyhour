@@ -39,12 +39,12 @@ $more = false;
 			$post_parent = ' data-parent-post-id="' . absint( $post->post_parent ) . '"';
 		}
 		if ( $i > 1 ) {
-			$class = 'col-xs-12 col-sm-6';
+			$class = 'type-tribe_events col-xs-12 col-sm-6';
 		} else {
-			$class = 'col-xs-12';
+			$class = 'type-tribe_events col-xs-12';
 		}
 		?>
-		<div id="post-<?php the_ID() ?>" class="<?php tribe_events_event_classes() ?> <?php echo $class; ?>" <?php // echo $post_parent; ?>>
+		<div class="<?php // tribe_events_event_classes() ?> <?php echo $class; ?>"  <?php hybrid_attr( 'event' ); ?><?php // echo $post_parent; ?>>
 		
 			<?php tribe_get_template_part( 'list/single', 'event' ) ?>
 		</div><!-- .hentry .vevent -->

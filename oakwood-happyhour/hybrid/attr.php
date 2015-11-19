@@ -134,3 +134,12 @@ function happyhour_attr_event( $attr ) {
 
 	return $attr;	
 }
+
+add_filter( 'hybrid_attr_promo', 'happyhour_attr_promo', 10 );
+function happyhour_attr_promo( $attr ) {
+//	$attr['class'] = 'fa-ul';	
+	$attr['itemscope'] = 'itemscope';
+	$attr['itemtype']  = 'http://schema.org/SaleEvent';
+
+	return $attr;
+}

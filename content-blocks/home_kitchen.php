@@ -34,9 +34,14 @@ $featured = get_post( $featured_post );
 	</div>
 	<div class="col-xs-12 col-md-6 col-lg-7">
 		<?php if( is_okc() ) : ?>
-			<?php echo do_shortcode( '[gallery type="rectangular" size="medium" ids="1478,1477,1496,1494,1483,1481"]' ); ?>
+			<?php // echo do_shortcode( '[gallery type="rectangular" size="medium" ids="1478,1477,1496,1494,1483,1481"]' ); ?>
+			<?php 
+			// all - 1980,1981,1982,1985,1972,1977,1990
+			// vertical - 1980, 1981, 1990
+			// main - 1977
+			echo do_shortcode( '[gallery type="rectangular" size="medium" ids="2449,2446,2465,2447,2445,2443"]' ); ?>
 		<?php else : ?>
-			<?php echo do_shortcode( '[gallery type="rectangular" size="medium" ids="1478,1477,1496,1494,1483,1481"]' ); ?>
+			<?php echo do_shortcode( '[gallery type="rectangular" size="medium" ids="2469,2470,2466,2456,2447,2467"]' ); ?>
 		<?php endif; ?> 
 	</div>
 	<div class="col-xs-12">

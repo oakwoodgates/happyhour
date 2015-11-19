@@ -25,10 +25,10 @@ $club_close = get_post_meta( $venue, '_happyhour_venue_club_close', true );
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3">
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="">
-            <img src="http://45.55.219.172/wp-content/uploads/2015/09/tulsa-logo.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block marg" >
+            <img src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/10/logo-tulsa.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block marg" >
           </a>
           <a href="http://nighttrips.com/OKC" class="">
-            <img src="http://45.55.219.172/wp-content/uploads/2015/09/Logo2_OKC.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block" >
+            <img src="http://nighttrips.com/OKC/wp-content/uploads/2015/10/logo-okc.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block" >
           </a>          
         </div>
         <nav class="col-xs-6 col-sm-6 col-md-3" <?php hybrid_attr( 'menu2', 'secondary' ); ?>>
@@ -59,21 +59,21 @@ $club_close = get_post_meta( $venue, '_happyhour_venue_club_close', true );
           <div>
             <a href="tel:9186222858"><i class="fa fa-phone" itemprop="telephone" content="+19186223858"></i> 918.622.3858</a>
           </div>
-          <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="small">
+          <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="small">
             <i class="fa fa-map-marker"></i> <span itemprop="streetAddress">3902 S. Sheridan Rd.</span>, <span itemprop="addressLocality">Tulsa</span>, <span itemprop="addressRegion">OK</span> <span itemprop="postalCode">74145</span>
-          </address>
+          </div>
           <div class="panel panel-info open-hours">
             <div class="panel-body">
               <ul class="list-group">
-                <li class="list-group-item">
+                <li class="list-group-item" itemprop="openingHours" datetime="<?php echo date("H:i", strtotime($mon_fri_open)) . '-' . date("H:i", strtotime($club_close)); ?>">
                   <span class="badge"><?php echo date("ga", strtotime($mon_fri_open)) . '-' . date("ga", strtotime($club_close)); ?></span>
                   Mon-Fri
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item" itemprop="openingHours" datetime="<?php echo date("H:i", strtotime($sat_open)) . '-' . date("H:i", strtotime($club_close)); ?>">
                   <span class="badge"><?php echo date("ga", strtotime($sat_open)) . '-' . date("ga", strtotime($club_close)); ?></span>
                   Saturday
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item" itemprop="openingHours" datetime="<?php echo date("H:i", strtotime($sun_open)) . '-' . date("H:i", strtotime($club_close)); ?>">
                   <span class="badge"><?php echo date("ga", strtotime($sun_open)) . '-' . date("ga", strtotime($club_close)); ?></span>
                   Sunday
                 </li>                  

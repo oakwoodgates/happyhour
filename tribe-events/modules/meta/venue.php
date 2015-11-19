@@ -17,12 +17,12 @@ $website = tribe_get_venue_website_link();
 
 ?>
 
-<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="col-xs-12 col-sm-6 col-md-3" itemprop="location" itemscope itemtype="http://schema.org/NightClub">
 	<h3 class="tribe-events-single-section-title"> <?php _e( tribe_get_venue_label_singular(), 'tribe-events-calendar' ) ?> </h3>
 	<dl>
 		<?php do_action( 'tribe_events_single_meta_venue_section_start' ) ?>
 
-		<dd class="author fn org"> <?php echo tribe_get_venue() ?> </dd>
+		<dd class="author fn org" itemprop="name"> <?php echo tribe_get_venue() ?> </dd>
 
 		<?php if ( tribe_address_exists() ) : ?>
 			<dd class="location">
@@ -41,8 +41,7 @@ $website = tribe_get_venue_website_link();
 		<?php endif ?>
 
 		<?php if ( ! empty( $website ) ): ?>
-			<dt> <?php esc_html_e( 'Website:', 'tribe-events-calendar' ) ?> </dt>
-			<dd class="url"> <?php echo $website ?> </dd><br />
+			<meta itemprop="url" content="<?php echo $url = tribe_get_event_meta( tribe_get_venue_id(), '_VenueURL', true ); ?>">
 		<?php endif ?>
 
 		<?php do_action( 'tribe_events_single_meta_venue_section_end' ) ?>

@@ -13,7 +13,7 @@
 				<?php get_template_part( 'content-blocks/callout_pluxh-vertimg' ); ?>
 			</div>
 			<div class="col-md-7">
-				<?php echo do_shortcode( '[gallery type="rectangular" size="thumbnail" link="file" ids="1727,1728,1726"]' ); ?>
+				<?php echo do_shortcode( '[gallery type="rectangular" size="thumbnail" link="file" ids="2283,2284,2282"]' ); ?>
 				<div class="jumbotron mini-jumbotron bkg-darker">
 	        		<h3>Pluxh</h3>
 
@@ -44,8 +44,7 @@
 $300 Booking fee to be paid up front – non-refundable<br />
 <span class="small">*Includes 3 hours of use</span><br />
 Additional charge of $50 for each person in your party. $100 for each additional hour<br />
-Come in and book in person or call us at <a href="tel:9186222858">918.622.3858</a>.<br />
-If you need to book online, please download, print and fill out the form below. <a href="http://nighttrips.com/Tulsa/wp-content/uploads/2014/02/TNT-Pluxh-CC-Form.pdf">Click here to download our Pluxh Rental Form and Agreement</a>. Once completed, email to <a href="mailto:pluxh@nighttrips.com">pluxh@nighttrips.com</a>.
+Come in and book in person or call us at <a href="tel:9186222858">918.622.3858</a>
 </div>							
 		</div>			
 	</div>

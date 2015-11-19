@@ -26,12 +26,12 @@ $venue_id = get_the_ID();
 $full_region = tribe_get_full_region( $venue_id );
 
 ?>
-<span class="adr">
+<span class="adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 
 <?php
 // This location's street address.
 if ( tribe_get_address( $venue_id ) ) : ?>
-<span class="street-address"><?php echo tribe_get_address( $venue_id ); ?></span>
+<span itemprop="streetAddress" class="street-address"><?php echo tribe_get_address( $venue_id ); ?></span>
 	<?php if ( ! tribe_is_venue() ) : ?>
 		<br>
 	<?php endif; ?>
@@ -43,19 +43,19 @@ if ( tribe_get_city( $venue_id ) ) :
 	if ( tribe_get_address( $venue_id ) ) : ?>
 		<br>
 	<?php endif; ?>
-	<span class="locality"><?php echo tribe_get_city( $venue_id ); ?></span><span class="delimiter">,</span>
+	<span class="locality" itemprop="addressLocality"><?php echo tribe_get_city( $venue_id ); ?></span><span class="delimiter">,</span>
 <?php endif; ?>
 
 <?php
 // This location's abbreviated region. Full region name in the element title.
 if ( tribe_get_region( $venue_id ) ) : ?>
-	<abbr class="region tribe-events-abbr" title="<?php esc_attr_e( $full_region ); ?>"><?php echo tribe_get_region( $venue_id ); ?></abbr>
+	<abbr class="region tribe-events-abbr" itemprop="addressRegion" title="<?php esc_attr_e( $full_region ); ?>"><?php echo tribe_get_region( $venue_id ); ?></abbr>
 <?php endif; ?>
 
 <?php
 // This location's postal code.
 if ( tribe_get_zip( $venue_id ) ) : ?>
-	<span class="postal-code"><?php echo tribe_get_zip( $venue_id ); ?></span>
+	<span class="postal-code" itemprop="postalCode"><?php echo tribe_get_zip( $venue_id ); ?></span>
 <?php endif; ?>
 
 

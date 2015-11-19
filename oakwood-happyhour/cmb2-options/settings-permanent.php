@@ -172,7 +172,7 @@ class Status_Admin {
 		    'id'          => $prefix . 'location_post',
 		    'type'        => 'post_search_text', // This field type
 		    // post type also as array
-		    'post_type'   => 'page',
+		    'post_type'   => 'jsg_organization',
 		    // Default is 'checkbox', used in the modal view to select the post type
 		    'select_type' => 'radio',
 		    // Will replace any selection with selection from modal. Default is 'add'

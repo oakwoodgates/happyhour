@@ -9,16 +9,16 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/Article">
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title" itemprop="name">', '</h1>' ); ?>
 
 		<div class="entry-meta">
 			<?php // happyhour_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div itemprop="articleBody" class="entry-content">
 		<?php
 		if ( has_post_thumbnail() ) {
 			the_post_thumbnail();

@@ -10,9 +10,9 @@
 	<div class="col-xs-12">
 		<h2>Get Social With Us</h2>
 		  <?php if( is_okc() ) : ?>
-			<p class="lead">We’re always entertaining on <a href="https://www.facebook.com/nighttripsokc">Facebook</a>, <a href="https://twitter.com/nighttripsokc">Twitter</a> and <a href="https://www.youtube.com/user/nighttripstv">Youtube</a>. Like our beer? Check out our list of our <a href="#">Favorite Craft Brews</a>.</p>
+			<p class="lead">We’re always entertaining on <a href="https://www.facebook.com/nighttripsokc">Facebook</a>, <a href="https://twitter.com/nighttripsokc">Twitter</a> and <a href="https://www.youtube.com/user/nighttripstv">Youtube</a>. Like our beer? Check out our list of our <a href="http://nighttrips.com/OKC/craft-beer/craft-beer-list">Favorite Craft Brews</a>.</p>
 		  <?php else : ?>
-			<p class="lead">We’re always entertaining on <a href="https://www.facebook.com/nighttripstulsa">Facebook</a>, <a href="https://twitter.com/nighttripstulsa">Twitter</a> and <a href="https://www.youtube.com/user/nighttripstv">Youtube</a>. Like our drinks? Try them at home with our recipes on <a href="#">Pinterest</a>.</p>
+			<p class="lead">We’re always entertaining on <a href="https://www.facebook.com/nighttripstulsa">Facebook</a>, <a href="https://twitter.com/nighttripstulsa">Twitter</a> and <a href="https://www.youtube.com/user/nighttripstv">Youtube</a>. Like our drinks? Try them at home with our recipes on <a href="https://www.pinterest.com/nighttrips">Pinterest</a>.</p>
 		  <?php endif; ?>		
 	</div>
 	<div class="col-xs-12 col-md-5">
