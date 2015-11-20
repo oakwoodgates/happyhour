@@ -11,17 +11,14 @@
 		<h3 class="panel-title">Club Info</h3>
 	</div>
     <div class="panel-body">
-      	<p class="text-center"><br /><em>over 200 of the Southwest’s most beautiful ladies rotating on 4 stages</em></p>
+      	<p class="text-center"><br /><em>over 200 of the Southwest’s most beautiful ladies rotating on 3 stages</em></p>
 		<div class="col col-xs-6">
 			<ul class="list-group">
 				<li class="list-group-item">
 					<i class="fa fa-beer fa-fw"></i>  Ice Cold Beer
 				</li>
 				<li class="list-group-item">
-					<i class="fa fa-glass fa-fw"></i>  Full Liquor Bar
-				</li>
-				<li class="list-group-item">
-					<i class="fa fa-lock fa-fw"></i>  Private Rooms
+					<i class="fa fa-diamond fa-fw"></i>  VIP Booths
 				</li>
 				<li class="list-group-item">
 					<i class="fa fa-cutlery fa-fw"></i>  Kitchen open till 1am
@@ -34,11 +31,9 @@
 					<i class="fa fa-television fa-fw"></i>  Sports
 				</li>
 				<li class="list-group-item">
-					<i class="fa fa-star-o fa-fw"></i>  4 Stages
+					<i class="fa fa-star-o fa-fw"></i>  3 Stages
 				</li>
-				<li class="list-group-item">
-					<i class="fa fa-diamond fa-fw"></i>  VIP
-				</li>
+
 				<li class="list-group-item">
 					<i class="fa fa-music fa-fw"></i>  Music
 				</li>                
