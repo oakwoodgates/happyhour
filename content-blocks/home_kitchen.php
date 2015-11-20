@@ -41,7 +41,7 @@ $featured = get_post( $featured_post );
 			// main - 1977
 			echo do_shortcode( '[gallery type="rectangular" size="medium" ids="2449,2446,2465,2447,2445,2443"]' ); ?>
 		<?php else : ?>
-			<?php echo do_shortcode( '[gallery type="rectangular" size="medium" ids="2469,2470,2466,2456,2447,2467"]' ); ?>
+			<?php echo do_shortcode( '[gallery type="rectangular" size="medium" ids="2469,2470,2466,2456,2468,2467"]' ); ?>
 		<?php endif; ?> 
 	</div>
 	<div class="col-xs-12">
