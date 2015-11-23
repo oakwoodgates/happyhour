@@ -13,7 +13,7 @@
 				<?php get_template_part( 'content-blocks/callout_pluxh-vertimg' ); ?>
 			</div>
 			<div class="col-md-7">
-				<?php echo do_shortcode( '[gallery type="rectangular" size="thumbnail" link="file" ids="2463,2464,2465"]' ); ?>
+				<?php echo do_shortcode( '[gallery type="rectangular" size="thumbnail" link="file" ids="2459,2460,2458"]' ); ?>
 				<div class="jumbotron mini-jumbotron bkg-darker">
 	        		<h3>
 <?php echo wp_get_attachment_image( 1600, 'medium', false, array( 'class'	=> "align-left" ) ); ?><br /> 

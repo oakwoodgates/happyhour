@@ -10,7 +10,7 @@
 	<div class="panel panel-vip">
 		<div class="panel-body">
 			<div class="col-md-8">
-		    	<?php echo do_shortcode( '[gallery type="rectangular" size="thumbnail" link="file" ids="2459,2460,2458"]' ); ?>
+		    	<?php echo do_shortcode( '[gallery type="rectangular" size="thumbnail" link="file" ids="2463,2464,2465"]' ); ?>
 			</div>
 			<div class="col-md-4">
 		        <div class="jumbotron mini-jumbotron bkg-darker">
