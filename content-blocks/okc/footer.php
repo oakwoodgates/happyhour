@@ -60,7 +60,7 @@ $club_close = get_post_meta( $venue, '_happyhour_venue_club_close', true );
             <a href="tel:4059424242"><i class="fa fa-phone" itemprop="telephone" content="+14059424242"></i> 405.942.4242</a>
           </div>
           <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="small">
-            <i class="fa fa-map-marker"></i> <span itemprop="streetAddress">39220 S. Vermont Ave.</span>, <span itemprop="addressLocality">Oklahoma City</span>, <span itemprop="addressRegion">OK</span> <span itemprop="postalCode">73108</span>
+            <i class="fa fa-map-marker"></i> <span itemprop="streetAddress">220 S. Vermont Ave.</span>, <span itemprop="addressLocality">Oklahoma City</span>, <span itemprop="addressRegion">OK</span> <span itemprop="postalCode">73108</span>
           </div>
           <div class="panel panel-info open-hours">
             <div class="panel-body">
