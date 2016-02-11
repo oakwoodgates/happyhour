@@ -28,7 +28,7 @@ $happyhour = cmb2_get_option( 'happyhour_status', 'happyhour_status_happy_hour_p
 ?>
 <span itemscope itemtype="http://schema.org/SaleEvent">
 <a itemprop="url" href="<?php echo get_permalink( $happyhour ); ?>">
-<?php echo get_the_post_thumbnail( $happyhour, 'full', array( 'class' => '"center-block attachment-full' ) ); ?></a>
+<?php echo get_the_post_thumbnail( $happyhour, 'full', array( 'class' => 'center-block attachment-full' ) ); ?></a>
   <meta itemprop="name" content="Happy Hour">
   <meta itemprop="startDate" content="<?php echo date("c", strtotime($promo_start)); ?>">
   <meta itemprop="endDate" content="<?php echo date("c", strtotime($promo_end)); ?>">
