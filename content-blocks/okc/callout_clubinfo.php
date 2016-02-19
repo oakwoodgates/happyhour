@@ -49,12 +49,12 @@
 	<?php endif; ?>        
 		<ul class="list-inline text-center">
 			<li><i class="fa fa-2x fa-cc-visa" data-toggle="tooltip" data-placement="top" title="VISA" data-original-title="VISA"></i></li>
-			<li><i class="fa fa-2x fa-cc-mastercard" data-toggle="tooltip" data-placement="top" title="MasterCard" data-original-title="MasterCard"></i></i></li>
-			<li><i class="fa fa-2x fa-cc-discover" data-toggle="tooltip" data-placement="top" title="Discover" data-original-title="Discover"></i></i></li>
-			<li><i class="fa fa-2x fa-cc-amex" data-toggle="tooltip" data-placement="top" title="American Express" data-original-title="American Express"></i></i></li>
-			<li><i class="fa fa-2x fa-cc-paypal" data-toggle="tooltip" data-placement="top" title="PayPal" data-original-title="PayPal"></i></i></li>
-			<li><i class="fa fa-2x fa-usd" data-toggle="tooltip" data-placement="top" title="Cash - ATM Onsite" data-original-title="Cash - ATM Onsite"></i></i></li>
-			<li><i class="fa fa-2x fa-money" data-toggle="tooltip" data-placement="top" title="Dancer Dollars" data-original-title="Dancer Dollars"></i></i></li>
+			<li><i class="fa fa-2x fa-cc-mastercard" data-toggle="tooltip" data-placement="top" title="MasterCard" data-original-title="MasterCard"></i></li>
+			<li><i class="fa fa-2x fa-cc-discover" data-toggle="tooltip" data-placement="top" title="Discover" data-original-title="Discover"></i></li>
+			<li><i class="fa fa-2x fa-cc-amex" data-toggle="tooltip" data-placement="top" title="American Express" data-original-title="American Express"></i></li>
+			<li><i class="fa fa-2x fa-cc-paypal" data-toggle="tooltip" data-placement="top" title="PayPal" data-original-title="PayPal"></i></li>
+			<li><i class="fa fa-2x fa-usd" data-toggle="tooltip" data-placement="top" title="Cash - ATM Onsite" data-original-title="Cash - ATM Onsite"></i></li>
+			<li><i class="fa fa-2x fa-money" data-toggle="tooltip" data-placement="top" title="Dancer Dollars" data-original-title="Dancer Dollars"></i></li>
 		</ul>
 		<ul class="list-inline text-center">
 			<li>ATM</li>
