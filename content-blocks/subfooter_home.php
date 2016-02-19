@@ -19,11 +19,7 @@
 		<?php get_template_part( 'content-blocks/subfooter_inside' ); ?>
 	</div>
 	<div class="col-xs-12 col-md-6">
-		<?php if ( is_okc() ) : ?>
-			<div id="mapokc"></div>
-		<?php else : ?>
-			<div id="map"></div>
-		<?php endif; ?>
+		<div id="map"></div>
 	</div>
 	<div class="col-xs-12 col-md-6">
 		<?php get_template_part( 'content-blocks/' . tulsa_or_okc() .  'callout_clubinfo' ); ?>
