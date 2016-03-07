@@ -18,6 +18,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+<meta name="twitter:widgets:theme" content="dark"><meta name="twitter:widgets:link-color" content="#b38cd9"><meta name="twitter:widgets:border-color" content="#ff80c0">
 </head>
 
 <body <?php hybrid_attr( 'body' ); ?>>
