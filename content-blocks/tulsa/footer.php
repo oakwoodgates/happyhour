@@ -57,7 +57,7 @@ $club_close = get_post_meta( $venue, '_happyhour_venue_club_close', true );
           <link itemprop="url" href="<?php echo site_url() ?>">
           <h4>Details</h4>
           <div>
-            <a href="tel:9186222858"><i class="fa fa-phone" itemprop="telephone" content="+19186223858"></i> 918.622.3858</a>
+            <a href="tel:9186223858"><i class="fa fa-phone" itemprop="telephone" content="+19186223858"></i> 918.622.3858</a>
           </div>
           <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="small">
             <i class="fa fa-map-marker"></i> <span itemprop="streetAddress">3902 S. Sheridan Rd.</span>, <span itemprop="addressLocality">Tulsa</span>, <span itemprop="addressRegion">OK</span> <span itemprop="postalCode">74145</span>
