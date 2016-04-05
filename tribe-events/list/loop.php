@@ -48,7 +48,9 @@ $more = false;
 		
 			<?php tribe_get_template_part( 'list/single', 'event' ) ?>
 		</div><!-- .hentry .vevent -->
-
+		<?php if ( $i & 1 ) : ?>
+			<div class="clearfix"></div>
+		<?php endif; ?>
 
 		<?php // do_action( 'tribe_events_inside_after_loop' ); ?>
 
