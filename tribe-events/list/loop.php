@@ -44,7 +44,7 @@ $more = false;
 			$class = 'type-tribe_events col-xs-12';
 		}
 		?>
-		<div class="<?php // tribe_events_event_classes() ?> <?php echo $class; ?>"<?php // echo $post_parent; ?>>
+		<div class="<?php // tribe_events_event_classes() ?> <?php echo $class; ?>"  <?php hybrid_attr( 'event' ); ?><?php // echo $post_parent; ?>>
 		
 			<?php tribe_get_template_part( 'list/single', 'event' ) ?>
 		</div><!-- .hentry .vevent -->
