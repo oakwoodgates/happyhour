@@ -25,7 +25,7 @@ $event = get_post( $event_id );
 		<?php tribe_events_the_notices() ?>
 
 		<?php the_title( '<h1 class="tribe-events-single-event-title" itemprop="name">', '</h1>' ); ?>	
-		<p class="lead"><?php echo $event->post_excerpt; // the_excerpt(); ?></p>
+		<p class="lead" itemprop="description"><?php echo $event->post_excerpt; // the_excerpt(); ?></p>
 
 	</div>
 	<?php while ( have_posts() ) :  the_post(); ?>
@@ -53,7 +53,7 @@ $event = get_post( $event_id );
 			<!-- Event content -->
 			<div class="col-xs-12 col-sm-12 col-md-6">
 				<?php // do_action( 'tribe_events_single_event_before_the_content' ) ?>
-				<div itemprop="description" class="tribe-events-single-event-description tribe-events-content entry-content description">
+				<div class="tribe-events-single-event-description tribe-events-content entry-content description">
 					<?php the_content(); ?>
 				</div>
 			</div>
@@ -76,7 +76,7 @@ $event = get_post( $event_id );
 			}
 			?>
 			<?php // do_action( 'tribe_events_single_event_after_the_meta' ) ?>
-			
+			<meta itemprop="URL" content="<?php echo esc_url( tribe_get_event_link() ); ?>">
 		</div> <!-- #post-x -->
 		<?php if ( get_post_type() == Tribe__Events__Main::POSTTYPE && tribe_get_option( 'showComments', false ) ) comments_template() ?>
 	<?php endwhile; ?>
