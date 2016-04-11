@@ -68,5 +68,9 @@
 			<li><i class="fa fa-star small text-primary"></i></li>
 			<li>21+</li>
 		</ul>
+		<ul class="list-inline text-center">
+			<li><i class="fa fa-ban"></i> No Smoking</li>
+			<li><i class="fa fa-check"></i> Vaping Allowed</li>
+		</ul>
 	</div>
 </div>
