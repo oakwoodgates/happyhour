@@ -33,34 +33,24 @@ if ($events) : ?>
 
 					if ($loop == 1) : ?>
 						<div class="col-xs-12">
-							<div class="media event-simple card-one event-primary" <?php hybrid_attr( 'event' ); ?>>
+							<div class="media event-simple card-one event-primary">
 								<a itemprop="url" href="<?php echo $link; ?>" class="media-header">
 									<?php echo $featuredimg; ?>
 								</a>
 								<a class="media-left bkg-darker vcard" href="<?php echo $link; ?>" title="<?php echo $event->post_title; ?>" rel="bookmark">
 									<span class="day"><?php echo tribe_get_start_date( $event, false, 'D' ) ?></span>
-									<span class="date" itemprop="startDate" content="<?php echo tribe_get_start_date( $event, false, 'c' ) ?>"><?php echo tribe_get_start_date( $event, false, 'j' ) ?></span>
+									<span class="date"><?php echo tribe_get_start_date( $event, false, 'j' ) ?></span>
 									<span class="month"><?php echo tribe_get_start_date( $event, false, 'M' ) ?></span>
-									<span itemprop="location" itemscope itemtype="http://schema.org/NightClub">
-										<meta itemprop="url" content="<?php echo esc_url( home_url( '/' ) ); ?>">
-										<meta itemprop="name" content="Night Trips Tulsa">
-										<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-										  <meta itemprop="streetAddress" content="3902 S. Sheridan Rd.">
-										  <meta itemprop="addressLocality" content="Tulsa">
-										  <meta itemprop="addressRegion" content="OK">
-										  <meta itemprop="postalCode" content="74145">
-										</span>
-									</span>									
 								</a>
-								<a class="event-description media-body bkg-darker"  href="<?php echo $link; ?>" title="<?php echo $event->post_title; ?>" rel="bookmark">
-									<h4 class="media-heading" itemprop="name"><?php echo $event->post_title; ?></h4>
-									<span itemprop="description"><?php echo $event->post_excerpt; ?></span>
+								<a class="event-description media-body bkg-darker" href="<?php echo $link; ?>" title="<?php echo $event->post_title; ?>" rel="bookmark">
+									<h4 class="media-heading"><?php echo $event->post_title; ?></h4>
+									<span><?php echo $event->post_excerpt; ?></span>
 								</a>
 							</div>
 						</div>
 					<?php else : ?>
 						<div class="col-xs-12 col-sm-6">
-							<div class="media event-simple card-one event-primary" <?php hybrid_attr( 'event' ); ?>>
+							<div class="media event-simple card-one event-primary">
 								<a itemprop="url" href="<?php echo $link; ?>" class="media-header">
 									<?php echo $featuredimg; ?>
 								</a>
@@ -68,20 +58,10 @@ if ($events) : ?>
 									<span class="day"><?php echo tribe_get_start_date( $event, false, 'D' ) ?></span>
 									<span class="date" itemprop="startDate" content="<?php echo tribe_get_start_date( $event, false, 'c' ) ?>"><?php echo tribe_get_start_date( $event, false, 'j' ) ?></span>
 									<span class="month"><?php echo tribe_get_start_date( $event, false, 'M' ) ?></span>
-									<span itemprop="location" itemscope itemtype="http://schema.org/NightClub">
-										<meta itemprop="url" content="<?php echo esc_url( home_url( '/' ) ); ?>">
-										<meta itemprop="name" content="Night Trips Tulsa">
-										<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-										  <meta itemprop="streetAddress" content="3902 S. Sheridan Rd.">
-										  <meta itemprop="addressLocality" content="Tulsa">
-										  <meta itemprop="addressRegion" content="OK">
-										  <meta itemprop="postalCode" content="74145">
-										</span>
-									</span>										
 								</a>
-								<a class="event-description media-body bkg-darker"  href="<?php echo $link; ?>" title="<?php echo $event->post_title; ?>" rel="bookmark">
-									<h4 class="media-heading" itemprop="name"><?php echo $event->post_title; ?></h4>
-									<span itemprop="description"><?php echo $event->post_excerpt; ?></span>
+								<a class="event-description media-body bkg-darker" href="<?php echo $link; ?>" title="<?php echo $event->post_title; ?>" rel="bookmark">
+									<h4 class="media-heading"><?php echo $event->post_title; ?></h4>
+									<span><?php echo $event->post_excerpt; ?></span>
 								</a>
 							</div>
 						</div>
