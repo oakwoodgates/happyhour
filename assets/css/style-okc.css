@@ -6679,6 +6679,7 @@ body.w5 {
 .event-simple img {
 	width:100%;
 }
-.fb_iframe_widget span {
+.fb_iframe_widget span,
+.fb_iframe_widget iframe {
 	background:#fff;
 }
