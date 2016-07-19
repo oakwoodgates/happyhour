@@ -7,7 +7,7 @@
  */
 ?>
 <div class="panel panel-primary panel-club-info">
-	<div class="panel-heading">         
+	<div class="panel-heading">
 		<h3 class="panel-title">Club Info</h3>
 	</div>
     <div class="panel-body">
@@ -25,8 +25,8 @@
 				</li>
 				<li class="list-group-item">
 					<i class="fa fa-cutlery fa-fw"></i>  Kitchen open till 1am
-				</li>                
-			</ul>          		
+				</li>
+			</ul>
 		</div>
 		<div class="col col-xs-6">
 			<ul class="list-group fa-ul">
@@ -41,8 +41,8 @@
 				</li>
 				<li class="list-group-item">
 					<i class="fa fa-music fa-fw"></i>  Music
-				</li>                
-			</ul>         		
+				</li>
+			</ul>
 		</div>
     </div>
 	<div class="panel-footer">
@@ -51,7 +51,7 @@
 			<li class="text-danger"><i class="fa fa-2x fa-female"></i> ALWAYS FREE</li>
 			<li class="text-info"><i class="fa fa-2x fa-male"></i> ONLY $5</li>
 		</ul>
-	<?php endif; ?>        
+	<?php endif; ?>
 		<ul class="list-inline text-center">
 			<li><i class="fa fa-2x fa-cc-visa" data-toggle="tooltip" data-placement="top" title="VISA" data-original-title="VISA"></i></li>
 			<li><i class="fa fa-2x fa-cc-mastercard" data-toggle="tooltip" data-placement="top" title="MasterCard" data-original-title="MasterCard"></i></li>
@@ -67,10 +67,6 @@
 			<li>WiFi</li>
 			<li><i class="fa fa-star small text-primary"></i></li>
 			<li>21+</li>
-		</ul>
-		<ul class="list-inline text-center">
-			<li><i class="fa fa-ban"></i> No Smoking</li>
-			<li><i class="fa fa-check"></i> Vaping Allowed</li>
 		</ul>
 	</div>
 </div>
