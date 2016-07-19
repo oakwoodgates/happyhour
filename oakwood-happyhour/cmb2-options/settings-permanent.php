@@ -54,10 +54,7 @@ class Status_Admin {
 	public function hooks() {
 		add_action( 'admin_init', array( $this, 'init' ) );
 		add_action( 'admin_menu', array( $this, 'add_options_page' ) );
-
-		// To replace line below
-		// add_action( 'cmb2_admin_init', array( $this, 'add_options_page_metabox' ) );
-		add_action( 'cmb2_init', array( $this, 'add_options_page_metabox' ) );
+		add_action( 'cmb2_admin_init', array( $this, 'add_options_page_metabox' ) );
 	}
 
 
@@ -199,7 +196,7 @@ class Status_Admin {
 			'options' => array(
 				'show_thumbnails' => true, // Show thumbnails on the left
 				'filter_boxes'    => true, // Show a text box for filtering the results
-				'query_args'      => array( 
+				'query_args'      => array(
 										'posts_per_page' => 10,
 										'post_type' => 'promos'
 									 ), // override the get_posts args

@@ -209,7 +209,7 @@ require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-ve
 remove_filter( 'the_excerpt', 'wpautop' );
 
 // remove modern tribe json markup and use our own, for now
-add_filter( 'tribe_google_data_markup_json', 'oak_tribe_remove_json', $data );
+add_filter( 'tribe_google_data_markup_json', 'oak_tribe_remove_json', 10, 1 );
 function oak_tribe_remove_json( $data ){
 	$data = '';
 	return $data;

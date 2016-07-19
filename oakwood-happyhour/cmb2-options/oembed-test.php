@@ -1,5 +1,5 @@
 <?php
-add_action( 'cmb2_init', 'cmb2_add_metabox' );
+add_action( 'cmb2_admin_init', 'cmb2_add_metabox' );
 function cmb2_add_metabox() {
 	$prefix = '_happyhour_';
 	$cmb = new_cmb2_box( array(
@@ -34,6 +34,6 @@ function cmb2_add_metabox() {
 	    'id'   => 'title',
 	    'type' => 'text',
 	    // 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-	) );	
+	) );
 
 }

@@ -53,10 +53,7 @@ class Happyhour_Admin {
 	public function hooks() {
 		add_action( 'admin_init', array( $this, 'init' ) );
 		add_action( 'admin_menu', array( $this, 'add_options_page' ) );
-
-		// To replace line below
-		// add_action( 'cmb2_admin_init', array( $this, 'add_options_page_metabox' ) );
-		add_action( 'cmb2_init', array( $this, 'add_options_page_metabox' ) );
+		add_action( 'cmb2_admin_init', array( $this, 'add_options_page_metabox' ) );
 	}
 
 
@@ -149,7 +146,7 @@ class Happyhour_Admin {
 		    'id'   => $prefix . 'facebook_post',
 		    'type' => 'text_url',
 		    // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
-		) );		
+		) );
 
 		$cmb->add_field( array(
 		    'name' => __( 'Featured Tweet', 'cmb' ),
@@ -165,7 +162,7 @@ class Happyhour_Admin {
 		    'id'   => $prefix . 'pinterest_post',
 		    'type' => 'text_url',
 		    // 'protocols' => array( 'http', 'https', 'ftp', 'ftps', 'mailto', 'news', 'irc', 'gopher', 'nntp', 'feed', 'telnet' ), // Array of allowed protocols
-		) );		
+		) );
 
 		$cmb->add_field( array(
 		    'name'        => __( 'Drink Special post' ),
@@ -202,7 +199,7 @@ class Happyhour_Admin {
 		        'add_upload_file_text' => 'Upload Image' // Change upload button text. Default: "Add or Upload File"
 		    ),
 		) );
-		
+
 	}
 
 	/**

@@ -54,10 +54,7 @@ class Kitchen_Admin {
 	public function hooks() {
 		add_action( 'admin_init', array( $this, 'init' ) );
 		add_action( 'admin_menu', array( $this, 'add_options_page' ) );
-
-		// To replace line below
-		// add_action( 'cmb2_admin_init', array( $this, 'add_options_page_metabox' ) );
-		add_action( 'cmb2_init', array( $this, 'add_options_page_metabox' ) );
+		add_action( 'cmb2_admin_init', array( $this, 'add_options_page_metabox' ) );
 	}
 
 
@@ -182,7 +179,7 @@ class Kitchen_Admin {
 		        'url' => false, // Hide the text input for the url
 		        'add_upload_file_text' => 'Upload Image' // Change upload button text. Default: "Add or Upload File"
 		    ),
-		) );		
+		) );
 	}
 
 	/**

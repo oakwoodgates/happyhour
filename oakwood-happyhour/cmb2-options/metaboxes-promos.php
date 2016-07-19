@@ -12,7 +12,7 @@
  * @since       1.0.0
  */
 
-add_action( 'cmb2_init', 'happyhour_event_meta' );
+add_action( 'cmb2_admin_init', 'happyhour_event_meta' );
 function happyhour_event_meta() {
 
 	$prefix = '_happyhour_promo_';
@@ -46,7 +46,7 @@ function happyhour_event_meta() {
 
 }
 
-add_action( 'cmb2_init', 'happyhour_event_meta_2' );
+add_action( 'cmb2_admin_init', 'happyhour_event_meta_2' );
 function happyhour_event_meta_2() {
 
 	$prefix = '_happyhour_promo_data_';
@@ -70,7 +70,7 @@ function happyhour_event_meta_2() {
 		'id' => $prefix . 'end_time',
 		'type' => 'text_time',
 	) );
-	
+
 	$cmb->add_field( array(
 		'name' => __( 'All Day?', 'happyhour' ),
 		'id' => $prefix . 'all_time',
