@@ -16,7 +16,7 @@ $featured = get_post( $featured_post );
 		<?php else : ?>
 
 			<p class="lead">Night Trips Tulsa features a full kitchen, ice cold beer, seasonal craft beers and a hand crafted cocktail menu. Featuring our signature drink, the <a href="<?php echo post_permalink( $featured ); ?>"><?php echo get_the_title( $featured ) ?></a>.</p>
-		<?php endif; ?>		
+		<?php endif; ?>
 	</div>
 	<div class="col-xs-12 col-md-6 col-lg-5">
 		<?php $facebook = esc_url( cmb2_get_option( 'happyhour_options', 'happyhour_facebook_post' ) );  ?>
@@ -28,25 +28,33 @@ $featured = get_post( $featured_post );
           <p class="info">Take a look at our delicious food and drink items. Now featuring our house spicy wings!</p>
 		<?php else : ?>
           <p class="info">Take a look at our delicious food and drink items. Now featuring a classic rib eye steak.</p>
-		<?php endif; ?>       
+		<?php endif; ?>
           <p class="action text-right"><a class="btn btn-primary btn-lg" href="<?php echo happyhour_kitchen_link() ?>">View Menu</a></p>
-        </div>			
+        </div>
 	</div>
 	<div class="col-xs-12 col-md-6 col-lg-7">
 		<?php if( is_okc() ) : ?>
 			<?php // echo do_shortcode( '[gallery type="rectangular" size="medium" ids="1478,1477,1496,1494,1483,1481"]' ); ?>
-			<?php 
+			<?php
 			// all - 1980,1981,1982,1985,1972,1977,1990
 			// vertical - 1980, 1981, 1990
 			// main - 1977
-			echo do_shortcode( '[gallery type="rectangular" size="medium" ids="2449,2446,2465,2447,2445,2443"]' ); ?>
+		//	echo do_shortcode( '[gallery type="rectangular" size="medium" ids="2449,2446,2465,2447,2445,2443"]' );
+		// tacos - 2589
+		//  waitress - 2593
+		// brushetta - 2595
+		// cuban - 2597
+		// salad - 2598
+		// wings - 2599
+			echo do_shortcode( '[gallery type="rectangular" size="medium" ids="2593,2599,2598,2597,2595,2589"]' );
+		?>
 		<?php else : ?>
 			<?php echo do_shortcode( '[gallery type="rectangular" size="medium" ids="2469,2470,2466,2456,2468,2467"]' ); ?>
-		<?php endif; ?> 
+		<?php endif; ?>
 	</div>
 	<div class="col-xs-12">
 		<div class="col-xs-12">
 			<?php get_template_part( 'content-blocks/callout_promodays-horizontal' ); ?>
 		</div>
-	</div>		
+	</div>
 </div>
