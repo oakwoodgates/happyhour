@@ -34,15 +34,16 @@
 						</div>
 					</div>
 
-					<p class="info text-center">For those wanting a more VIP experience on busy nights come experience our private bar &amp; lounge. Open Thursday, Friday &amp; Saturday 7pm to close. <br />Come and go all night.</p>
+	        		<p class="info text-center">For those wanting a more VIP experience on busy nights come experience our private bar &amp; lounge. Open Thursday, Friday &amp; Saturday. $50 entrance fee per person. Come and go all night.</p>
 
 				</div>
 			</div>
 <div class="well text-center col-md-10 col-md-offset-1">
 <h4><em>Now Available For Rent</em></h4>
 *Bachelor Party&nbsp;&nbsp;&nbsp;&nbsp;*Divorce Party&nbsp;&nbsp;&nbsp;&nbsp;*Any Party<br />
-$300 Booking fee for 3 hours of fun for you and up to 20 of your guests. Want more time? Each hour after is only $100.<br />
-<span class="small">Available anytime</span><br />
+$300 Booking fee to be paid up front – non-refundable<br />
+<span class="small">*Includes 3 hours of use</span><br />
+Additional charge of $50 for each person in your party. $100 for each additional hour<br />
 Come in and book in person or call us at <a href="tel:9186222858">918.622.3858</a>
 </div>
 		</div>
