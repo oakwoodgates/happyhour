@@ -17,5 +17,11 @@
 
 <?php wp_footer(); ?>
 
+<style>
+
+.tribe-events-list .tribe-events-loop .tribe-events-event-image{width:100%}
+
+</style>
+
 </body>
 </html>
