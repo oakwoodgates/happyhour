@@ -19,8 +19,8 @@
 
 			<div class="well panel-club-info text-center">
 				<ul class="list-group">
-					<li class="list-group-item">Main stage booths are $50 all night<br /><span class="small">Thursday, Friday &amp; Saturday only - up to 6 people</span></li>
-					<li class="list-group-item">Private upstairs stage booths are $200 all night<br /><span class="small">Thursday, Friday &amp; Saturday only - up to 10 people</span></li>
+					<li class="list-group-item">Main stage booths are FREE all the time!</li>
+					<li class="list-group-item">Private upstairs stage booths may be booked for private parties.<br /><span class="small">$200 all night - up to 10 people</span></li>
 				</ul>
 	        </div>				        
 		        </div>
