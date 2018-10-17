@@ -48,8 +48,11 @@
 	<div class="panel-footer">
 	<?php if ( get_post_type() != 'tribe_events' ) : ?>
 		<ul class="list-inline text-center">
-			<li class="text-danger"><i class="fa fa-2x fa-female"></i> ALWAYS FREE</li>
-			<li class="text-info"><i class="fa fa-2x fa-male"></i> ONLY $5</li>
+			<!--
+				<li class="text-danger"><i class="fa fa-2x fa-female"></i> ALWAYS FREE</li>
+				<li class="text-info"><i class="fa fa-2x fa-male"></i> ONLY $5</li>
+			-->
+			<li class="text-info"><i class="fa fa-2x fa-ticket"></i> ONLY $5 AFTER 2PM</li> 
 		</ul>
 	<?php endif; ?>
 		<ul class="list-inline text-center">
