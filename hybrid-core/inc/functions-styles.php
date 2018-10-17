@@ -21,7 +21,7 @@ add_filter( 'stylesheet_uri', 'hybrid_style_filter',       15   );
 add_filter( 'locale_stylesheet_uri', 'hybrid_locale_stylesheet_uri', 5 );
 
 # Remove the default emoji styles. We'll handle this in the stylesheet.
-remove_action( 'wp_print_styles', 'print_emoji_styles' );
+// remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 /**
  * Registers stylesheets for the framework.  This function merely registers styles with WordPress using
