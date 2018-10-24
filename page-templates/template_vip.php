@@ -56,9 +56,9 @@ get_header();
 			<div class="panel-body">
 				<div class="col-md-5">
 					<img data-src="holder.js/600x900?text=Pluxh callout.">
-				<!--	<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent.jpg">
+				<!--	<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent.jpg">
 
-					<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png"> -->
+					<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png"> -->
 				</div>
 				<div class="col-md-7">
 					<?php echo do_shortcode( '[gallery type="rectangular" size="thumbnail" link="file" ids="1465,1468,1464"]' ); ?>

@@ -24,7 +24,7 @@ get_header();
 				<div class="col-xs-12">
 					<div class="media event-simple card-one event-danger">
 						<div class="media-header">
-							<img src="http://nighttrips.com/Tulsa/wp-content/uploads/2012/01/AsaAkiraTNTLobby-1024x570.jpg" />
+							<img src="https://nighttrips.com/Tulsa/wp-content/uploads/2012/01/AsaAkiraTNTLobby-1024x570.jpg" />
 						</div>
 						<div class="media-left bkg-darker">
 							<a href="javascript:void(0)">
@@ -44,7 +44,7 @@ get_header();
 				<div class="col-xs-12 col-sm-6">
 					<div class="media event-simple card-one event-danger">
 						<div class="media-header">
-							<img src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/03/stpattysTulsaLobby-900x501.jpg" />
+							<img src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/03/stpattysTulsaLobby-900x501.jpg" />
 						</div>
 						<div class="media-left bkg-darker">
 							<a href="javascript:void(0)">
@@ -64,7 +64,7 @@ get_header();
 				<div class="col-xs-12 col-sm-6">
 					<div class="media event-simple card-one event-danger">
 						<div class="media-header">
-							<img src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/01/RileyReidTULSALobby-1024x570.jpg" />
+							<img src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/01/RileyReidTULSALobby-1024x570.jpg" />
 						</div>
 						<div class="media-left bkg-darker">
 							<a href="javascript:void(0)">
@@ -88,7 +88,7 @@ get_header();
 		<div class="col-xs-12 col-sm-4 event-column-one">
 			<div class="row no-gutter">
 				<div class="col-xs-12">
-		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent-682x1024.jpg">
+		<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent-682x1024.jpg">
 		<img data-src="holder.js/900x501?text=Pluxh callout.">
 <?php // echo wp_get_attachment_image( cmb2_get_option( 'happyhour_options', 'happyhour_drink_special_id' ), 'full', false, array( 'class'	=> "center-block attachment-full" ) );
 ?>
@@ -117,7 +117,7 @@ get_header();
 			<div class="col-xs-12 col-md-6">
 				<div class="media event-simple card-one event-primary">
 					<div class="media-header">
-						<img src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/05/MissNTTULSALobby-900x501.jpg" />
+						<img src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/05/MissNTTULSALobby-900x501.jpg" />
 					</div>
 					<div class="media-left bkg-darker">
 						<a href="javascript:void(0)">
@@ -137,7 +137,7 @@ get_header();
 			<div class="col-xs-12 col-md-6">
 				<div class="media event-simple card-one event-danger">
 					<div class="media-header">
-						<img src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/02/LobbyTVTulsa-900x501.jpg" />
+						<img src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/02/LobbyTVTulsa-900x501.jpg" />
 					</div>
 					<div class="media-left bkg-darker">
 						<a href="javascript:void(0)">
@@ -157,7 +157,7 @@ get_header();
 			<div class="col-xs-12 col-md-6">
 				<div class="media event-simple card-one event-danger">
 					<div class="media-header">
-						<img src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/01/PoleOlympicsTulsaLobby1-900x501.jpg" />
+						<img src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/01/PoleOlympicsTulsaLobby1-900x501.jpg" />
 					</div>
 					<div class="media-left bkg-darker">
 						<a href="javascript:void(0)">
@@ -177,7 +177,7 @@ get_header();
 			<div class="col-xs-12 col-md-6">
 				<div class="media event-simple card-one event-primary">
 					<div class="media-header">
-						<img src="http://nighttrips.com/Tulsa/wp-content/uploads/2014/10/CincoDeMayoTNTLobby-900x501.jpg" />
+						<img src="https://nighttrips.com/Tulsa/wp-content/uploads/2014/10/CincoDeMayoTNTLobby-900x501.jpg" />
 					</div>
 					<div class="media-left bkg-darker">
 						<a href="javascript:void(0)">
@@ -288,11 +288,11 @@ get_header();
         </div>
       </div>   			
 	</div>
-	<!--	<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/02/LobbyTVTulsa-900x501.jpg">
-		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2014/10/CincoDeMayoTNTLobby-900x501.jpg"> 
+	<!--	<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/02/LobbyTVTulsa-900x501.jpg">
+		<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2014/10/CincoDeMayoTNTLobby-900x501.jpg"> 
 
 	<div class="col-xs-12 col-sm-4">
-		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png"> 
+		<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png"> 
 	</div>	-->
 </div>
 <!-- <div class="row marg">
@@ -534,10 +534,10 @@ get_header();
 </div>
 <div class="row marg">
 	<div class="col-xs-12 col-md-4">
-		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent-682x1024.jpg">
+		<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent-682x1024.jpg">
 	</div>
 	<div class="col-xs-12 col-md-4">
-		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png">
+		<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png">
 	</div>
 	<div class="col-xs-12 col-md-4">
 		<img data-src="holder.js/600x600?text=Other callout.">

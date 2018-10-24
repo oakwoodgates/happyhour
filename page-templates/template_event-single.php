@@ -16,7 +16,7 @@ get_header();
 </div>
 <div class="row marg col-marg">
 	<div class="col-xs-12 col-sm-12 col-md-8">
-		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/02/LobbyTVTulsa.jpg">
+		<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/02/LobbyTVTulsa.jpg">
 	</div>
 	<div class="hidden-xs hidden-sm col-md-4">
 		<img data-src="holder.js/400x450?text=Event info \n *details \n *time \n *price">
@@ -95,10 +95,10 @@ get_header();
 </div>
 <div class="row marg col-marg">
 	<div class="col-xs-12 col-md-4">
-		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent-682x1024.jpg">
+		<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent-682x1024.jpg">
 	</div>
 	<div class="col-xs-12 col-md-4">
-		<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png">
+		<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png">
 	</div>
 	<div class="col-xs-12 col-md-4 event-column-one">
 		<h4>Coming Soon to NightTrips&hellip;</h4>	
@@ -113,7 +113,7 @@ get_header();
         </div>
         <div class="media-body" style="">
           <a class="event-description" href="javascript:void(0)">
-             <img src="http://nighttrips.com/Tulsa/wp-content/uploads/2012/01/AsaAkiraTNTLobby-1024x570.jpg" />
+             <img src="https://nighttrips.com/Tulsa/wp-content/uploads/2012/01/AsaAkiraTNTLobby-1024x570.jpg" />
           </a>
           <div class="overlay bkg-base"></div>        
         </div>

@@ -33,7 +33,7 @@ get_header();
 		</div>						
 	</div>
 	<div class="col-xs-12 col-md-4">
-			<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent.jpg">
+			<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent.jpg">
 
 	<!--	<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-12">
@@ -110,7 +110,7 @@ get_header();
 				<div class="col-xs-12">
 					<div class="media event-simple card-one event-danger">
 						<div class="media-header">
-							<img src="http://nighttrips.com/Tulsa/wp-content/uploads/2012/01/AsaAkiraTNTLobby-1024x570.jpg" />
+							<img src="https://nighttrips.com/Tulsa/wp-content/uploads/2012/01/AsaAkiraTNTLobby-1024x570.jpg" />
 						</div>
 						<div class="media-left bkg-darker">
 							<a href="javascript:void(0)">
@@ -130,7 +130,7 @@ get_header();
 				<div class="col-xs-12 col-sm-6">
 					<div class="media event-simple card-one event-danger">
 						<div class="media-header">
-							<img src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/03/stpattysTulsaLobby-900x501.jpg" />
+							<img src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/03/stpattysTulsaLobby-900x501.jpg" />
 						</div>
 						<div class="media-left bkg-darker">
 							<a href="javascript:void(0)">
@@ -150,7 +150,7 @@ get_header();
 				<div class="col-xs-12 col-sm-6">
 					<div class="media event-simple card-one event-danger">
 						<div class="media-header">
-							<img src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/01/RileyReidTULSALobby-1024x570.jpg" />
+							<img src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/01/RileyReidTULSALobby-1024x570.jpg" />
 						</div>
 						<div class="media-left bkg-darker">
 							<a href="javascript:void(0)">
@@ -174,7 +174,7 @@ get_header();
 		<div class="col-xs-12 col-md-4 event-column-one">
 			<div class="row no-gutter">
 				<div class="col-xs-12">
-			      	<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/05/MissNTTULSAFB.jpg">
+			      	<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/05/MissNTTULSAFB.jpg">
 			        <div class="jumbotron mini-jumbotron panel bkg-notblack">
 			          <h4>Our Events are the Best!</h4>
 			          <p class="info">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
@@ -233,9 +233,9 @@ get_header();
 			<div class="panel-body">
 				<div class="col-md-5">
 					<img data-src="holder.js/600x900?text=Pluxh callout.">
-				<!--	<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent.jpg">
+				<!--	<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent.jpg">
 
-					<img class="center-block" src="http://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png"> -->
+					<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png"> -->
 				</div>
 				<div class="col-md-7">
 					<?php echo do_shortcode( '[gallery type="rectangular" size="thumbnail" link="file" ids="1465,1468,1464"]' ); ?>

@@ -25,10 +25,10 @@ $club_close = get_post_meta( $venue, '_happyhour_venue_club_close', true );
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3">
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="">
-            <img src="http://nighttrips.com/Tulsa/wp-content/uploads/2015/10/logo-tulsa.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block marg" >
+            <img src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/10/logo-tulsa.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block marg" >
           </a>
-          <a href="http://nighttrips.com/OKC" class="">
-            <img src="http://nighttrips.com/OKC/wp-content/uploads/2015/10/logo-okc.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block" >
+          <a href="https://nighttrips.com/OKC" class="">
+            <img src="https://nighttrips.com/OKC/wp-content/uploads/2015/10/logo-okc.png" alt="<?php bloginfo( 'name' ); ?>" class="center-block" >
           </a>          
         </div>
         <nav class="col-xs-6 col-sm-6 col-md-3" <?php hybrid_attr( 'menu2', 'secondary' ); ?>>
@@ -49,7 +49,7 @@ $club_close = get_post_meta( $venue, '_happyhour_venue_club_close', true );
             <li><a itemprop="sameAs" href="https://www.facebook.com/nighttripstulsa"><i class="fa fa-li fa-facebook"></i>Facebook</a></li>
             <li><a itemprop="sameAs" href="https://twitter.com/nighttripstulsa"><i class="fa fa-li fa-twitter"></i>Twitter</a></li>
             <li><a itemprop="sameAs" href="https://www.youtube.com/user/nighttripstv"><i class="fa fa-li fa-youtube-play"></i>YouTube</a></li>
-            <li><a itemprop="sameAs" href="http://nighttripspics.tumblr.com/"><i class="fa fa-li fa-tumblr"></i>Tumblr</a></li>
+            <li><a itemprop="sameAs" href="https://nighttripspics.tumblr.com/"><i class="fa fa-li fa-tumblr"></i>Tumblr</a></li>
             <li><a itemprop="sameAs" href="https://plus.google.com/+NightTripsTulsa/posts"><i class="fa fa-li fa-google-plus"></i>Google+</a></li>
           </ul>
         </div>
