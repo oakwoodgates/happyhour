@@ -5,18 +5,13 @@
  * @author  WPguru4u
  * @package happyhour
  */
-$featured_post = cmb2_get_option( 'happyhour_options', 'happyhour_featured_blog_post' );
-$featured = get_post( $featured_post );
+// $featured_post = cmb2_get_option( 'happyhour_options', 'happyhour_featured_blog_post' );
+// $featured = get_post( $featured_post );
 ?>
 <div class="row marg">
 	<div class="col-xs-12">
 		<h2>Food &amp; Drinks</h2>
-		<?php if( is_okc() ) : ?>
-			<p class="lead">Night Trips OKC features a savory food menu, ice cold beer and seasonal craft beers.</p>
-		<?php else : ?>
-
-			<p class="lead">Night Trips Tulsa features a full kitchen, ice cold beer, seasonal craft beers and a hand crafted cocktail menu. Featuring our signature drink, the <a href="<?php echo post_permalink( $featured ); ?>"><?php echo get_the_title( $featured ) ?></a>.</p>
-		<?php endif; ?>
+		<p class="lead">Night Trips <?php echo ( is_okc() ) ? 'OKC' : 'Tulsa'; ?> features a savory food menu, ice cold beer, seasonal craft beers and a hand crafted cocktail menu featuring our signature cocktail the <a href="https://www.youtube.com/watch?v=CbtJEIGL-mI" target="_blank">Citrus Mule</a>.</p>
 	</div>
 	<div class="col-xs-12 col-md-6 col-lg-5">
 		<?php $facebook = esc_url( cmb2_get_option( 'happyhour_options', 'happyhour_facebook_post' ) );  ?>
