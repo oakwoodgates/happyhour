@@ -16,17 +16,11 @@ get_header();
 	</div>
 	<div class="col-xs-12 col-md-6">
 		<div id="map"></div>
-	<!--	<iframe
-		  width="600"
-		  height="450"
-		  frameborder="0" style="border:0"
-		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA_wjmyCYdfeRV-17SNsa6SEJvhB8lN-Lk&q=Night+Trips,Tulsa+OK" allowfullscreen>
-		</iframe>	-->
 	</div>
 
 	<div class="col-xs-12 col-md-6">
         <div class="panel panel-primary panel-club-info">
-			<div class="panel-heading">         
+			<div class="panel-heading">
 				<h3 class="panel-title">Club Info</h3>
 			</div>
 	        <div class="panel-body">
@@ -44,8 +38,8 @@ get_header();
 						</li>
 						<li class="list-group-item">
 							<i class="fa fa-cutlery fa-fw"></i>  Kitchen open till 1am
-						</li>                
-					</ul>          		
+						</li>
+					</ul>
 				</div>
 				<div class="col col-xs-6">
 					<ul class="list-group fa-ul">
@@ -60,15 +54,15 @@ get_header();
 						</li>
 						<li class="list-group-item">
 							<i class="fa fa-music fa-fw"></i>  music
-						</li>                
-					</ul>         		
+						</li>
+					</ul>
 				</div>
 	        </div>
 			<div class="panel-footer">
 				<ul class="list-inline text-center">
 					<li class="text-danger"><i class="fa fa-2x fa-female"></i> ALWAYS FREE</li>
 					<li class="text-info"><i class="fa fa-2x fa-male"></i> ONLY $5</li>
-				</ul>          
+				</ul>
 				<ul class="list-inline text-center">
 					<li><i class="fa fa-2x fa-cc-visa" data-toggle="tooltip" data-placement="top" title="VISA" data-original-title="VISA"></i></li>
 					<li><i class="fa fa-2x fa-cc-mastercard" data-toggle="tooltip" data-placement="top" title="MasterCard" data-original-title="MasterCard"></i></i></li>
@@ -102,7 +96,7 @@ get_header();
 	</div>
 	<div class="col-xs-12 col-sm-4">
 		<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2014/04/pluxhtabletentfacebook.png">
-	</div>	
+	</div>
 </div>
 
 <?php

@@ -30,7 +30,7 @@ get_header();
 				<h4 class="media-heading">Media heading</h4>
 				Cras sit amet nibh libero, in gravida nulla.
 			</div>
-		</div>						
+		</div>
 	</div>
 	<div class="col-xs-12 col-md-4">
 			<img class="center-block" src="https://nighttrips.com/Tulsa/wp-content/uploads/2015/08/HappyHourOKCTableTent.jpg">
@@ -40,16 +40,16 @@ get_header();
 				<div class="twitter-box">
 					<?php // echo $embed_code = wp_oembed_get('https://twitter.com/SamuelLJackson/status/619826409104613376'); ?>
 					<div id="funk"></div>
-					<div id="twitter-wjs"></div> 
+					<div id="twitter-wjs"></div>
 				</div>
 				<p class="lead">
 				some text
-				</p>				
+				</p>
 			</div>
-			
+
 			<div class="col-xs-12 col-sm-6 col-md-12">
-				<img data-src="holder.js/1024x570">			
-			</div>		 
+				<img data-src="holder.js/1024x570">
+			</div>
 		</div> -->
 	</div>
 </div>
@@ -65,23 +65,23 @@ get_header();
           <h4>Our Awesome Bar &amp; Kitchen</h4>
           <p class="info">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
           <p class="action text-right"><a class="btn btn-primary btn-lg">View Menu</a></p>
-        </div>			
+        </div>
 	</div>
 	<div class="col-xs-12 col-md-6 col-lg-7">
 		<div class="row marg">
 			<div class="col-xs-12 col-md-12">
 			<!--	<img data-src="holder.js/851x315?bg=684190&fg=ffffff"> -->
-				<?php // echo do_shortcode( '[gallery type="rectangular" size="medium" ids="1478,1487,1496,1494,1477,1483,1481,1497,1498"]' ); ?>	
-				<?php echo do_shortcode( '[gallery type="rectangular" size="medium" ids="1478,1477,1496,1494,1483,1481"]' ); ?>	
+				<?php // echo do_shortcode( '[gallery type="rectangular" size="medium" ids="1478,1487,1496,1494,1477,1483,1481,1497,1498"]' ); ?>
+				<?php echo do_shortcode( '[gallery type="rectangular" size="medium" ids="1478,1477,1496,1494,1483,1481"]' ); ?>
 			</div>
 		</div>
 		<div class="row marg">
 			<div class="col-xs-12 col-sm-6">
-		<?php // echo do_shortcode( '[gallery type="columns" size="large" ids="977,1261,1038,967,1040,807"]' ); ?>	
+		<?php // echo do_shortcode( '[gallery type="columns" size="large" ids="977,1261,1038,967,1040,807"]' ); ?>
 
-			</div>			
-		</div>		
-	</div>	
+			</div>
+		</div>
+	</div>
 </div>
 </div>
 <div class="marg neon-sign">
@@ -104,7 +104,7 @@ get_header();
 
 
 	<div class="col-xs-12">
-		<div class="col-xs-12 col-md-8">		
+		<div class="col-xs-12 col-md-8">
 			<div class="row no-gutter">
 
 				<div class="col-xs-12">
@@ -166,9 +166,9 @@ get_header();
 							</a>
 						</div>
 					</div>
-				</div>						
-				
-			</div>	
+				</div>
+
+			</div>
 		</div>
 
 		<div class="col-xs-12 col-md-4 event-column-one">
@@ -179,12 +179,12 @@ get_header();
 			          <h4>Our Events are the Best!</h4>
 			          <p class="info">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
 			          <p class="action text-right"><a class="btn btn-primary btn-lg">See All</a></p>
-			        </div>	      
+			        </div>
 				</div>
 			</div>
 		</div>
 
-	</div>	
+	</div>
 </div>
 
 <div class="row marg"></div>
@@ -200,7 +200,7 @@ get_header();
 			<div class="panel-body">
 				<div class="col-xs-12 col-md-8 col-md-push-4">
 			    	<?php echo do_shortcode( '[gallery type="rectangular" size="thumbnail" link="file" ids="1465,1468,1464"]' ); ?>
-				</div>			
+				</div>
 				<div class="col-xs-12 col-md-4 col-md-pull-8">
 			        <div class="jumbotron mini-jumbotron bkg-darker">
 			          <h3>VIP Booths</h3>
@@ -208,7 +208,7 @@ get_header();
 			          <p class="action"><a class="btn btn-primary btn-lg">More Info</a></p>
 			        </div>
 				</div>
-			</div>			
+			</div>
 		</div>
 	</div>
 	<div class="col-xs-12">
@@ -223,8 +223,8 @@ get_header();
 			          <p class="info">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
 			          <p class="action"><a class="btn btn-primary btn-lg">More Info</a></p>
 			        </div>
-				</div>				
-			</div>			
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -247,21 +247,21 @@ get_header();
 								<ul>
 									<li class=""><i class="fa fa-beer fa-fw"></i>yea</li>
 									<li class=""><i class="fa fa-beer fa-fw"></i>yea</li>
-									<li class=""><i class="fa fa-beer fa-fw"></i>yea</li>									
+									<li class=""><i class="fa fa-beer fa-fw"></i>yea</li>
 								</ul>
 							</div>
 							<div class="col-xs-12 col-sm-6">
 								<ul>
 									<li class=""><i class="fa fa-beer fa-fw"></i>yea</li>
 									<li class=""><i class="fa fa-beer fa-fw"></i>yea</li>
-									<li class=""><i class="fa fa-beer fa-fw"></i>yea</li>									
+									<li class=""><i class="fa fa-beer fa-fw"></i>yea</li>
 								</ul>
-							</div>						
+							</div>
 						</div>
 			        	<p class="action text-right"><a class="btn btn-primary btn-lg">More Info</a></p>
 			        </div>
-				</div>				
-			</div>			
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -291,7 +291,7 @@ get_header();
 						<h4 class="media-heading">Media heading</h4>
 						Cras sit amet nibh libero, in gravida nulla.
 					</div>
-				</div>	
+				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6">
 				<div class="twitter-box">
@@ -302,9 +302,9 @@ get_header();
 			</div>
 			<div class="col-xs-12 col-sm-6">
 				<img data-src="holder.js/400x200?text=4-way Follow Box.">
-			</div>			
-		</div>		
-	</div>	
+			</div>
+		</div>
+	</div>
 </div>
 
 <div class="row marg">
@@ -317,17 +317,11 @@ get_header();
 	</div>
 	<div class="col-xs-12 col-md-6">
 		<div id="map"></div>
-	<!--	<iframe
-		  width="600"
-		  height="450"
-		  frameborder="0" style="border:0"
-		  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA_wjmyCYdfeRV-17SNsa6SEJvhB8lN-Lk&q=Night+Trips,Tulsa+OK" allowfullscreen>
-		</iframe>	-->
 	</div>
 
 	<div class="col-xs-12 col-md-6">
         <div class="panel panel-primary panel-club-info">
-			<div class="panel-heading">         
+			<div class="panel-heading">
 				<h3 class="panel-title">Club Info</h3>
 			</div>
 	        <div class="panel-body">
@@ -345,8 +339,8 @@ get_header();
 						</li>
 						<li class="list-group-item">
 							<i class="fa fa-cutlery fa-fw"></i>  Kitchen open till 1am
-						</li>                
-					</ul>          		
+						</li>
+					</ul>
 				</div>
 				<div class="col col-xs-6">
 					<ul class="list-group fa-ul">
@@ -361,15 +355,15 @@ get_header();
 						</li>
 						<li class="list-group-item">
 							<i class="fa fa-music fa-fw"></i>  music
-						</li>                
-					</ul>         		
+						</li>
+					</ul>
 				</div>
 	        </div>
 			<div class="panel-footer">
 				<ul class="list-inline text-center">
 					<li class="text-danger"><i class="fa fa-2x fa-female"></i> ALWAYS FREE</li>
 					<li class="text-info"><i class="fa fa-2x fa-male"></i> ONLY $5</li>
-				</ul>          
+				</ul>
 				<ul class="list-inline text-center">
 					<li><i class="fa fa-2x fa-cc-visa" data-toggle="tooltip" data-placement="top" title="VISA" data-original-title="VISA"></i></li>
 					<li><i class="fa fa-2x fa-cc-mastercard" data-toggle="tooltip" data-placement="top" title="MasterCard" data-original-title="MasterCard"></i></i></li>

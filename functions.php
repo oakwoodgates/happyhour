@@ -153,7 +153,7 @@ function happyhour_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 //	wp_enqueue_script( 'happyhour-holder', '//cdnjs.cloudflare.com/ajax/libs/holder/2.8.1/holder.min.js', array('jquery'), '1.0.0', true );
-	wp_enqueue_script( 'happyhour-maps', '//maps.googleapis.com/maps/api/js?key=AIzaSyA_wjmyCYdfeRV-17SNsa6SEJvhB8lN-Lk&sensor=false', array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'happyhour-maps', '//maps.googleapis.com/maps/api/js?key=AIzaSyA-vX2w0aCtfvw3P2oNNwTuY0XYtapb3R0&sensor=false', array('jquery'), '1.0.0', true );
 	wp_enqueue_script( 'happyhour-js', get_template_directory_uri() . '/assets/js/bootstrap-' . $site . '.min.js', array('jquery'), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'happyhour_scripts' );
@@ -209,7 +209,7 @@ require get_template_directory() . '/oakwood-happyhour/cmb2-options/metaboxes-ve
 remove_filter( 'the_excerpt', 'wpautop' );
 
 // remove modern tribe json markup and use our own, for now
-add_filter( 'tribe_google_data_markup_json', 'oak_tribe_remove_json', 10, 1 );
+// add_filter( 'tribe_google_data_markup_json', 'oak_tribe_remove_json', 10, 1 );
 function oak_tribe_remove_json( $data ){
 	$data = '';
 	return $data;
