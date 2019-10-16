@@ -123,6 +123,11 @@ function happyhour_widgets_init() {
 }
 add_action( 'widgets_init', 'happyhour_widgets_init' );
 
+function happyhour_g_api() {
+	$plugin_options     = get_option( 'googleplacesreviews_options' );
+	return $plugin_options['google_places_api_key'];
+}
+
 /**
  * Enqueue scripts and styles.
  */
@@ -153,7 +158,7 @@ function happyhour_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 //	wp_enqueue_script( 'happyhour-holder', '//cdnjs.cloudflare.com/ajax/libs/holder/2.8.1/holder.min.js', array('jquery'), '1.0.0', true );
-	wp_enqueue_script( 'happyhour-maps', '//maps.googleapis.com/maps/api/js?key=AIzaSyA-vX2w0aCtfvw3P2oNNwTuY0XYtapb3R0&sensor=false', array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'happyhour-maps', '//maps.googleapis.com/maps/api/js?key='.happyhour_g_api().'&sensor=false', array('jquery'), '1.0.0', true );
 	wp_enqueue_script( 'happyhour-js', get_template_directory_uri() . '/assets/js/bootstrap-' . $site . '.min.js', array('jquery'), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'happyhour_scripts' );
