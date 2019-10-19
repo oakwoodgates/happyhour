@@ -34,7 +34,7 @@
 			// all - 1980,1981,1982,1985,1972,1977,1990
 			// vertical - 1980, 1981, 1990
 			// main - 1977
-			echo do_shortcode( '[gallery type="rectangular" size="medium" ids="2449,2446,2465,2447,2445,2443"]' ); ?>
+			echo do_shortcode( '[gallery type="rectangular" size="medium" ids="2449,2446,2465,2447,2445,2443"]' ); 
 		// tacos - 2589
 		//  waitress - 2593
 		// brushetta - 2595
